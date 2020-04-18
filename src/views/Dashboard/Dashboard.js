@@ -23,7 +23,6 @@ import {
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 import { getStyle, hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities'
 
-const Widget03 = lazy(() => import('../../views/Widgets/Widget03'));
 
 const brandPrimary = getStyle('--primary')
 const brandSuccess = getStyle('--success')
@@ -629,7 +628,6 @@ class Dashboard extends Component {
             </Card>
           </Col>
         </Row>
-
         <Row>
           <Col>
             <Card>
