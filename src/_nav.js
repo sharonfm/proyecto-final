@@ -1,7 +1,7 @@
 export default {
   items: [
     {
-      name: 'Inicio',
+      name: 'Información',
       url: '/base/carousels',
       icon: 'icon-puzzle',
     },
@@ -18,22 +18,17 @@ export default {
         variant: 'info',
       },
     },
-    
+
+    {
+      name: 'Feedback',
+      url: '/base/list-groups',
+      icon: 'icon-puzzle',
+    },
     {
       name: 'Base',
       url: '/base',
       icon: 'icon-puzzle',
       children: [
-        {
-          name: 'List groups',
-          url: '/base/list-groups',
-          icon: 'icon-puzzle',
-        },
-        {
-          name: 'Paginations',
-          url: '/base/paginations',
-          icon: 'icon-puzzle',
-        },
         {
           name: 'Switches',
           url: '/base/switches',
@@ -51,7 +46,6 @@ export default {
         },
       ],
     },
-
     {
       name: 'Buttons',
       url: '/buttons',
@@ -96,11 +90,6 @@ export default {
           },
         },
         {
-          name: 'Flags',
-          url: '/icons/flags',
-          icon: 'icon-star',
-        },
-        {
           name: 'Font Awesome',
           url: '/icons/font-awesome',
           icon: 'icon-star',
@@ -124,7 +113,7 @@ export default {
       title: true,
       name: 'Extras',
     },
-    {
+    /* {
       name: 'Pages',
       url: '/pages',
       icon: 'icon-star',
@@ -141,6 +130,6 @@ export default {
         },
         
       ],
-    },
+    }, */
   ],
 };

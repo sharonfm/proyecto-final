@@ -25,12 +25,12 @@ class DefaultHeader extends Component {
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile />
         <AppNavbarBrand
-          full={{ src: logo, width: 89, height: 25, alt: 'CoreUI Logo' }}
-          minimized={{ src: sygnet, width: 30, height: 30, alt: 'CoreUI Logo' }}
+          full={{ src: logo, width: 89, height: 25, alt: 'Project Logo' }}
+          minimized={{ src: sygnet, width: 30, height: 30, alt: 'Project Logo' }}
         />
         <AppSidebarToggler className="d-md-down-none" display="lg" />
 
-        <Nav className="d-md-down-none" navbar>
+        {/* <Nav className="d-md-down-none" navbar>
           <NavItem className="px-3">
             <NavLink to="/dashboard" className="nav-link" >Dashboard</NavLink>
           </NavItem>
@@ -40,20 +40,14 @@ class DefaultHeader extends Component {
           <NavItem className="px-3">
             <NavLink to="#" className="nav-link">Settings</NavLink>
           </NavItem>
-        </Nav>
+        </Nav> */}
         
         <Nav className="ml-auto" navbar>
           <UncontrolledDropdown nav direction="down">
             <DropdownToggle nav>
-              <img src={'../../assets/img/avatars/6.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com" />
+              <img src={'../../assets/img/avatars/usuario.png'} className="img-avatar" />
             </DropdownToggle>
-            <DropdownMenu right>
-              {/* <DropdownItem header tag="div" className="text-center"><strong>Account</strong></DropdownItem>
-              <DropdownItem><i className="fa fa-bell-o"></i> Updates<Badge color="info">42</Badge></DropdownItem>
-              <DropdownItem><i className="fa fa-envelope-o"></i> Messages<Badge color="success">42</Badge></DropdownItem>
-              <DropdownItem><i className="fa fa-tasks"></i> Tasks<Badge color="danger">42</Badge></DropdownItem>
-              <DropdownItem><i className="fa fa-comments"></i> Comments<Badge color="warning">42</Badge></DropdownItem> */}
-              
+            <DropdownMenu right>             
               <DropdownItem header tag="div" className="text-center"><strong>Settings</strong></DropdownItem>
               <DropdownItem><i className="fa fa-user"></i> Profile</DropdownItem>
               <DropdownItem><i className="fa fa-wrench"></i> Settings</DropdownItem>
