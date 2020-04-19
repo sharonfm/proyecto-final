@@ -71,8 +71,8 @@ class Carousels extends Component {
 
     return (
       <div className="animated fadeIn">
-        <Row >  
-          <Col xs="2" sm="8">    
+        <Row style={{justifyContent: 'center'}}>  
+          <Col xs="12" sm="8">    
             <Card className="text-center">
               <CardHeader>
                 <h1><strong>Governance y Gestión de TI</strong> </h1>
@@ -93,8 +93,8 @@ class Carousels extends Component {
             <CardHeader><h3>EDM→ Evaluar, Dirigir y Monitorizar</h3></CardHeader>
         </Card>
         
-        <Row>
-          <Col xs="2" sm="3" >
+        <Row >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>EDM01</h4> Garantizar el establecimiento y mantenimiento del marco de gobierno
@@ -106,7 +106,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>EDM03</h4> Asegurar la optimización del riesgo
@@ -118,7 +118,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>EDM04</h4> Asegurar la optimización de los recursos
@@ -130,7 +130,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>EDM05</h4> Asegurar la transparencia de las partes interesadas
@@ -150,7 +150,7 @@ class Carousels extends Component {
         </Card>
 
         <Row>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>APO01</h4> Gestionar el marco de gestión de I&T
@@ -164,7 +164,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>APO03</h4> Gestionar la arquitectura empresarial
@@ -176,7 +176,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>APO04</h4> Gestionar la arquitectura empresarial
@@ -188,7 +188,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>APO06</h4> Gestionar el presupuesto y los costes
@@ -201,7 +201,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>APO08</h4> Gestionar las relaciones
@@ -213,7 +213,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>APO09</h4> Gestionar los acuerdos de servicio
@@ -224,7 +224,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>APO11</h4> Gestionar la calidad
@@ -235,7 +235,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>APO13</h4> Gestionar la seguridad
@@ -246,7 +246,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>APO14</h4> Gestionar los datos
@@ -263,7 +263,7 @@ class Carousels extends Component {
         </Card>
         
         <Row>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>BAI01</h4> Gestionar los programas
@@ -276,7 +276,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>BAI02</h4> Gestionar la definición de requerimientos
@@ -286,7 +286,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>BAI03</h4> Gestionar la identificación y construcción de soluciones
@@ -298,7 +298,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>BAI04</h4> Gestionar la disponibilidad y capacidad
@@ -309,7 +309,7 @@ class Carousels extends Component {
               </CardBody>
               </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>BAI05</h4> Gestionar los cambios organizativos
@@ -319,7 +319,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>BAI06</h4> Gestionar los cambios de TI
@@ -330,7 +330,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>BAI07</h4> Gestionar la aceptación y la transición de los cambios de TI
@@ -340,7 +340,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>BAI11</h4> Gestionar los proyectos
@@ -359,8 +359,8 @@ class Carousels extends Component {
             <CardHeader><h3>DSS→ Entregar, Dar Servicio y Soporte</h3></CardHeader>
         </Card>
         
-        <Row>
-          <Col xs="2" sm="3" >
+        <Row style={{justifyContent: 'center'}}>
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>DSS01</h4> Gestionar las operaciones
@@ -370,7 +370,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>DSS02</h4> Gestionar las peticiones y los incidentes del servicio
@@ -383,7 +383,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>DSS05</h4> Gestionar los servicios de seguridad
@@ -400,7 +400,7 @@ class Carousels extends Component {
         </Card>
         
         <Row>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>MEA01</h4> Gestionar la monitorización del rendimiento y la conformidad
@@ -410,7 +410,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>MEA02</h4> Gestionar el sistema de control interno
@@ -422,7 +422,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>MEA03</h4> Gestionar el cumplimiento de los requerimientos externos
@@ -432,7 +432,7 @@ class Carousels extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xs="2" sm="3" >
+          <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
               <h4>MEA04</h4> Gestionar el aseguramiento
