@@ -72,7 +72,7 @@ class Carousels extends Component {
     return (
       <div className="animated fadeIn">
         <Row style = {{justifyContent: 'center'}}>  
-          <Col xs="2" sm="9">   
+          <Col xs="2" sm="8">   
             <Card className= "text-center">
               <CardHeader>
                 <h1><strong>Governance y Gestión de TI</strong> </h1>
