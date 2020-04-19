@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { UncontrolledDropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem } from 'reactstrap';
+import { UncontrolledDropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav } from 'reactstrap';
 import PropTypes from 'prop-types';
 
 import {  AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
@@ -45,7 +44,7 @@ class DefaultHeader extends Component {
         <Nav className="ml-auto" navbar>
           <UncontrolledDropdown nav direction="down">
             <DropdownToggle nav>
-              <img src={'../../assets/img/avatars/usuario.png'} className="img-avatar" />
+              <img src={'../../assets/img/avatars/usuario.png'} className="img-avatar"/>
             </DropdownToggle>
             <DropdownMenu right>             
               <DropdownItem header tag="div" className="text-center"><strong>Settings</strong></DropdownItem>
