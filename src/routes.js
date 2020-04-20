@@ -1,7 +1,11 @@
 import React from 'react';
 const Carousels = React.lazy(() => import('./views/Base/Información/Info'));
-const Forms = React.lazy(() => import('./views/Base/Formulario/Formulario'));
-const Forms2 = React.lazy(() => import('./views/Base/Formulario/Formulario2'));
+const Forms = React.lazy(() => import('./views/Base/Formulario/Formulario.js'));
+const Forms2 = React.lazy(() => import('./views/Base/Formulario/Formulario2.js'));
+const Forms3 = React.lazy(() => import('./views/Base/Formulario/Formulario3.js'));
+const Forms4 = React.lazy(() => import('./views/Base/Formulario/Formulario4.js'));
+const Forms5 = React.lazy(() => import('./views/Base/Formulario/Formulario5.js'));
+const Forms6 = React.lazy(() => import('./views/Base/Formulario/Formulario6.js'));
 const Switches = React.lazy(() => import('./views/Base/Switches'));
 const Tables = React.lazy(() => import('./views/Base/Tables'));
 const BrandButtons = React.lazy(() => import('./views/Buttons/BrandButtons'));
@@ -27,6 +31,11 @@ const routes = [
   { path: '/', exact: true, name: 'Inicio'},
   { path: '/dashboard', name: 'Estadísticas', component: Dashboard },
   { path: '/base/form', name: 'Formulario', component: Forms },
+  { path: '/base/form2', name: 'Formulario2', component: Forms2 },
+  { path: '/base/form3', name: 'Formulario3', component: Forms3 },
+  { path: '/base/form4', name: 'Formulario4', component: Forms4 },
+  { path: '/base/form5', name: 'Formulario4', component: Forms5 },
+  { path: '/base/form6', name: 'Formulario4', component: Forms6 },
   { path: '/base/list1', name: 'List1', component: List1},
   { path: '/base/list2', name: 'List2', component: List2},
   { path: '/base/list3', name: 'List3', component: List3},
