@@ -19,7 +19,7 @@ import {
   Row,
 } from 'reactstrap';
 
-class Forms2 extends Component {
+class Forms4 extends Component {
   constructor(props) {
     super(props);
 
@@ -178,26 +178,83 @@ class Forms2 extends Component {
                     </Card>
                   </FormGroup>
                   
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>5. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
+                  </FormGroup>
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>6. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
+                  </FormGroup>
+
                 </Form>
                   <Pagination>
-                    <Link to="/base/form">
+                    <Link to="/base/form3">
                       <PaginationItem><PaginationLink tag="button">Prev</PaginationLink></PaginationItem>
                     </Link> 
                     <Link to="/base/form">
                       <PaginationItem><PaginationLink tag="button">1</PaginationLink></PaginationItem>
                     </Link> 
-                    <PaginationItem active>
-                      <PaginationLink tag="button">2</PaginationLink>
-                    </PaginationItem>
+                    <Link to="/base/form2">
+                      <PaginationItem><PaginationLink tag="button">2</PaginationLink></PaginationItem>
+                    </Link> 
                     <Link to="/base/form3">
                       <PaginationItem><PaginationLink tag="button">3</PaginationLink></PaginationItem>
                     </Link> 
-                    <Link to="/base/form4">
-                      <PaginationItem><PaginationLink tag="button">4</PaginationLink></PaginationItem>
-                    </Link> 
-                    <Link to="/base/form3">
-                      <PaginationItem><PaginationLink tag="button">Next</PaginationLink></PaginationItem>
-                    </Link> 
+                    <PaginationItem active>
+                      <PaginationLink tag="button">4</PaginationLink>
+                    </PaginationItem>
+                    <PaginationItem disabled><PaginationLink previous tag="button">Next</PaginationLink></PaginationItem>
                   </Pagination>
               </CardBody>
               <CardFooter>
@@ -213,4 +270,4 @@ class Forms2 extends Component {
   }
 }
 
-export default Forms2;
+export default Forms4;
