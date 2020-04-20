@@ -180,9 +180,9 @@ class List1 extends Component {
                     </Link>
                   </PaginationItem>
                   <PaginationItem>
-                    <PaginationLink href="#">
-                      3
-                    </PaginationLink>
+                    <Link to="/base/list3">
+                      <PaginationLink>3</PaginationLink>
+                    </Link>
                   </PaginationItem>
                   <PaginationItem>
                     <PaginationLink href="#">

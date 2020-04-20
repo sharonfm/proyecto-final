@@ -169,20 +169,18 @@ class List2 extends Component {
                   <PaginationItem disabled>
                     <PaginationLink previous href="#" />
                   </PaginationItem>
-                  <PaginationItem active>
-                    <PaginationLink href="#">
-                      1
-                    </PaginationLink>
-                  </PaginationItem>
                   <PaginationItem>
-                    <Link to="/base/list2">
-                    <PaginationLink>2</PaginationLink>
+                    <Link to="/base/list1">
+                      <PaginationLink>1</PaginationLink>
                     </Link>
                   </PaginationItem>
+                  <PaginationItem active>
+                    <PaginationLink>2</PaginationLink>
+                  </PaginationItem>
                   <PaginationItem>
-                    <PaginationLink href="#">
-                      3
-                    </PaginationLink>
+                   <Link to="/base/list3">
+                      <PaginationLink>3</PaginationLink>
+                    </Link>
                   </PaginationItem>
                   <PaginationItem>
                     <PaginationLink href="#">
