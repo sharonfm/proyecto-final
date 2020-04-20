@@ -27,7 +27,7 @@ class ListGroups extends Component {
           <Col>
             <Card>
               <CardHeader>
-                <i className="fa fa-align-justify"></i><strong>Retroalimentación</strong> <small>with TabPanes</small>
+                <i className="fa fa-align-justify"></i><strong>Retroalimentación</strong> 
               </CardHeader>
               <CardBody>
                 <Row>
@@ -159,7 +159,6 @@ class ListGroups extends Component {
                     </TabContent>
                   </Col>
                 </Row>
-                
               </CardBody>
             </Card>
           </Col>

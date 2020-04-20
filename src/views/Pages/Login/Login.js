@@ -44,7 +44,7 @@ class Login extends Component {
                         <Input type="password" placeholder="Password" autoComplete="current-password" />
                       </InputGroup>
                       <Row>
-                        <Link to="/base/carousels">
+                        <Link to="/base/info">
                           <Col xs="6">
                             <Button color="primary" className="px-4" >Vamos!</Button>
                           </Col>

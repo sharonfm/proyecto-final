@@ -2,12 +2,12 @@ export default {
   items: [
     {
       name: 'Información',
-      url: '/base/carousels',
+      url: '/base/info',
       icon: 'icon-puzzle',
     },
     {
       name: 'Formulario',
-      url: '/base/forms',
+      url: '/base/form',
       icon: 'icon-puzzle',
     },
     {
@@ -21,7 +21,7 @@ export default {
 
     {
       name: 'Feedback',
-      url: '/base/list-groups',
+      url: '/base/feedback',
       icon: 'icon-puzzle',
     },
     {
