@@ -90,30 +90,36 @@ class List4 extends Component {
               </CardBody>
                 <Row style={{justifyContent: 'center'}}> 
                     <Pagination aria-label="Page navigation example">
+                      <Link to="/base/list3">
+                        <PaginationItem><PaginationLink previous></PaginationLink></PaginationItem>
+                      </Link> 
                         <PaginationItem>
                             <Link to="/base/list1">
-                                <PaginationLink>1</PaginationLink>
+                            <PaginationItem><PaginationLink tag="button">1</PaginationLink></PaginationItem>
                             </Link>
                         </PaginationItem>
                         <PaginationItem>
                             <Link to="/base/list2">
-                                <PaginationLink>2</PaginationLink>
+                            <PaginationItem><PaginationLink tag="button">2</PaginationLink></PaginationItem>
                             </Link>
                         </PaginationItem>
                         <PaginationItem>
                         <Link to="/base/list3">
-                            <PaginationLink>3</PaginationLink>
+                        <PaginationItem><PaginationLink tag="button">3</PaginationLink></PaginationItem>
                         </Link>
                         </PaginationItem>
                         <PaginationItem active>
-                            <PaginationLink>4</PaginationLink>
+                        <PaginationItem><PaginationLink tag="button">4</PaginationLink></PaginationItem>
                         </PaginationItem>
                         <PaginationItem>
                         <Link to="/base/list5">
-                            <PaginationLink>5</PaginationLink>
+                        <PaginationItem><PaginationLink tag="button">5</PaginationLink></PaginationItem>
                         </Link>
                         </PaginationItem>
-                        </Pagination>
+                        <Link to="/base/list5">
+                          <PaginationItem><PaginationLink next></PaginationLink></PaginationItem>
+                        </Link> 
+                      </Pagination>
                 </Row>
             </Card>
           </Col>

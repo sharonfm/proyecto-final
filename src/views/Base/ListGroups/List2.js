@@ -163,29 +163,37 @@ class List2 extends Component {
               </CardBody>
               <Row style={{justifyContent: 'center'}}> 
                 <Pagination aria-label="Page navigation example">
+                  <Link to="/base/list1">
+                  <PaginationItem><PaginationLink previous></PaginationLink></PaginationItem>
+                  </Link> 
                   <PaginationItem>
                     <Link to="/base/list1">
-                      <PaginationLink>1</PaginationLink>
+                    <PaginationItem><PaginationLink tag="button">1</PaginationLink></PaginationItem>
                     </Link>
                   </PaginationItem>
                   <PaginationItem active>
-                    <PaginationLink>2</PaginationLink>
+                  <PaginationItem><PaginationLink tag="button">2</PaginationLink></PaginationItem>
                   </PaginationItem>
                   <PaginationItem>
                    <Link to="/base/list3">
-                      <PaginationLink>3</PaginationLink>
+                   <PaginationItem><PaginationLink tag="button">3</PaginationLink></PaginationItem>
                     </Link>
                   </PaginationItem>
                   <PaginationItem>
                     <Link to="/base/list4">
-                      <PaginationLink>4</PaginationLink>
+                    <PaginationItem><PaginationLink tag="button">4</PaginationLink></PaginationItem>
                     </Link>
                   </PaginationItem>
                   <PaginationItem>
                     <Link to="/base/list5">
-                      <PaginationLink>5</PaginationLink>
+                    <PaginationItem><PaginationLink tag="button">5</PaginationLink></PaginationItem>
                     </Link>
                   </PaginationItem>
+                  <Link to="/base/list3">
+                    <PaginationItem>
+                    <PaginationLink next></PaginationLink>
+                    </PaginationItem>
+                    </Link> 
                 </Pagination>
                 </Row>
             </Card>

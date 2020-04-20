@@ -5,7 +5,6 @@ const Forms2 = React.lazy(() => import('./views/Base/Formulario/Formulario2.js')
 const Forms3 = React.lazy(() => import('./views/Base/Formulario/Formulario3.js'));
 const Forms4 = React.lazy(() => import('./views/Base/Formulario/Formulario4.js'));
 const Forms5 = React.lazy(() => import('./views/Base/Formulario/Formulario5.js'));
-const Forms6 = React.lazy(() => import('./views/Base/Formulario/Formulario6.js'));
 const Switches = React.lazy(() => import('./views/Base/Switches'));
 const Tables = React.lazy(() => import('./views/Base/Tables'));
 const BrandButtons = React.lazy(() => import('./views/Buttons/BrandButtons'));
@@ -28,20 +27,18 @@ const User = React.lazy(() => import('./views/Users/User')); */
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
-  { path: '/', exact: true, name: 'Inicio'},
+  { path: '/', exact: true, name: 'Login'},
   { path: '/dashboard', name: 'Estadísticas', component: Dashboard },
-  { path: '/base/form', name: 'Formulario', component: Forms },
-  { path: '/base/form2', name: 'Formulario2', component: Forms2 },
-  { path: '/base/form3', name: 'Formulario3', component: Forms3 },
-  { path: '/base/form4', name: 'Formulario4', component: Forms4 },
-  { path: '/base/form5', name: 'Formulario4', component: Forms5 },
-  { path: '/base/form6', name: 'Formulario4', component: Forms6 },
-  { path: '/base/list1', name: 'List1', component: List1},
-  { path: '/base/list2', name: 'List2', component: List2},
-  { path: '/base/list3', name: 'List3', component: List3},
-  { path: '/base/list4', name: 'List4', component: List4},
-  { path: '/base/list5', name: 'List5', component: List5},
-  { path: '/base/form2', name: 'Formulario2', component: Forms2 },
+  { path: '/base/form', name: 'Formulario EDM', component: Forms },
+  { path: '/base/form2', name: 'Formulario APO', component: Forms2 },
+  { path: '/base/form3', name: 'Formulario BAI', component: Forms3 },
+  { path: '/base/form4', name: 'Formulario DSS', component: Forms4 },
+  { path: '/base/form5', name: 'Formulario MEA', component: Forms5 },
+  { path: '/base/list1', name: 'Retroalimentación EDM', component: List1},
+  { path: '/base/list2', name: 'Retroalimentación APO', component: List2},
+  { path: '/base/list3', name: 'Retroalimentación BAI', component: List3},
+  { path: '/base/list4', name: 'Retroalimentación DSS', component: List4},
+  { path: '/base/list5', name: 'Retroalimentación MEA', component: List5},
   { path: '/base/switches', name: 'Switches', component: Switches },
   { path: '/base/tables', name: 'Tables', component: Tables },
   { path: '/base/info', name: 'Información', component: Carousels },

@@ -43,17 +43,15 @@ class Forms extends Component {
   render() {
     return (
       <div className="animated fadeIn">
-        <Row>   
-        </Row>
         <Row style={{justifyContent: 'center'}}>
           <Col xs="12" md="10">
             <Card>
-              <CardHeader>
-               <h2><strong > Revisión de estructura TI</strong></h2>
+              <CardHeader align="center">
+                <h1>Revisión de estructura TI</h1> 
               </CardHeader>
               <CardBody>
                 <Form action="" method="post" encType="multipart/form-data" className="form-horizontal">
-                  <FormGroup row>
+                  <FormGroup >
                     <p>En este formulario se hablará de cosas vagas 
                       en este formulario se hablará de cosas vagas 
                       en este formulario se hablará de cosas vagas 
@@ -411,10 +409,11 @@ class Forms extends Component {
                   </FormGroup>
                   
                 </Form>
+                <Row style={{justifyContent: 'center'}}>
                   <Pagination>
-                    <PaginationItem disabled><PaginationLink previous tag="button">Prev</PaginationLink></PaginationItem>
+                    <PaginationItem disabled><PaginationLink previous></PaginationLink></PaginationItem>
                     <PaginationItem active>
-                      <PaginationLink tag="button">1</PaginationLink>
+                    <PaginationItem><PaginationLink tag="button">1</PaginationLink></PaginationItem>
                     </PaginationItem>
                     <Link to="/base/form2">
                       <PaginationItem><PaginationLink tag="button">2</PaginationLink></PaginationItem>
@@ -428,15 +427,11 @@ class Forms extends Component {
                     <Link to="/base/form5">
                       <PaginationItem><PaginationLink tag="button">5</PaginationLink></PaginationItem>
                     </Link> 
-                    <Link to="/base/form6">
-                      <PaginationItem><PaginationLink tag="button">6</PaginationLink></PaginationItem>
-                    </Link> 
                     <Link to="/base/form2">
-                      <PaginationItem><PaginationLink tag="button">Next</PaginationLink></PaginationItem>
+                      <PaginationItem><PaginationLink next></PaginationLink></PaginationItem>
                     </Link> 
-                    
-
                   </Pagination>
+                </Row>
               </CardBody>
               <CardFooter>
                 <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Submit</Button>
