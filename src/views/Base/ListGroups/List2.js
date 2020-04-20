@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Badge, Card, CardBody, CardHeader, Col, ListGroup, ListGroupItem,  Row, TabContent, TabPane } from 'reactstrap';
+import { Badge, Card, CardBody, CardHeader, Col, ListGroup, ListGroupItem,  Row, TabContent, TabPane, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
-class ListGroups extends Component {
+class List2 extends Component {
 
   constructor(props) {
     super(props);
@@ -160,6 +161,47 @@ class ListGroups extends Component {
                   </Col>
                 </Row>
               </CardBody>
+              <Row style={{justifyContent: 'center'}}> 
+                <Pagination aria-label="Page navigation example">
+                  <PaginationItem disabled>
+                    <PaginationLink first href="#" />
+                  </PaginationItem>
+                  <PaginationItem disabled>
+                    <PaginationLink previous href="#" />
+                  </PaginationItem>
+                  <PaginationItem active>
+                    <PaginationLink href="#">
+                      1
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <Link to="/base/list2">
+                    <PaginationLink>2</PaginationLink>
+                    </Link>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink href="#">
+                      3
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink href="#">
+                      4
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink href="#">
+                      5
+                    </PaginationLink>
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink next href="#" />
+                  </PaginationItem>
+                  <PaginationItem>
+                    <PaginationLink last href="#" />
+                  </PaginationItem>
+                </Pagination>
+                </Row>
             </Card>
           </Col>
         </Row>
@@ -168,4 +210,4 @@ class ListGroups extends Component {
   }
 }
 
-export default ListGroups;
+export default List2;

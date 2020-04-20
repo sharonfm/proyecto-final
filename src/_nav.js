@@ -21,7 +21,7 @@ export default {
 
     {
       name: 'Feedback',
-      url: '/base/feedback',
+      url: '/base/list1',
       icon: 'icon-puzzle',
     },
     {
