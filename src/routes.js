@@ -12,6 +12,7 @@ const Dashboard = React.lazy(() => import('./views/Dashboard'));
 const CoreUIIcons = React.lazy(() => import('./views/Icons/CoreUIIcons'));
 const FontAwesome = React.lazy(() => import('./views/Icons/FontAwesome'));
 const SimpleLineIcons = React.lazy(() => import('./views/Icons/SimpleLineIcons'));
+const ListGroups = React.lazy(() => import('./views/Base/ListGroups'));
 /* const Users = React.lazy(() => import('./views/Users/Users'));
 const User = React.lazy(() => import('./views/Users/User')); */
 
@@ -21,6 +22,7 @@ const routes = [
   { path: '/', exact: true, name: 'Inicio'},
   { path: '/dashboard', name: 'Estadísticas', component: Dashboard },
   { path: '/base/forms', name: 'Formulario', component: Forms },
+  { path: '/base/list-groups', name: 'Feedback', component: ListGroups},
   { path: '/base/switches', name: 'Switches', component: Switches },
   { path: '/base/tables', name: 'Tables', component: Tables },
   { path: '/base/carousels', name: 'Información', component: Carousels },
