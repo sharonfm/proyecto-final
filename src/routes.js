@@ -27,7 +27,7 @@ const routes = [
   { path: '/base/list1', name: 'List1', component: List1},
   { path: '/base/list2', name: 'List2', component: List2},
   { path: '/base/form2', name: 'Formulario2', component: Forms2 },
-  { path: '/base/feedback', name: 'Feedback', component: ListGroups},
+  // { path: '/base/feedback', name: 'Feedback', component: ListGroups},
   { path: '/base/switches', name: 'Switches', component: Switches },
   { path: '/base/tables', name: 'Tables', component: Tables },
   { path: '/base/info', name: 'Información', component: Carousels },
