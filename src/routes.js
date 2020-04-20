@@ -15,6 +15,7 @@ const FontAwesome = React.lazy(() => import('./views/Icons/FontAwesome'));
 const SimpleLineIcons = React.lazy(() => import('./views/Icons/SimpleLineIcons'));
 const List1 = React.lazy(() => import('./views/Base/ListGroups/List1'));
 const List2 = React.lazy(() => import('./views/Base/ListGroups/List2'));
+const List3 = React.lazy(() => import('./views/Base/ListGroups/List3'));
 /* const Users = React.lazy(() => import('./views/Users/Users'));
 const User = React.lazy(() => import('./views/Users/User')); */
 
@@ -26,8 +27,12 @@ const routes = [
   { path: '/base/form', name: 'Formulario', component: Forms },
   { path: '/base/list1', name: 'List1', component: List1},
   { path: '/base/list2', name: 'List2', component: List2},
+  { path: '/base/list3', name: 'List3', component: List3},
   { path: '/base/form2', name: 'Formulario2', component: Forms2 },
+<<<<<<< HEAD
   // { path: '/base/feedback', name: 'Feedback', component: ListGroups},
+=======
+>>>>>>> 24c7525f97107addee6ab58a3fe8853c859008f9
   { path: '/base/switches', name: 'Switches', component: Switches },
   { path: '/base/tables', name: 'Tables', component: Tables },
   { path: '/base/info', name: 'Información', component: Carousels },
