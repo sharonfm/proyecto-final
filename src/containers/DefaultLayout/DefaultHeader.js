@@ -47,11 +47,9 @@ class DefaultHeader extends Component {
               <img src={'../../assets/img/avatars/usuario.png'} className="img-avatar"/>
             </DropdownToggle>
             <DropdownMenu right>             
-              <DropdownItem header tag="div" className="text-center"><strong>Settings</strong></DropdownItem>
-              <DropdownItem><i className="fa fa-user"></i> Profile</DropdownItem>
-              <DropdownItem><i className="fa fa-wrench"></i> Settings</DropdownItem>
+              <DropdownItem header tag="div" className="text-center"><strong>Ajustes</strong></DropdownItem>
               <DropdownItem divider />
-              <DropdownItem onClick={e => this.props.onLogout(e)}><i className="fa fa-lock"></i> Logout</DropdownItem>
+              <DropdownItem onClick={e => this.props.onLogout(e)}><i className="fa fa-lock"></i> Cerrar Sesión</DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
         </Nav>

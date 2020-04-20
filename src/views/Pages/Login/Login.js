@@ -17,7 +17,7 @@ class Login extends Component {
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.</p>
                       <Link to="/register">
-                        <Button color="primary" className="mt-3" active tabIndex={-1}>Regitrate ahora!</Button>
+                        <Button color="primary" className="mt-3" active tabIndex={-1}>Regístrate ahora!</Button>
                       </Link>
                     </div>
                   </CardBody>
@@ -43,10 +43,10 @@ class Login extends Component {
                         </InputGroupAddon>
                         <Input type="password" placeholder="Password" autoComplete="current-password" />
                       </InputGroup>
-                      <Row>
+                      <Row style={{justifyContent: 'center'}}>
                         <Link to="/base/info">
                           <Col xs="6">
-                            <Button color="primary" className="px-4" >Vamos!</Button>
+                            <Button color="primary" className="px-4" >Ingresar </Button>
                           </Col>
                         </Link>
                         <Col xs="6" className="text-right">

@@ -27,7 +27,7 @@ class Register extends Component {
                 <Card className="p-4" >
                 <CardBody>
                   <Form align="center">
-                    <h1>Register</h1>
+                    <h1>G&G TI</h1>
                     <p className="text-muted">Registra aquí una nueva cuenta</p>
                     <InputGroup className="mb-3">
                       <InputGroupAddon addonType="prepend">

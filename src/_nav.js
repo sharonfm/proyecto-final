@@ -24,7 +24,7 @@ export default {
       url: '/base/list1',
       icon: 'icon-puzzle',
     },
-    {
+   /*  {
       name: 'Base',
       url: '/base',
       icon: 'icon-puzzle',
@@ -45,8 +45,8 @@ export default {
           icon: 'icon-pie-chart',
         },
       ],
-    },
-    {
+    }, */
+    /* {
       name: 'Buttons',
       url: '/buttons',
       icon: 'icon-cursor',
@@ -72,10 +72,10 @@ export default {
           icon: 'icon-cursor',
         },
       ],
-    },
+    }, */
     
 
-    {
+    /* {
       name: 'Icons',
       url: '/icons',
       icon: 'icon-star',
@@ -104,15 +104,15 @@ export default {
           icon: 'icon-star',
         },
       ],
-    },
+    }, */
 
-    {
+    /* {
       divider: true,
     },
     {
       title: true,
       name: 'Extras',
-    },
+    }, */
     /* {
       name: 'Pages',
       url: '/pages',
