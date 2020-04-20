@@ -42,23 +42,30 @@ class Forms extends Component {
         <Row>
           
         </Row>
-        <Row>
-          <Col xs="12" md="6">
+        <Row style={{justifyContent: 'center'}}>
+          <Col xs="12" md="10">
             <Card>
               <CardHeader>
-                <strong>Basic Form</strong> Elements
+               <h2><strong > Revisión de estructura TI</strong></h2>
               </CardHeader>
               <CardBody>
                 <Form action="" method="post" encType="multipart/form-data" className="form-horizontal">
                   <FormGroup row>
-                    <Col md="3">
+                    {/* <Row style={{justifyContent: 'center'}}> */}
+                    <p>En este formulario se hablará de cosas vagas 
+                      en este formulario se hablará de cosas vagas 
+                      en este formulario se hablará de cosas vagas 
+                      en este formulario se hablará de cosas vagas 
+                      en este formulario se hablará de cosas vagas</p>
+                    {/* </Row> */}
+                    {/* <Col md="3">
                       <Label>Static</Label>
                     </Col>
                     <Col xs="12" md="9">
                       <p className="form-control-static">Username</p>
-                    </Col>
+                    </Col> */}
                   </FormGroup>
-                  <FormGroup row>
+                  {/* <FormGroup row>
                     <Col md="3">
                       <Label htmlFor="text-input">Text Input</Label>
                     </Col>
@@ -66,8 +73,8 @@ class Forms extends Component {
                       <Input type="text" id="text-input" name="text-input" placeholder="Text" />
                       <FormText color="muted">This is a help text</FormText>
                     </Col>
-                  </FormGroup>
-                  <FormGroup row>
+                  </FormGroup> */}
+                  {/* <FormGroup row>
                     <Col md="3">
                       <Label htmlFor="email-input">Email Input</Label>
                     </Col>
@@ -75,8 +82,8 @@ class Forms extends Component {
                       <Input type="email" id="email-input" name="email-input" placeholder="Enter Email" autoComplete="email"/>
                       <FormText className="help-block">Please enter your email</FormText>
                     </Col>
-                  </FormGroup>
-                  <FormGroup row>
+                  </FormGroup> */}
+                  {/* <FormGroup row>
                     <Col md="3">
                       <Label htmlFor="password-input">Password</Label>
                     </Col>
@@ -109,8 +116,8 @@ class Forms extends Component {
                       <Input type="textarea" name="textarea-input" id="textarea-input" rows="9"
                              placeholder="Content..." />
                     </Col>
-                  </FormGroup>
-                  <FormGroup row>
+                  </FormGroup> */}
+                  {/* <FormGroup row>
                     <Col md="3">
                       <Label htmlFor="select">Select</Label>
                     </Col>
@@ -182,27 +189,357 @@ class Forms extends Component {
                         <option value="10">Option #10</option>
                       </Input>
                     </Col>
+                  </FormGroup> */}
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>1. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
                   </FormGroup>
-                  <FormGroup row>
-                    <Col md="3">
-                      <Label>Radios</Label>
-                    </Col>
-                    <Col md="9">
-                      <FormGroup check className="radio">
-                        <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
-                        <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
-                      </FormGroup>
-                      <FormGroup check className="radio">
-                        <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
-                        <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
-                      </FormGroup>
-                      <FormGroup check className="radio">
-                        <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
-                        <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
-                      </FormGroup>
-                    </Col>
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>2. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
                   </FormGroup>
-                  <FormGroup row>
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>3. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
+                  </FormGroup>
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>4. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
+                  </FormGroup>
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>5. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
+                  </FormGroup>
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>6. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
+                  </FormGroup>
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>7. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
+                  </FormGroup>
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>8. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
+                  </FormGroup>
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>9. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
+                  </FormGroup>
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>10. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
+                  </FormGroup>
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>11. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
+                  </FormGroup>
+                  <FormGroup>
+                    <Card className= "card-accent-primary">
+                      <CardBody>
+                        <Row>
+                          <Label>12. Antes tú me pichabas ahora yo te picheo?</Label>
+                        </Row>                            
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="option3" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="option4" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="option5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup>     
+                      </CardBody>
+                    </Card>
+                  </FormGroup>
+
+                  {/* <FormGroup row>
                     <Col md="3">
                       <Label>Inline Radios</Label>
                     </Col>
@@ -220,8 +557,9 @@ class Forms extends Component {
                         <Label className="form-check-label" check htmlFor="inline-radio3">Three</Label>
                       </FormGroup>
                     </Col>
-                  </FormGroup>
-                  <FormGroup row>
+                  </FormGroup> */}
+                  
+                  {/* <FormGroup row>
                     <Col md="3"><Label>Checkboxes</Label></Col>
                     <Col md="9">
                       <FormGroup check className="checkbox">
@@ -237,8 +575,8 @@ class Forms extends Component {
                         <Label check className="form-check-label" htmlFor="checkbox3">Option 3</Label>
                       </FormGroup>
                     </Col>
-                  </FormGroup>
-                  <FormGroup row>
+                  </FormGroup> */}
+                  {/* <FormGroup row>
                     <Col md="3">
                       <Label>Inline Checkboxes</Label>
                     </Col>
@@ -256,8 +594,8 @@ class Forms extends Component {
                         <Label className="form-check-label" check htmlFor="inline-checkbox3">Three</Label>
                       </FormGroup>
                     </Col>
-                  </FormGroup>
-                  <FormGroup row>
+                  </FormGroup> */}
+                  {/* <FormGroup row>
                     <Col md="3">
                       <Label htmlFor="file-input">File input</Label>
                     </Col>
@@ -272,8 +610,8 @@ class Forms extends Component {
                     <Col xs="12" md="9">
                       <Input type="file" id="file-multiple-input" name="file-multiple-input" multiple />
                     </Col>
-                  </FormGroup>
-                  <FormGroup row hidden>
+                  </FormGroup> */}
+                  {/* <FormGroup row hidden>
                     <Col md="3">
                       <Label className="custom-file" htmlFor="custom-file-input">Custom file input</Label>
                     </Col>
@@ -283,7 +621,7 @@ class Forms extends Component {
                         <span className="custom-file-control"></span>
                       </Label>
                     </Col>
-                  </FormGroup>
+                  </FormGroup> */}
                 </Form>
               </CardBody>
               <CardFooter>
