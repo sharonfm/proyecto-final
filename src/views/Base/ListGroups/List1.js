@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Badge, Card, CardBody, CardHeader, Col, ListGroup, ListGroupItem,  Row, TabContent, TabPane, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
+import { Card, CardBody, CardHeader, Col, ListGroup, ListGroupItem,  Row, TabContent, TabPane, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 class List1 extends Component {
@@ -163,12 +163,12 @@ class List1 extends Component {
               </CardBody>
               <Row style={{justifyContent: 'center'}}> 
                 <Pagination aria-label="Page navigation example">
-                  <PaginationItem disabled>
+                  {/* <PaginationItem disabled>
                     <PaginationLink first href="#" />
                   </PaginationItem>
                   <PaginationItem disabled>
                     <PaginationLink previous href="#" />
-                  </PaginationItem>
+                  </PaginationItem> */}
                   <PaginationItem active>
                     <PaginationLink href="#">
                       1
@@ -194,12 +194,12 @@ class List1 extends Component {
                       5
                     </PaginationLink>
                   </PaginationItem>
-                  <PaginationItem>
+                  {/* <PaginationItem>
                     <PaginationLink next href="#" />
                   </PaginationItem>
                   <PaginationItem>
                     <PaginationLink last href="#" />
-                  </PaginationItem>
+                  </PaginationItem> */}
                 </Pagination>
                 </Row>
             </Card>
