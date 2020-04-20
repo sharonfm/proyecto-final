@@ -27,8 +27,8 @@ class List2 extends Component {
         <Row>
           <Col>
             <Card>
-              <CardHeader>
-                <i className="fa fa-align-justify"></i><strong>Retroalimentación</strong> 
+            <CardHeader align="center">
+                <h1>Retroalimentación APO</h1> 
               </CardHeader>
               <CardBody>
                 <Row>
@@ -177,14 +177,14 @@ class List2 extends Component {
                     </Link>
                   </PaginationItem>
                   <PaginationItem>
-                    <PaginationLink href="#">
-                      4
-                    </PaginationLink>
+                    <Link to="/base/list4">
+                      <PaginationLink>4</PaginationLink>
+                    </Link>
                   </PaginationItem>
                   <PaginationItem>
-                    <PaginationLink href="#">
-                      5
-                    </PaginationLink>
+                    <Link to="/base/list5">
+                      <PaginationLink>5</PaginationLink>
+                    </Link>
                   </PaginationItem>
                 </Pagination>
                 </Row>

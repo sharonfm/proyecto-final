@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Card, CardBody, CardHeader, Col, ListGroup, ListGroupItem,  Row, TabContent, TabPane, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-class List1 extends Component {
+class List5 extends Component {
 
   constructor(props) {
     super(props);
@@ -27,8 +27,8 @@ class List1 extends Component {
         <Row>
           <Col>
             <Card>
-              <CardHeader align="center">
-                <h1>Retroalimentación EDM</h1> 
+            <CardHeader align="center">
+                <h1>Retroalimentación MEA</h1> 
               </CardHeader>
               <CardBody>
                 <Row>
@@ -38,7 +38,6 @@ class List1 extends Component {
                       <ListGroupItem onClick={() => this.toggle(2)} action active={this.state.activeTab === 2} >Dos</ListGroupItem>
                       <ListGroupItem onClick={() => this.toggle(3)} action active={this.state.activeTab === 3} >Tres</ListGroupItem>
                       <ListGroupItem onClick={() => this.toggle(4)} action active={this.state.activeTab === 4} >Cuatro</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(5)} action active={this.state.activeTab === 5} >Cinco</ListGroupItem>
                     </ListGroup>
                   </Col>
                   <Col xs="8">
@@ -69,57 +68,36 @@ class List1 extends Component {
                           anim aute dolor incididunt veniam aute dolore do exercitation. Dolor nisi culpa ex ad irure in elit eu dolore. Ad laboris ipsum
                           reprehenderit irure non commodo enim culpa commodo veniam incididunt veniam ad.</p>
                       </TabPane>
-                      <TabPane tabId={5}>
-                        <p>Ut ut do pariatur aliquip aliqua aliquip exercitation do nostrud commodo reprehenderit aute ipsum voluptate. Irure Lorem et laboris
-                          nostrud amet cupidatat cupidatat anim do ut velit mollit consequat enim tempor. Consectetur
-                          est minim nostrud nostrud consectetur irure labore voluptate irure. Ipsum id Lorem sit sint voluptate est pariatur eu ad cupidatat et
-                          deserunt culpa sit eiusmod deserunt. Consectetur et fugiat anim do eiusmod aliquip nulla
-                          laborum elit adipisicing pariatur cillum.</p>
-                      </TabPane>
                     </TabContent>
                   </Col>
                 </Row>
               </CardBody>
-              <Row style={{justifyContent: 'center'}}> 
-                <Pagination aria-label="Page navigation example">
-                  {/* <PaginationItem disabled>
-                    <PaginationLink first href="#" />
-                  </PaginationItem>
-                  <PaginationItem disabled>
-                    <PaginationLink previous href="#" />
-                  </PaginationItem> */}
-                  <PaginationItem active>
-                    <PaginationLink href="#">
-                      1
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <Link to="/base/list2">
-                    <PaginationLink>2</PaginationLink>
-                    </Link>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <Link to="/base/list3">
-                      <PaginationLink>3</PaginationLink>
-                    </Link>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <Link to="/base/list4">
-                      <PaginationLink>4</PaginationLink>
-                    </Link>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <Link to="/base/list5">
-                      <PaginationLink>5</PaginationLink>
-                    </Link>
-                  </PaginationItem>
-                  {/* <PaginationItem>
-                    <PaginationLink next href="#" />
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink last href="#" />
-                  </PaginationItem> */}
-                </Pagination>
+                <Row style={{justifyContent: 'center'}}> 
+                    <Pagination aria-label="Page navigation example">
+                        <PaginationItem>
+                            <Link to="/base/list1">
+                                <PaginationLink>1</PaginationLink>
+                            </Link>
+                        </PaginationItem>
+                        <PaginationItem>
+                            <Link to="/base/list2">
+                                <PaginationLink>2</PaginationLink>
+                            </Link>
+                        </PaginationItem>
+                        <PaginationItem>
+                        <Link to="/base/list3">
+                            <PaginationLink>3</PaginationLink>
+                        </Link>
+                        </PaginationItem>
+                        <PaginationItem>
+                        <Link to="/base/list4">
+                            <PaginationLink>4</PaginationLink>
+                        </Link>
+                        </PaginationItem>
+                        <PaginationItem active>
+                            <PaginationLink>5</PaginationLink>
+                        </PaginationItem>
+                        </Pagination>
                 </Row>
             </Card>
           </Col>
@@ -129,4 +107,4 @@ class List1 extends Component {
   }
 }
 
-export default List1;
+export default List5;
