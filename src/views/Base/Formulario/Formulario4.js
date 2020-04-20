@@ -254,7 +254,15 @@ class Forms4 extends Component {
                     <PaginationItem active>
                       <PaginationLink tag="button">4</PaginationLink>
                     </PaginationItem>
-                    <PaginationItem disabled><PaginationLink previous tag="button">Next</PaginationLink></PaginationItem>
+                    <Link to="/base/form5">
+                      <PaginationItem><PaginationLink tag="button">5</PaginationLink></PaginationItem>
+                    </Link> 
+                    <Link to="/base/form6">
+                      <PaginationItem><PaginationLink tag="button">6</PaginationLink></PaginationItem>
+                    </Link>
+                    <Link to="/base/form5">
+                      <PaginationItem><PaginationLink tag="button">Next</PaginationLink></PaginationItem>
+                    </Link>              
                   </Pagination>
               </CardBody>
               <CardFooter>

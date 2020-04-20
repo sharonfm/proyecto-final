@@ -195,6 +195,12 @@ class Forms2 extends Component {
                     <Link to="/base/form4">
                       <PaginationItem><PaginationLink tag="button">4</PaginationLink></PaginationItem>
                     </Link> 
+                    <Link to="/base/form5">
+                      <PaginationItem><PaginationLink tag="button">5</PaginationLink></PaginationItem>
+                    </Link>
+                    <Link to="/base/form6">
+                      <PaginationItem><PaginationLink tag="button">6</PaginationLink></PaginationItem>
+                    </Link> 
                     <Link to="/base/form3">
                       <PaginationItem><PaginationLink tag="button">Next</PaginationLink></PaginationItem>
                     </Link> 
