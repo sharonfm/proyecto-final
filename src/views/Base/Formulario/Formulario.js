@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  Badge,
   Button,
   Card,
   CardBody,
@@ -10,7 +9,6 @@ import {
   Col,
   Form,
   FormGroup,
-  FormText,
   Pagination, 
   PaginationItem, 
   PaginationLink,
@@ -413,7 +411,7 @@ class Forms extends Component {
                   <Pagination>
                     <PaginationItem disabled><PaginationLink style={{color:'#43425D'}} previous></PaginationLink></PaginationItem>
                     <PaginationItem active>
-                    <PaginationItem><PaginationLink style={{color:'#F2F2F2'}, {backgroundColor:'#43425D'}} tag="button">1</PaginationLink></PaginationItem>
+                    <PaginationItem><PaginationLink style={{color:'#F2F2F2', backgroundColor:'#43425D'}} tag="button">1</PaginationLink></PaginationItem>
                     </PaginationItem>
                     <Link to="/base/form2">
                       <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">2</PaginationLink></PaginationItem>

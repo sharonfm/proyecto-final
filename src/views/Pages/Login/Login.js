@@ -10,7 +10,7 @@ class Login extends Component {
           <Row className="justify-content-center">
             <Col md="8">
               <CardGroup>
-                <Card className="text-white  py-5 d-md-down-none" style={{ width: '50%' },{backgroundColor: '#43425D'}}>
+                <Card className="text-white  py-5 d-md-down-none" style={{ width: '50%' , backgroundColor: '#43425D'}}>
                   <CardBody className="text-center">
                     <div>
                       <h2>Únete a nosotros!</h2>

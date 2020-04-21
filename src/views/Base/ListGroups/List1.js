@@ -84,7 +84,7 @@ class List1 extends Component {
                 <Pagination aria-label="Page navigation example">
                 <PaginationItem disabled><PaginationLink style={{color:'#43425D'}} previous></PaginationLink></PaginationItem>
                   <PaginationItem active>
-                  <PaginationItem><PaginationLink style={{color:'#F2F2F2'}, {backgroundColor:'#43425D'}} tag="button">1</PaginationLink></PaginationItem>
+                  <PaginationItem><PaginationLink style={{color:'#F2F2F2', backgroundColor:'#43425D'}} tag="button">1</PaginationLink></PaginationItem>
                   </PaginationItem>
                   <PaginationItem>
                     <Link to="/base/list2">

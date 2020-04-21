@@ -109,7 +109,7 @@ class List4 extends Component {
                         </Link>
                         </PaginationItem>
                         <PaginationItem active>
-                        <PaginationItem><PaginationLink style={{color:'#F2F2F2'}, {backgroundColor:'#43425D'}} tag="button">4</PaginationLink></PaginationItem>
+                        <PaginationItem><PaginationLink style={{color:'#F2F2F2', backgroundColor:'#43425D'}} tag="button">4</PaginationLink></PaginationItem>
                         </PaginationItem>
                         <PaginationItem>
                         <Link to="/base/list5">
