@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Card, CardBody, CardGroup, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
 
+
+// login() {
+
+// }
+
+// signUp() {
+
+// }
+
+
 class Login extends Component {
   render() {
     return (
@@ -14,7 +24,7 @@ class Login extends Component {
                   <CardBody className="text-center">
                     <div>
                       <h2>Únete a nosotros!</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.</p>
                       <Row style={{justifyContent:'center'}}>
                         <Link to="/register">
