@@ -26,7 +26,28 @@ class Carousels extends Component {
     this.goToIndex = this.goToIndex.bind(this);
     this.onExiting = this.onExiting.bind(this);
     this.onExited = this.onExited.bind(this);
+    // this.state = {
+    //   user: null,
+    // }
+
+    //this.authListener = this.authListener.bind(this);
   }
+
+  // componentDidMount() {
+  //   this.authListener();
+  // }
+  // authListener() {
+  //   fire.auth().onAuthStateChanged((user) => {
+  //     if(user) {
+  //       this.setState({ user })
+  //     } else {
+  //       this.setState( {user: null})
+  //     }
+  //   })
+
+  // }
+
+  
 
   onExiting() {
     this.animating = true;
