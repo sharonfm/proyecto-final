@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Card, CardBody, CardGroup, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
 
+
+// login() {
+
+// }
+
+// signUp() {
+
+// }
+
+
 class Login extends Component {
   render() {
     return (
@@ -14,10 +24,10 @@ class Login extends Component {
                   <CardBody className="text-center">
                     <div>
                       <h2>Únete a nosotros!</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                      <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.</p>
                       <Link to="/register">
-                        <Button color="primary" className="mt-3" active tabIndex={-1}>Regístrate ahora!</Button>
+                        <Button color="primary" className="mt-3" active tabIndex={-1} onClick = {this.signUp} >Regístrate ahora!</Button>
                       </Link>
                     </div>
                   </CardBody>
@@ -46,7 +56,7 @@ class Login extends Component {
                       <Row style={{justifyContent: 'center'}}>
                         <Link to="/base/info">
                           <Col xs="6">
-                            <Button color="primary" className="px-4" >Ingresar </Button>
+                            <Button color="primary" className="px-4" onClick = {this.login}>Ingresar </Button>
                           </Col>
                         </Link>
                         <Col xs="6" className="text-right">
