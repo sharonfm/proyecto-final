@@ -1,10 +1,10 @@
 {
-  "short_name": "CoreUI-React",
-  "name": "CoreUI-React sample",
+  "short_name": "G&G TI",
+  "name": "Governance y Gestión de TI",
   "icons": [
     {
       "src": "./assets/img/logo.png",
-      "sizes": "100x100",
+      "sizes": "800x800",
       "type": "image/png"
     }
   ],

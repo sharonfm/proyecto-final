@@ -32,7 +32,7 @@ class List2 extends Component {
               </CardHeader>
               <CardBody>
                 <Row>
-                  <Col xs="4">
+                  <Col xs="12" md="4">
                     <ListGroup id="list-tab" role="tablist">
                       <ListGroupItem onClick={() => this.toggle(1)} action active={this.state.activeTab === 1} >Uno</ListGroupItem>
                       <ListGroupItem onClick={() => this.toggle(2)} action active={this.state.activeTab === 2} >Dos</ListGroupItem>
@@ -43,7 +43,7 @@ class List2 extends Component {
                       <ListGroupItem onClick={() => this.toggle(7)} action active={this.state.activeTab === 7} >Siete</ListGroupItem>
                     </ListGroup>
                   </Col>
-                  <Col xs="8">
+                  <Col  xs="12" md="8">
                     <TabContent activeTab={this.state.activeTab}>
                       <TabPane tabId={1}>
                         <p>Cupidatat quis ad sint excepteur laborum in esse qui. Et excepteur consectetur ex nisi eu do cillum ad laborum. Mollit et eu officia
@@ -97,7 +97,7 @@ class List2 extends Component {
                 </Row>
 
                 <Row>
-                  <Col xs="4">
+                  <Col xs="12" md="4">
                     <ListGroup id="list-tab" role="tablist">
                       <ListGroupItem onClick={() => this.toggle(8)} action active={this.state.activeTab === 8} >Ocho</ListGroupItem>
                       <ListGroupItem onClick={() => this.toggle(9)} action active={this.state.activeTab === 9} >Nueve</ListGroupItem>
@@ -108,7 +108,7 @@ class List2 extends Component {
                       <ListGroupItem onClick={() => this.toggle(14)} action active={this.state.activeTab === 14} >Catorce</ListGroupItem>
                     </ListGroup>
                   </Col>
-                  <Col xs="8">
+                  <Col xs="12" md="8">
                     <TabContent activeTab={this.state.activeTab}>
                       <TabPane tabId={8}>
                         <p>Cupidatat quis ad sint excepteur laborum in esse qui. Et excepteur consectetur ex nisi eu do cillum ad laborum. Mollit et eu officia

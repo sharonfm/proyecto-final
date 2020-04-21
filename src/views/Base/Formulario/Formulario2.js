@@ -44,7 +44,7 @@ class Forms2 extends Component {
         <Row style={{justifyContent: 'center'}}>
           <Col xs="12" md="10">
             <Card>
-              <CardHeader align="center">
+              <CardHeader align="center" style={{color:'#43425D'}}>
                 <h1>Revisión de estructura TI</h1> 
               </CardHeader>
               <CardBody>
@@ -61,7 +61,7 @@ class Forms2 extends Component {
                     <Card className= "card-accent-primary">
                       <CardBody>
                         <Row>
-                          <Label>1. Antes tú me pichabas ahora yo te picheo?</Label>
+                          <h5 style={{color:'#43425D'}}>1. Antes tú me pichabas ahora yo te picheo?</h5>
                         </Row>                            
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
@@ -90,7 +90,7 @@ class Forms2 extends Component {
                     <Card className= "card-accent-primary">
                       <CardBody>
                         <Row>
-                          <Label>2. Antes tú me pichabas ahora yo te picheo?</Label>
+                          <h5 style={{color:'#43425D'}}>1. Antes tú me pichabas ahora yo te picheo?</h5>
                         </Row>                            
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
@@ -119,7 +119,7 @@ class Forms2 extends Component {
                     <Card className= "card-accent-primary">
                       <CardBody>
                         <Row>
-                          <Label>3. Antes tú me pichabas ahora yo te picheo?</Label>
+                          <h5 style={{color:'#43425D'}}>1. Antes tú me pichabas ahora yo te picheo?</h5>
                         </Row>                            
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
@@ -148,7 +148,7 @@ class Forms2 extends Component {
                     <Card className= "card-accent-primary">
                       <CardBody>
                         <Row>
-                          <Label>4. Antes tú me pichabas ahora yo te picheo?</Label>
+                          <h5 style={{color:'#43425D'}}>1. Antes tú me pichabas ahora yo te picheo?</h5>
                         </Row>                            
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
@@ -180,6 +180,9 @@ class Forms2 extends Component {
                     <Link to="/base/form">
                       <PaginationItem><PaginationLink style={{color:'#43425D'}} previous tag="button"></PaginationLink></PaginationItem>
                     </Link> 
+                    <Link to="/base/form0">
+                      <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">Criterios</PaginationLink></PaginationItem>
+                    </Link>
                     <Link to="/base/form">
                       <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">1</PaginationLink></PaginationItem>
                     </Link> 

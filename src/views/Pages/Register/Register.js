@@ -60,7 +60,7 @@ class Register extends Component {
                       <Input type="password" placeholder="Confirmar contraseña" autoComplete="new-password" />
                     </InputGroup>
                     <Link to="/login">
-                        <Button style={{backgroundColor:'#43425D'}} className="mt-3">Registrarme</Button>
+                        <Button style={{backgroundColor:'#43425D'}} className="mt-3"><medium style={{color:'#F2F2F2'}}>Registrarme</medium></Button>
                     </Link>
                   </Form>
                 </CardBody>

@@ -7,7 +7,7 @@ export default {
     },
     {
       name: 'Formulario',
-      url: '/base/form',
+      url: '/base/form0',
       icon: 'fa fa-address-card',
       active: '#F2F2F2'
     },

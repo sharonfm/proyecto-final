@@ -1,5 +1,6 @@
 import React from 'react';
 const Info = React.lazy(() => import('./views/Base/Información/Info'));
+const Forms0 = React.lazy(() => import('./views/Base/Formulario/Criterios.js'));
 const Forms = React.lazy(() => import('./views/Base/Formulario/Formulario.js'));
 const Forms2 = React.lazy(() => import('./views/Base/Formulario/Formulario2.js'));
 const Forms3 = React.lazy(() => import('./views/Base/Formulario/Formulario3.js'));
@@ -19,6 +20,7 @@ const User = React.lazy(() => import('./views/Users/User')); */
 const routes = [
   { path: '/', exact: true, name: 'Login'},
   { path: '/views/estadisticas', name: 'Estadísticas', component: Estadisticas },
+  { path: '/base/form0', name: 'Criterios de evaluación', component: Forms0 },
   { path: '/base/form', name: 'Formulario EDM', component: Forms },
   { path: '/base/form2', name: 'Formulario APO', component: Forms2 },
   { path: '/base/form3', name: 'Formulario BAI', component: Forms3 },
