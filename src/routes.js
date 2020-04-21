@@ -6,11 +6,11 @@ const Forms3 = React.lazy(() => import('./views/Base/Formulario/Formulario3.js')
 const Forms4 = React.lazy(() => import('./views/Base/Formulario/Formulario4.js'));
 const Forms5 = React.lazy(() => import('./views/Base/Formulario/Formulario5.js'));
 const Estadisticas = React.lazy(() => import('./views/Estadisticas/Estadisticas'));
-const List1 = React.lazy(() => import('./views/Base/ListGroups/List1'));
-const List2 = React.lazy(() => import('./views/Base/ListGroups/List2'));
-const List3 = React.lazy(() => import('./views/Base/ListGroups/List3'));
-const List4 = React.lazy(() => import('./views/Base/ListGroups/List4'));
-const List5 = React.lazy(() => import('./views/Base/ListGroups/List5'));
+const List1 = React.lazy(() => import('./views/Base/Feedback/List1'));
+const List2 = React.lazy(() => import('./views/Base/Feedback/List2'));
+const List3 = React.lazy(() => import('./views/Base/Feedback/List3'));
+const List4 = React.lazy(() => import('./views/Base/Feedback/List4'));
+const List5 = React.lazy(() => import('./views/Base/Feedback/List5'));
 /* const Users = React.lazy(() => import('./views/Users/Users'));
 const User = React.lazy(() => import('./views/Users/User')); */
 
