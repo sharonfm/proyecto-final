@@ -209,25 +209,25 @@ class Forms3 extends Component {
                 <Row style={{justifyContent: 'center'}}>
                   <Pagination>
                     <Link to="/base/form2">
-                      <PaginationItem><PaginationLink previous></PaginationLink></PaginationItem>
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} previous></PaginationLink></PaginationItem>
                     </Link> 
                     <Link to="/base/form">
-                      <PaginationItem><PaginationLink tag="button">1</PaginationLink></PaginationItem>
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">1</PaginationLink></PaginationItem>
                     </Link> 
                     <Link to="/base/form2">
-                      <PaginationItem><PaginationLink tag="button">2</PaginationLink></PaginationItem>
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">2</PaginationLink></PaginationItem>
                     </Link> 
                     <PaginationItem active>
-                    <PaginationItem><PaginationLink tag="button">3</PaginationLink></PaginationItem>
+                    <PaginationItem><PaginationLink style={{color:'#F2F2F2'}, {backgroundColor:'#43425D'}} tag="button">3</PaginationLink></PaginationItem>
                     </PaginationItem>
                     <Link to="/base/form4">
-                      <PaginationItem><PaginationLink tag="button">4</PaginationLink></PaginationItem>
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">4</PaginationLink></PaginationItem>
                     </Link>
                     <Link to="/base/form5">
-                      <PaginationItem><PaginationLink tag="button">5</PaginationLink></PaginationItem>
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">5</PaginationLink></PaginationItem>
                     </Link>
                     <Link to="/base/form4">
-                      <PaginationItem><PaginationLink next></PaginationLink></PaginationItem>
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} next></PaginationLink></PaginationItem>
                     </Link> 
                   </Pagination>
                 </Row>

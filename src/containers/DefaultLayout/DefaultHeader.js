@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { UncontrolledDropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav } from 'reactstrap';
 import PropTypes from 'prop-types';
 
-import {  AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
+import {  AppNavbarBrand, AppSidebarToggler,AppAsideToggler } from '@coreui/react';
 import logo from '../../assets/img/brand/logo.svg'
 import sygnet from '../../assets/img/brand/sygnet.svg'
 
@@ -24,22 +24,10 @@ class DefaultHeader extends Component {
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile />
         <AppNavbarBrand
-          full={{ src: logo, width: 89, height: 25, alt: 'Project Logo' }}
-          minimized={{ src: sygnet, width: 30, height: 30, alt: 'Project Logo' }}
+          full={{ src: logo, width: 100, height: 55, alt: 'Project Logo' }}
+          minimized={{ src: logo, width: 100, height: 55, alt: 'Project Logo' }}
         />
         <AppSidebarToggler className="d-md-down-none" display="lg" />
-
-        {/* <Nav className="d-md-down-none" navbar>
-          <NavItem className="px-3">
-            <NavLink to="/dashboard" className="nav-link" >Dashboard</NavLink>
-          </NavItem>
-          <NavItem className="px-3">
-            <Link to="/users" className="nav-link">Users</Link>
-          </NavItem>
-          <NavItem className="px-3">
-            <NavLink to="#" className="nav-link">Settings</NavLink>
-          </NavItem>
-        </Nav> */}
         
         <Nav className="ml-auto" navbar>
           <UncontrolledDropdown nav direction="down">
@@ -47,14 +35,12 @@ class DefaultHeader extends Component {
               <img src={'../../assets/img/avatars/usuario.png'} className="img-avatar"/>
             </DropdownToggle>
             <DropdownMenu right>             
-              <DropdownItem header tag="div" className="text-center"><strong>Ajustes</strong></DropdownItem>
+              <DropdownItem header tag="div" className="text-center" style= {{backgroundColor:'#43425D'}}><strong>Ajustes</strong></DropdownItem>
               <DropdownItem divider />
               <DropdownItem onClick={e => this.props.onLogout(e)}><i className="fa fa-lock"></i> Cerrar Sesión</DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
         </Nav>
-        {/* <AppAsideToggler className="d-md-down-none" /> */}
-        {/* <AppAsideToggler className="d-lg-none" mobile /> */}
       </React.Fragment>
     );
   }
