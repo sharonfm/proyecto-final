@@ -26,9 +26,6 @@ class Login extends Component {
                       <h2>Únete a nosotros!</h2>
                       <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.</p>
-                      <Link to="/register">
-                        <Button color="primary" className="mt-3" active tabIndex={-1} onClick = {this.signUp} >Regístrate ahora!</Button>
-                      </Link>
                       <Row style={{justifyContent:'center'}}>
                         <Link to="/register">
                           <Button className="mt-3"  tabIndex={-1} style={{backgroundColor:'#F2F2F2'}}>Regístrate ahora!</Button>
@@ -60,13 +57,8 @@ class Login extends Component {
                       </InputGroup>
                       <Row style={{justifyContent: 'center'}}>
                         <Link to="/base/info">
-<<<<<<< HEAD
-                          <Col xs="6">
-                            <Button color="primary" className="px-4" onClick = {this.login}>Ingresar </Button>
-=======
                           <Col xs="6" >
                             <Button className="px-4" tabIndex={-1}  style={{backgroundColor:'#43425D'}}>Ingresar </Button>
->>>>>>> 99f3557b064132bbb07e41e316a0485942ad6747
                           </Col>
                         </Link>
                         <Col xs="6" className="text-right">
