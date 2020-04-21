@@ -26,13 +26,14 @@ const DefaultHeader = React.lazy(() => import('./DefaultHeader'));
 
 class DefaultLayout extends Component {
 
-  loading = () => <div className="animated fadeIn pt-1 text-center">Loading...</div>
+  loading = () => <div className="animated fadeIn pt-1 text-center" >Loading...</div>
 
   signOut(e) {
     e.preventDefault()
     this.props.history.push('/login')
   }
-
+//3A3950 dark purple
+//43425D 
   render() {
     return (
       <div className="app">
@@ -41,21 +42,20 @@ class DefaultLayout extends Component {
             <DefaultHeader onLogout={e=>this.signOut(e)}/>
           </Suspense>
         </AppHeader>
-        <div className="app-body">
-          <AppSidebar fixed display="lg">
-            <AppSidebarHeader />
-            <AppSidebarForm />
-            <Suspense>
-            <AppSidebarNav navConfig={navigation} {...this.props} router={router}/>
+        <div className="app-body" >
+          <AppSidebar fixed display="lg" >
+            <AppSidebarHeader style={{backgroundColor:'#3A3950'}}> G&G TI</AppSidebarHeader>
+            <Suspense >
+              <AppSidebarNav style= {{backgroundColor:'#43425D'}} navConfig={navigation} {...this.props} router={router}/>
             </Suspense>
             <AppSidebarFooter />
-            <AppSidebarMinimizer />
+            <AppSidebarMinimizer style={{backgroundColor:'#3A3950'}} />
           </AppSidebar>
           <main className="main">
             <AppBreadcrumb appRoutes={routes} router={router}/>
-            <Container fluid>
-              <Suspense fallback={this.loading()}>
-                <Switch>
+            <Container fluid >
+              <Suspense fallback={this.loading()} style={{backgroundColor:'#3A3950'}}>
+                <Switch >
                   {routes.map((route, idx) => {
                     return route.component ? (
                       <Route
@@ -73,13 +73,8 @@ class DefaultLayout extends Component {
               </Suspense>
             </Container>
           </main>
-          <AppAside fixed>
-            <Suspense fallback={this.loading()}>
-              <DefaultAside />
-            </Suspense>
-          </AppAside>
         </div>
-        <AppFooter>
+        <AppFooter >
           <Suspense fallback={this.loading()}>
             <DefaultFooter />
           </Suspense>

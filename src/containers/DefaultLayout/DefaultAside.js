@@ -12,7 +12,7 @@ class DefaultAside extends Component {
 
   constructor(props) {
     super(props);
-
+    
     this.toggle = this.toggle.bind(this);
     this.state = {
       activeTab: '1',
@@ -29,7 +29,6 @@ class DefaultAside extends Component {
 
   render() {
 
-    // eslint-disable-next-line
     const { children, ...attributes } = this.props;
 
     return (

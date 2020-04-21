@@ -3,17 +3,18 @@ export default {
     {
       name: 'Información',
       url: '/base/info',
-      icon: 'icon-puzzle',
+      icon: 'cui-home',
     },
     {
       name: 'Formulario',
       url: '/base/form',
-      icon: 'icon-puzzle',
+      icon: 'fa fa-address-card',
+      active: '#F2F2F2'
     },
     {
       name: 'Estadísticas',
       url: '/dashboard',
-      icon: 'icon-speedometer',
+      icon: 'cui-graph',
       badge: {
         variant: 'info',
       },
@@ -22,9 +23,9 @@ export default {
     {
       name: 'Feedback',
       url: '/base/list1',
-      icon: 'icon-puzzle',
+      icon: 'icon-speech',
     },
-   /*  {
+    /* {
       name: 'Base',
       url: '/base',
       icon: 'icon-puzzle',
@@ -46,36 +47,9 @@ export default {
         },
       ],
     }, */
-    /* {
-      name: 'Buttons',
-      url: '/buttons',
-      icon: 'icon-cursor',
-      children: [
-        {
-          name: 'Buttons',
-          url: '/buttons/buttons',
-          icon: 'icon-cursor',
-        },
-        {
-          name: 'Button dropdowns',
-          url: '/buttons/button-dropdowns',
-          icon: 'icon-cursor',
-        },
-        {
-          name: 'Button groups',
-          url: '/buttons/button-groups',
-          icon: 'icon-cursor',
-        },
-        {
-          name: 'Brand Buttons',
-          url: '/buttons/brand-buttons',
-          icon: 'icon-cursor',
-        },
-      ],
-    }, */
-    
-
-    /* {
+       
+    /* 
+    {
       name: 'Icons',
       url: '/icons',
       icon: 'icon-star',
@@ -103,32 +77,6 @@ export default {
           url: '/icons/simple-line-icons',
           icon: 'icon-star',
         },
-      ],
-    }, */
-
-    /* {
-      divider: true,
-    },
-    {
-      title: true,
-      name: 'Extras',
-    }, */
-    /* {
-      name: 'Pages',
-      url: '/pages',
-      icon: 'icon-star',
-      children: [
-        {
-          name: 'Login',
-          url: '/login',
-          icon: 'icon-star',
-        },
-        {
-          name: 'Register',
-          url: '/register',
-          icon: 'icon-star',
-        },
-        
       ],
     }, */
   ],

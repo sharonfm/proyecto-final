@@ -7,9 +7,9 @@ import {
   Tables,
 } from './Base';
 
-import { ButtonDropdowns, ButtonGroups, Buttons, BrandButtons } from './Buttons';
+
 import Charts from './Base/Charts';
-import Dashboard from './Dashboard';
+import Dashboard from './Dashboard/Estadisticas';
 import { CoreUIIcons,FontAwesome, SimpleLineIcons } from './Icons';
 
 export {
@@ -20,10 +20,6 @@ export {
   Login,
   SimpleLineIcons,
   FontAwesome,
-  ButtonDropdowns,
-  ButtonGroups,
-  BrandButtons,
-  Buttons,
   Tables,
   Charts,
   Dashboard,

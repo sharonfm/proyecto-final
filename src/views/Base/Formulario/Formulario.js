@@ -18,7 +18,7 @@ import {
   Label,
   Row,
 } from 'reactstrap';
-
+ 
 class Forms extends Component {
   constructor(props) {
     super(props);
@@ -60,7 +60,7 @@ class Forms extends Component {
                   </FormGroup>
                   
                   <FormGroup>
-                    <Card className= "card-accent-primary">
+                    <Card className= "card-accent-primary" >
                       <CardBody>
                         <Row>
                           <Label>1. Antes tú me pichabas ahora yo te picheo?</Label>
