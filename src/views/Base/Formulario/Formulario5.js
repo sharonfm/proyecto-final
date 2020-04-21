@@ -239,24 +239,24 @@ class Forms5 extends Component {
                 <Row style={{justifyContent: 'center'}}>
                   <Pagination>
                     <Link to="/base/form4">
-                      <PaginationItem><PaginationLink previous></PaginationLink></PaginationItem>
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} previous></PaginationLink></PaginationItem>
                     </Link> 
                     <Link to="/base/form">
-                      <PaginationItem><PaginationLink tag="button">1</PaginationLink></PaginationItem>
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">1</PaginationLink></PaginationItem>
                     </Link> 
                     <Link to="/base/form2">
-                      <PaginationItem><PaginationLink tag="button">2</PaginationLink></PaginationItem>
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">2</PaginationLink></PaginationItem>
                     </Link> 
                     <Link to="/base/form3">
-                      <PaginationItem><PaginationLink tag="button">3</PaginationLink></PaginationItem>
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">3</PaginationLink></PaginationItem>
                     </Link> 
                     <Link to="/base/form4">
-                      <PaginationItem><PaginationLink tag="button">4</PaginationLink></PaginationItem>
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">4</PaginationLink></PaginationItem>
                     </Link> 
                     <PaginationItem active>
-                    <PaginationItem><PaginationLink tag="button">5</PaginationLink></PaginationItem>
+                    <PaginationItem><PaginationLink style={{color:'#F2F2F2'}, {backgroundColor:'#43425D'}} tag="button">5</PaginationLink></PaginationItem>
                     </PaginationItem>
-                    <PaginationItem disabled><PaginationLink  next></PaginationLink></PaginationItem>             
+                    <PaginationItem disabled><PaginationLink  style={{color:'#43425D'}} next></PaginationLink></PaginationItem>             
                   </Pagination>
                 </Row>
               </CardBody>

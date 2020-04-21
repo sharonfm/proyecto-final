@@ -75,32 +75,32 @@ class List5 extends Component {
                 <Row style={{justifyContent: 'center'}}> 
                     <Pagination aria-label="Page navigation example">
                         <Link to="/base/list4">
-                          <PaginationItem><PaginationLink previous></PaginationLink></PaginationItem>
+                          <PaginationItem><PaginationLink style={{color:'#43425D'}} previous></PaginationLink></PaginationItem>
                         </Link> 
                         <PaginationItem>
                             <Link to="/base/list1">
-                            <PaginationItem><PaginationLink tag="button">1</PaginationLink></PaginationItem>
+                            <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">1</PaginationLink></PaginationItem>
                             </Link>
                         </PaginationItem>
                         <PaginationItem>
                             <Link to="/base/list2">
-                            <PaginationItem><PaginationLink tag="button">2</PaginationLink></PaginationItem>
+                            <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">2</PaginationLink></PaginationItem>
                             </Link>
                         </PaginationItem>
                         <PaginationItem>
                         <Link to="/base/list3">
-                        <PaginationItem><PaginationLink tag="button">3</PaginationLink></PaginationItem>
+                        <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">3</PaginationLink></PaginationItem>
                         </Link>
                         </PaginationItem>
                         <PaginationItem>
                         <Link to="/base/list4">
-                        <PaginationItem><PaginationLink tag="button">4</PaginationLink></PaginationItem>
+                        <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">4</PaginationLink></PaginationItem>
                         </Link>
                         </PaginationItem>
                         <PaginationItem active>
-                            <PaginationLink>5</PaginationLink>
+                        <PaginationItem><PaginationLink style={{color:'#F2F2F2'}, {backgroundColor:'#43425D'}} tag="button">5</PaginationLink></PaginationItem>
                         </PaginationItem>
-                        <PaginationItem disabled><PaginationLink next></PaginationLink></PaginationItem> 
+                        <PaginationItem disabled><PaginationLink style={{color:'#43425D'}} next></PaginationLink></PaginationItem> 
                         </Pagination>
                 </Row>
             </Card>
