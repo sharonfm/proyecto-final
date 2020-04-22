@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardBody, CardHeader, Carousel, CarouselCaption, CarouselControl, CarouselIndicators, CarouselItem, Col, Row } from 'reactstrap';
 import Image1 from './Slides/imagen1.png';
-//import Image2 from './Slides/logo2.png';
 
 const items = [
   {
