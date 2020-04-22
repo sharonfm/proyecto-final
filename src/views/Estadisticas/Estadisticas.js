@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Bar, Line, Pie } from 'react-chartjs-2';
+import { Line, Pie } from 'react-chartjs-2';
 import {
   ButtonDropdown,
   DropdownItem,
@@ -14,10 +14,8 @@ import {
   CardGroup,
 } from 'reactstrap';
 import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
-import { getStyle} from '@coreui/coreui/dist/js/coreui-utilities'
 
-const brandPrimary = getStyle('--primary')
-//const brandInfo = getStyle('--info')
+
 
 // Card Chart 1 (Contiene cardChartData1 y cardChartOpts1)
 const cardChartData1 = {
