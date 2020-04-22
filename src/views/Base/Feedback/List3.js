@@ -32,7 +32,7 @@ class List3 extends Component {
               </CardHeader>
               <CardBody>
                 <Row>
-                  <Col xs="4">
+                  <Col xs="12" md="4">
                     <ListGroup id="list-tab" role="tablist">
                       <ListGroupItem onClick={() => this.toggle(1)} action active={this.state.activeTab === 1} >Uno</ListGroupItem>
                       <ListGroupItem onClick={() => this.toggle(2)} action active={this.state.activeTab === 2} >Dos</ListGroupItem>
@@ -43,7 +43,7 @@ class List3 extends Component {
                       <ListGroupItem onClick={() => this.toggle(7)} action active={this.state.activeTab === 7} >Siete</ListGroupItem>
                     </ListGroup>
                   </Col>
-                  <Col xs="8">
+                  <Col xs="12" md="8">
                     <TabContent activeTab={this.state.activeTab}>
                       <TabPane tabId={1}>
                         <p>Cupidatat quis ad sint excepteur laborum in esse qui. Et excepteur consectetur ex nisi eu do cillum ad laborum. Mollit et eu officia
@@ -97,7 +97,7 @@ class List3 extends Component {
                 </Row>
 
                 <Row>
-                  <Col xs="4">
+                  <Col xs="12" md="4">
                     <ListGroup id="list-tab" role="tablist">
                       <ListGroupItem onClick={() => this.toggle(8)} action active={this.state.activeTab === 8} >Ocho</ListGroupItem>
                       <ListGroupItem onClick={() => this.toggle(9)} action active={this.state.activeTab === 9} >Nueve</ListGroupItem>
@@ -105,7 +105,7 @@ class List3 extends Component {
                       <ListGroupItem onClick={() => this.toggle(11)} action active={this.state.activeTab === 11} >Once</ListGroupItem>
                     </ListGroup>
                   </Col>
-                  <Col xs="8">
+                  <Col xs="12" md="8">
                     <TabContent activeTab={this.state.activeTab}>
                       <TabPane tabId={8}>
                         <p>Cupidatat quis ad sint excepteur laborum in esse qui. Et excepteur consectetur ex nisi eu do cillum ad laborum. Mollit et eu officia
@@ -153,7 +153,7 @@ class List3 extends Component {
                     </Link>
                   </PaginationItem>
                   <PaginationItem active>
-                  <PaginationItem><PaginationLink style={{color:'#F2F2F2'}, {backgroundColor:'#43425D'}} tag="button">3</PaginationLink></PaginationItem>
+                  <PaginationItem><PaginationLink style={{color:'#F2F2F2', backgroundColor:'#43425D'}} tag="button">3</PaginationLink></PaginationItem>
                   </PaginationItem>
                   <PaginationItem>
                     <Link to="/base/list4">

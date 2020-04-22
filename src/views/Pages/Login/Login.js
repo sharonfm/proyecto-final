@@ -20,7 +20,7 @@ class Login extends Component {
           <Row className="justify-content-center">
             <Col md="8">
               <CardGroup>
-                <Card className="text-white  py-5 d-md-down-none" style={{ width: '50%' },{backgroundColor: '#43425D'}}>
+                <Card className="text-white  py-5 d-md-down-none" style={{ width: '50%' , backgroundColor: '#43425D'}}>
                   <CardBody className="text-center">
                     <div>
                       <h2>Únete a nosotros!</h2>
@@ -28,7 +28,7 @@ class Login extends Component {
                         labore et dolore magna aliqua.</p>
                       <Row style={{justifyContent:'center'}}>
                         <Link to="/register">
-                          <Button className="mt-3"  tabIndex={-1} style={{backgroundColor:'#F2F2F2'}} onClick = {this.signUp}>Regístrate ahora!</Button>
+                          <Button className="mt-3"  tabIndex={-1} style={{backgroundColor:'#F2F2F2'}}><medium style={{color: '#43425D'}}> Regístrate ahora!</medium></Button>
                         </Link>
                       </Row>
                     </div>
@@ -58,7 +58,7 @@ class Login extends Component {
                       <Row style={{justifyContent: 'center'}}>
                         <Link to="/base/info">
                           <Col xs="6" >
-                            <Button className="px-4" tabIndex={-1}  style={{backgroundColor:'#43425D'}} onClick = {this.login}>Ingresar </Button>
+                            <Button className="px-4" tabIndex={-1}  style={{backgroundColor:'#43425D'}}> <medium style={{color:'#F2F2F2'}}>Ingresar</medium> </Button>
                           </Col>
                         </Link>
                         <Col xs="6" className="text-right">

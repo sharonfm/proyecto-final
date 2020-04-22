@@ -29,7 +29,7 @@ class DefaultAside extends Component {
 
   render() {
 
-    const { children, ...attributes } = this.props;
+    
 
     return (
       <React.Fragment>

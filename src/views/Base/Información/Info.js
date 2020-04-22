@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import { Card, CardBody, CardHeader, Carousel, CarouselCaption, CarouselControl, CarouselIndicators, CarouselItem, Col, Row } from 'reactstrap';
+import Image1 from './Slides/imagen1.png';
+//import Image2 from './Slides/logo2.png';
 
 const items = [
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1607923e7e2%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1607923e7e2%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.9296875%22%20y%3D%22217.75625%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
+    src: Image1,
     altText: 'Slide 1',
   },
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa20%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa20%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
+    src: Image1,
     altText: 'Slide 2',
   },
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
+    src: Image1,
     altText: 'Slide 3',
   },
 ];
@@ -95,7 +97,7 @@ class Carousels extends Component {
         <Row style={{justifyContent: 'center'}}>  
           <Col xs="12" sm="8">    
             <Card className="text-center">
-              <CardHeader>
+              <CardHeader style={{color:'#43425D'}}>
                 <h1><strong>Governance y Gestión de TI</strong> </h1>
               </CardHeader>
               <CardBody>
@@ -111,14 +113,14 @@ class Carousels extends Component {
         </Row>
 
         <Card className="card-accent-primary text-center">
-            <CardHeader><h3>EDM→ Evaluar, Dirigir y Monitorizar</h3></CardHeader>
+            <CardHeader><h3 style={{color:'#43425D'}}>EDM→ Evaluar, Dirigir y Monitorizar</h3></CardHeader>
         </Card>
         
         <Row >
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>EDM01</h4> Garantizar el establecimiento y mantenimiento del marco de gobierno
+              <h4 style={{color:'#43425D'}}>EDM01</h4> Garantizar el establecimiento y mantenimiento del marco de gobierno
               </CardHeader>
               <CardBody>
               Proporcionar un enfoque uniforme, integrado y alineado con el enfoque de gobierno de la empresa
@@ -130,7 +132,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>EDM03</h4> Asegurar la optimización del riesgo
+              <h4 style={{color:'#43425D'}}>EDM03</h4> Asegurar la optimización del riesgo
               </CardHeader>
               <CardBody>
                 Asegurarse de que el riesgo de negocio relacionado con I&T no exceda el apetito 
@@ -142,7 +144,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>EDM04</h4> Asegurar la optimización de los recursos
+              <h4 style={{color:'#43425D'}}>EDM04</h4> Asegurar la optimización de los recursos
               </CardHeader>
               <CardBody>
                 Asegurarse de que las necesidades de recursos de la empresa se satisfagan de 
@@ -154,7 +156,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>EDM05</h4> Asegurar la transparencia de las partes interesadas
+              <h4 style={{color:'#43425D'}}>EDM05</h4> Asegurar la transparencia de las partes interesadas
               </CardHeader>
               <CardBody>
                 Asegurarse de que las partes interesadas apoyen la estrategia y la hoja de ruta de I&T, 
@@ -167,14 +169,14 @@ class Carousels extends Component {
         </Row>
 
         <Card className="card-accent-primary text-center">
-            <CardHeader><h3>APO→ Alinear, Planificar y Organizar</h3></CardHeader>
+            <CardHeader><h3 style={{color:'#43425D'}}>APO→ Alinear, Planificar y Organizar</h3></CardHeader>
         </Card>
 
         <Row>
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>APO01</h4> Gestionar el marco de gestión de I&T
+              <h4 style={{color:'#43425D'}}>APO01</h4> Gestionar el marco de gestión de I&T
               </CardHeader>
               <CardBody>
                 Implementar un enfoque uniforme de gestión para permitir que se alcancen los requisitos de gobierno empresarial,
@@ -188,7 +190,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>APO03</h4> Gestionar la arquitectura empresarial
+              <h4 style={{color:'#43425D'}}>APO03</h4> Gestionar la arquitectura empresarial
               </CardHeader>
               <CardBody>
                 Representar los diferentes componentes que conforman la empresa y sus interrelaciones, 
@@ -200,7 +202,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>APO04</h4> Gestionar la arquitectura empresarial
+              <h4 style={{color:'#43425D'}}>APO04</h4> Gestionar la arquitectura empresarial
               </CardHeader>
               <CardBody>
                 Representar los diferentes componentes que conforman la empresa y sus interrelaciones,
@@ -212,7 +214,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>APO06</h4> Gestionar el presupuesto y los costes
+              <h4 style={{color:'#43425D'}}>APO06</h4> Gestionar el presupuesto y los costes
               </CardHeader>
               <CardBody>
                 Fomentar la asociación entre TI y las partes interesadas de la empresa para permitir 
@@ -225,7 +227,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>APO08</h4> Gestionar las relaciones
+              <h4 style={{color:'#43425D'}}>APO08</h4> Gestionar las relaciones
               </CardHeader>
               <CardBody>
               Facilitar el conocimiento, habilidades y comportamientos correctos para generar mejores resultados, 
@@ -237,7 +239,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>APO09</h4> Gestionar los acuerdos de servicio
+              <h4 style={{color:'#43425D'}}>APO09</h4> Gestionar los acuerdos de servicio
               </CardHeader>
               <CardBody>
                 Asegurarse de que los productos, servicios y niveles de servicio de I&T satisfagan
@@ -248,7 +250,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>APO11</h4> Gestionar la calidad
+              <h4 style={{color:'#43425D'}}>APO11</h4> Gestionar la calidad
               </CardHeader>
               <CardBody>
                 Asegurar la entrega consistente de soluciones y servicios tecnológicos 
@@ -259,7 +261,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>APO13</h4> Gestionar la seguridad
+              <h4 style={{color:'#43425D'}}>APO13</h4> Gestionar la seguridad
               </CardHeader>
               <CardBody>
                 Mantener el impacto y la existencia de incidentes de seguridad de la información 
@@ -270,7 +272,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>APO14</h4> Gestionar los datos
+              <h4 style={{color:'#43425D'}}>APO14</h4> Gestionar los datos
               </CardHeader>
               <CardBody>
                 Asegurar el uso eficaz de activos de datos críticos para lograr las metas y objetivos empresariales.
@@ -280,14 +282,14 @@ class Carousels extends Component {
         </Row>
 
         <Card className="card-accent-primary text-center">
-            <CardHeader><h3>BAI→ Construir, Adquirir e Implementar</h3></CardHeader>
+            <CardHeader><h3 style={{color:'#43425D'}}>BAI→ Construir, Adquirir e Implementar</h3></CardHeader>
         </Card>
         
         <Row>
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>BAI01</h4> Gestionar los programas
+              <h4 style={{color:'#43425D'}}>BAI01</h4> Gestionar los programas
               </CardHeader>
               <CardBody>
               Obtener el valor de negocio deseado y reducir el riesgo de retrasos, costes y erosión de valor inesperados. 
@@ -300,7 +302,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>BAI02</h4> Gestionar la definición de requerimientos
+              <h4 style={{color:'#43425D'}}>BAI02</h4> Gestionar la definición de requerimientos
               </CardHeader>
               <CardBody>
               Crear soluciones óptimas que satisfagan las necesidades de la empresa, mientras se minimiza el riesgo.
@@ -310,7 +312,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>BAI03</h4> Gestionar la identificación y construcción de soluciones
+              <h4 style={{color:'#43425D'}}>BAI03</h4> Gestionar la identificación y construcción de soluciones
               </CardHeader>
               <CardBody>
               Asegurar una entrega ágil y escalable de productos y servicios digitales. Establecer soluciones oportunas y 
@@ -322,7 +324,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>BAI04</h4> Gestionar la disponibilidad y capacidad
+              <h4 style={{color:'#43425D'}}>BAI04</h4> Gestionar la disponibilidad y capacidad
               </CardHeader>
               <CardBody>
               Mantener la disponibilidad del servicio, la gestión eficiente de los recursos y la optimización 
@@ -333,7 +335,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>BAI05</h4> Gestionar los cambios organizativos
+              <h4 style={{color:'#43425D'}}>BAI05</h4> Gestionar los cambios organizativos
               </CardHeader>
               <CardBody>
               Preparar y conseguir el compromiso a las partes interesadas para el cambio en el negocio y reducir el riesgo de fracaso.
@@ -343,7 +345,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>BAI06</h4> Gestionar los cambios de TI
+              <h4 style={{color:'#43425D'}}>BAI06</h4> Gestionar los cambios de TI
               </CardHeader>
               <CardBody>
               Facilitar una ejecución de cambios rápida y confiable para el negocio. 
@@ -354,7 +356,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>BAI07</h4> Gestionar la aceptación y la transición de los cambios de TI
+              <h4 style={{color:'#43425D'}}>BAI07</h4> Gestionar la aceptación y la transición de los cambios de TI
               </CardHeader>
               <CardBody>
                 Implementar soluciones seguras y conforme a las expectativas y resultados acordados.
@@ -364,7 +366,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>BAI11</h4> Gestionar los proyectos
+              <h4 style={{color:'#43425D'}}>BAI11</h4> Gestionar los proyectos
               </CardHeader>
               <CardBody>
                 Lograr los resultados definidos del proyecto y reducir el riesgo de retrasos inesperados, 
@@ -377,14 +379,14 @@ class Carousels extends Component {
         </Row>
 
         <Card className="card-accent-primary text-center">
-            <CardHeader><h3>DSS→ Entregar, Dar Servicio y Soporte</h3></CardHeader>
+            <CardHeader><h3 style={{color:'#43425D'}}>DSS→ Entregar, Dar Servicio y Soporte</h3></CardHeader>
         </Card>
         
         <Row style={{justifyContent: 'center'}}>
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>DSS01</h4> Gestionar las operaciones
+              <h4 style={{color:'#43425D'}}>DSS01</h4> Gestionar las operaciones
               </CardHeader>
               <CardBody>
                 Proporcionar los resultados de los productos y servicios operativos de I&T según lo planeado.
@@ -394,7 +396,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>DSS02</h4> Gestionar las peticiones y los incidentes del servicio
+              <h4 style={{color:'#43425D'}}>DSS02</h4> Gestionar las peticiones y los incidentes del servicio
               </CardHeader>
               <CardBody>
                 Lograr una mayor productividad y minimizar las interrupciones mediante 
@@ -407,7 +409,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>DSS05</h4> Gestionar los servicios de seguridad
+              <h4 style={{color:'#43425D'}}>DSS05</h4> Gestionar los servicios de seguridad
               </CardHeader>
               <CardBody>
                 Minimizar el impacto en el negocio de las vulnerabilidades e incidentes operativos de seguridad de la información
@@ -417,14 +419,14 @@ class Carousels extends Component {
         </Row>
       
         <Card className="card-accent-primary text-center">
-            <CardHeader><h3>MEA→ Monitorizar, Evaluar y Valorar</h3></CardHeader>
+            <CardHeader><h3 style={{color:'#43425D'}}>MEA→ Monitorizar, Evaluar y Valorar</h3></CardHeader>
         </Card>
         
         <Row>
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>MEA01</h4> Gestionar la monitorización del rendimiento y la conformidad
+              <h4 style={{color:'#43425D'}}>MEA01</h4> Gestionar la monitorización del rendimiento y la conformidad
               </CardHeader>
               <CardBody>
                 Proporcionar transparencia en el desempeño y la conformidad e impulsar el logro de las metas.
@@ -434,7 +436,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>MEA02</h4> Gestionar el sistema de control interno
+              <h4 style={{color:'#43425D'}}>MEA02</h4> Gestionar el sistema de control interno
               </CardHeader>
               <CardBody>
                 Dar información transparente a las partes interesadas clave sobre la idoneidad 
@@ -446,7 +448,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>MEA03</h4> Gestionar el cumplimiento de los requerimientos externos
+              <h4 style={{color:'#43425D'}}>MEA03</h4> Gestionar el cumplimiento de los requerimientos externos
               </CardHeader>
               <CardBody>
                 Asegurarse de que la empresa cumpla con todos los requisitos externos aplicables.
@@ -456,7 +458,7 @@ class Carousels extends Component {
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
               <CardHeader className="text-center">
-              <h4>MEA04</h4> Gestionar el aseguramiento
+              <h4 style={{color:'#43425D'}}>MEA04</h4> Gestionar el aseguramiento
               </CardHeader>
               <CardBody>
               Facilitar a la organización el diseño y desarrollo de iniciativas de aseguramiento eficaces

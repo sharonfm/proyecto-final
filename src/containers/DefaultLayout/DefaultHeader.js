@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { UncontrolledDropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav } from 'reactstrap';
 import PropTypes from 'prop-types';
 
-import {  AppNavbarBrand, AppSidebarToggler,AppAsideToggler } from '@coreui/react';
+import {  AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
 import logo from '../../assets/img/brand/logo.svg'
-import sygnet from '../../assets/img/brand/sygnet.svg'
 
 const propTypes = {
   children: PropTypes.node,
@@ -24,20 +23,20 @@ class DefaultHeader extends Component {
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile />
         <AppNavbarBrand
-          full={{ src: logo, width: 100, height: 55, alt: 'Project Logo' }}
-          minimized={{ src: logo, width: 100, height: 55, alt: 'Project Logo' }}
+          full={{ src: logo, width: 70, height: 50, alt: 'Project Logo' }}
+          minimized={{ src: logo, width: 50, height: 50, alt: 'Project Logo' }}
         />
         <AppSidebarToggler className="d-md-down-none" display="lg" />
         
         <Nav className="ml-auto" navbar>
           <UncontrolledDropdown nav direction="down">
             <DropdownToggle nav>
-              <img src={'../../assets/img/avatars/usuario.png'} className="img-avatar"/>
+              <img src={'../../assets/img/avatars/usuario.png'} Alt='Usuario' className="img-avatar"/>
             </DropdownToggle>
             <DropdownMenu right>             
-              <DropdownItem header tag="div" className="text-center" style= {{backgroundColor:'#43425D'}}><strong>Ajustes</strong></DropdownItem>
+              <DropdownItem header tag="div" className="text-center" style= {{backgroundColor:'#43425D'}}><strong style={{color:'#F2F2F2'}}>Ajustes</strong></DropdownItem>
               <DropdownItem divider />
-              <DropdownItem onClick={e => this.props.onLogout(e)}><i className="fa fa-lock"></i> Cerrar Sesión</DropdownItem>
+              <DropdownItem onClick={e => this.props.onLogout(e)}><i className="fa fa-lock"></i> <medium style={{color:'#43425D'}}> Cerrar Sesión</medium></DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
         </Nav>

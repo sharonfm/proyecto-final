@@ -3,27 +3,16 @@ import {
   Dropdowns,
   Forms,
   Paginations,
-  Switches,
-  Tables,
 } from './Base';
 
-
-import Charts from './Base/Charts';
-import Dashboard from './Dashboard/Estadisticas';
-import { CoreUIIcons,FontAwesome, SimpleLineIcons } from './Icons';
+import Estadisticas from './Estadisticas/Estadisticas';
 
 export {
   Typography,
   Colors,
-  CoreUIIcons,
   Register,
   Login,
-  SimpleLineIcons,
-  FontAwesome,
-  Tables,
-  Charts,
-  Dashboard,
-  Switches,
+  Estadisticas,
   Forms,
   Dropdowns,
   Carousels,
