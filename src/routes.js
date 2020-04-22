@@ -1,5 +1,6 @@
 import React from 'react';
 const Carousels = React.lazy(() => import('./views/Base/Información/Info'));
+//const fire = React.lazy(() => import('./config/Base/firebase.js'));
 const Forms = React.lazy(() => import('./views/Base/Formulario/Formulario.js'));
 const Forms2 = React.lazy(() => import('./views/Base/Formulario/Formulario2.js'));
 const Forms3 = React.lazy(() => import('./views/Base/Formulario/Formulario3.js'));
@@ -26,6 +27,7 @@ const routes = [
   { path: '/', exact: true, name: 'Login'},
   { path: '/dashboard', name: 'Estadísticas', component: Dashboard },
   { path: '/base/form', name: 'Formulario EDM', component: Forms },
+  //{ path: '/config/fire', name: 'Formulario EDM', component: fire },
   { path: '/base/form2', name: 'Formulario APO', component: Forms2 },
   { path: '/base/form3', name: 'Formulario BAI', component: Forms3 },
   { path: '/base/form4', name: 'Formulario DSS', component: Forms4 },
