@@ -45,23 +45,48 @@ class Forms3 extends Component {
           <Col xs="12" md="10">
             <Card>
               <CardHeader align="center" style={{color:'#43425D'}}>
+              <Row style={{justifyContent: 'center'}}>
+                  <Pagination>
+                    <Link to="/base/form2">
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} previous></PaginationLink></PaginationItem>
+                    </Link> 
+                    <Link to="/base/form0">
+                      <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">Criterios</PaginationLink></PaginationItem>
+                    </Link>
+                    <Link to="/base/form">
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">1</PaginationLink></PaginationItem>
+                    </Link> 
+                    <Link to="/base/form2">
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">2</PaginationLink></PaginationItem>
+                    </Link> 
+                    <PaginationItem active>
+                    <PaginationItem><PaginationLink style={{color:'#F2F2F2', backgroundColor:'#43425D'}} tag="button">3</PaginationLink></PaginationItem>
+                    </PaginationItem>
+                    <Link to="/base/form4">
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">4</PaginationLink></PaginationItem>
+                    </Link>
+                    <Link to="/base/form5">
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} tag="button">5</PaginationLink></PaginationItem>
+                    </Link>
+                    <Link to="/base/form4">
+                      <PaginationItem><PaginationLink style={{color:'#43425D'}} next></PaginationLink></PaginationItem>
+                    </Link> 
+                  </Pagination>
+                </Row>
                 <h1>Revisión de estructura TI</h1> 
               </CardHeader>
               <CardBody>
                 <Form action="" method="post" encType="multipart/form-data" className="form-horizontal">
                   <FormGroup >
-                    <p>En este formulario se hablará de cosas vagas 
-                      en este formulario se hablará de cosas vagas 
-                      en este formulario se hablará de cosas vagas 
-                      en este formulario se hablará de cosas vagas 
-                      en este formulario se hablará de cosas vagas</p>
+                  <p>En este espacio se estará explicando de forma detallada el proceso que se estará evaluando. 
+                  Teniendo en cuenta la previa observación de la sección "Criterios" donde se conocerán los criterios de evaluación para cada área.</p>
                   </FormGroup>
                   
                   <FormGroup>
                     <Card className= "card-accent-primary">
                       <CardBody>
                         <Row>
-                          <h5 style={{color:'#43425D'}}>1. Antes tú me pichabas ahora yo te picheo?</h5>
+                          <h5 style={{color:'#43425D'}}>1. Pregunta 1</h5>
                         </Row>                            
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
@@ -90,7 +115,7 @@ class Forms3 extends Component {
                     <Card className= "card-accent-primary">
                       <CardBody>
                         <Row>
-                          <h5 style={{color:'#43425D'}}>1. Antes tú me pichabas ahora yo te picheo?</h5>
+                          <h5 style={{color:'#43425D'}}>2. Pregunta 2</h5>
                         </Row>                            
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
@@ -119,7 +144,7 @@ class Forms3 extends Component {
                     <Card className= "card-accent-primary">
                       <CardBody>
                         <Row>
-                          <h5 style={{color:'#43425D'}}>1. Antes tú me pichabas ahora yo te picheo?</h5>
+                          <h5 style={{color:'#43425D'}}>3. Pregunta 3</h5>
                         </Row>                            
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
@@ -148,7 +173,7 @@ class Forms3 extends Component {
                     <Card className= "card-accent-primary">
                       <CardBody>
                         <Row>
-                          <h5 style={{color:'#43425D'}}>1. Antes tú me pichabas ahora yo te picheo?</h5>
+                          <h5 style={{color:'#43425D'}}>4. Pregunta 4</h5>
                         </Row>                            
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
@@ -178,7 +203,7 @@ class Forms3 extends Component {
                     <Card className= "card-accent-primary">
                       <CardBody>
                         <Row>
-                          <h5 style={{color:'#43425D'}}>1. Antes tú me pichabas ahora yo te picheo?</h5>
+                          <h5 style={{color:'#43425D'}}>5. Pregunta 5</h5>
                         </Row>                            
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
