@@ -16,7 +16,7 @@ class DefaultFooter extends Component {
     return (
       <React.Fragment>
         <span><a href="https://github.com/sharonfm/proyecto-final">Proyecto Final</a> &copy; 2020 Uninorte.</span>
-        <span className="ml-auto">Hecho con ♥ por: Sharon Figueroa, Cristian Yepes, Alvaro Anaya</span>
+        <span className="ml-auto">Hecho con 💜 por: Sharon Figueroa, Cristian Yepes, Alvaro Anaya</span>
       </React.Fragment>
     );
   }

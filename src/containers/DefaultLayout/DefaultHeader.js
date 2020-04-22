@@ -30,7 +30,7 @@ const DefaultHeader =(props) => {
       <Nav className="ml-auto" navbar>
         <UncontrolledDropdown nav direction="down">
           <DropdownToggle nav>
-            <img src={'../../assets/img/avatars/usuario.png'} Alt='Usuario' className="img-avatar" />
+            <img style={{width:'54px', height:'54px'}} src={'../../assets/img/avatars/usuario.jpg'} Alt='Usuario' className="img-avatar" />
           </DropdownToggle>
           <DropdownMenu right>
             <DropdownItem header tag="div" className="text-center" style={{ backgroundColor: '#43425D' }}><strong style={{ color: '#F2F2F2' }}>Ajustes</strong></DropdownItem>
