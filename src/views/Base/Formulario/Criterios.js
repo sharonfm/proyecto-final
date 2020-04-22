@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import {
-    Button,
     Card,
     CardGroup,
     CardBody,
     CardFooter,
     CardHeader,
     Col,
-    Form,
-    FormGroup,
     Pagination,
     PaginationItem,
     PaginationLink,
-    Input,
-    Label,
     Row,
 } from 'reactstrap';
 
