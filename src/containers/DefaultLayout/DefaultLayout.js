@@ -29,8 +29,7 @@ class DefaultLayout extends Component {
     e.preventDefault()
     this.props.history.push('/login')
   }
-//3A3950 dark purple
-//43425D 
+
   render() {
     return (
       <div className="app">

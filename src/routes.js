@@ -18,7 +18,7 @@ const User = React.lazy(() => import('./views/Users/User')); */
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
-  { path: '/', exact: true, name: 'Login'},
+  { path: '/', exact: true, name: 'Inicio'},
   { path: '/views/estadisticas', name: 'Estadísticas', component: Estadisticas },
   { path: '/base/form0', name: 'Criterios de evaluación', component: Forms0 },
   { path: '/base/form', name: 'Formulario EDM', component: Forms },
