@@ -13,7 +13,6 @@ firebase.initializeApp({
     measurementId: "G-9FR6R0P3GT"
 });
 
-
 export { firebase };
 export const auth = firebase.auth();
 export const firestore = firebase.firestore()
@@ -22,11 +21,12 @@ export const firestore = firebase.firestore()
 export const generateUserDocument = async (user, additionalData) => {
     if (!user) return;
   
-    const userRef = firestore.doc(`users/${user.uid}`);
+    const userRef = firestore.collection('users').doc(`${user.uid}`);
     const snapshot = await userRef.get();
   
     if (!snapshot.exists) {
       const { email, username } = user;
+      console.log(email, username)
       try {
         await userRef.set({
           email,
@@ -43,8 +43,7 @@ export const generateUserDocument = async (user, additionalData) => {
 const getUserDocument = async uid => {
     if (!uid) return null;
     try {
-      const userDocument = await firestore.doc(`users/${uid}`).get();
-  
+      const userDocument = await firestore.collection('users').doc(`${uid}`).get();
       return {
         uid,
         ...userDocument.data()
@@ -53,5 +52,3 @@ const getUserDocument = async uid => {
       console.error("Error fetching user", error);
     }
   };
-
-  
