@@ -83,9 +83,8 @@ const Register = () => {
                   <div>
                     <h2>Únete a nosotros!</h2>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
+                    Mediante esta plataforma te ayudaremos a conocer y calificar todos 
+                    los procesos que puedes tener en el dpto de TI de tu empresa. Registrate, ingresa y actúa!
                     </p>
                   </div>
                 </CardBody>

@@ -23,8 +23,8 @@ const Login = () => {
   const signInWithEmailAndPasswordHandler = (event, email, password) => {
     event.preventDefault();
     auth.signInWithEmailAndPassword(email, password).catch((error) => {
-      setError("Error signing in with password and email!");
-      console.error("Error signing in with password and email", error);
+      setError("Error al iniciar sesión con la contraseña y el correo electrónico!");
+      console.error("Error al iniciar sesión con la contraseña y el correo electrónico", error);
     });
   };
   const onChangeHandler = (event) => {
@@ -51,9 +51,8 @@ const Login = () => {
                     <h2>Únete a nosotros!</h2>
                     
                     <p>
-                      Lorem ipsum dolor sit amet, consect etur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
+                      Mediante esta plataforma te ayudaremos a 
+                      conocer y calificar todos los procesos que puedes tener en el dpto de TI de tu empresa. Registrate, ingresa y actúa!
                     </p>
                     <Row style={{ justifyContent: "center" }}>
                       <Link to="/register">
@@ -79,19 +78,17 @@ const Login = () => {
                       G&G TI
                     </h1>
                     <p align="center" className="text-muted">
-                      Bienvenido! Inicie sesión con tu usuario y contraseña.
+                      Bienvenido! Inicie sesión con su correo y contraseña.
                     </p>
                     {error ? <span>{error}</span> : null}
                     <InputGroup className="mb-3">
 
-                      <InputGroupAddon addonType="prepend">
-                        <InputGroupText>
-                          <i className="icon-user"></i>
-                        </InputGroupText>
+                    <InputGroupAddon addonType="prepend">
+                        <InputGroupText>@</InputGroupText>
                       </InputGroupAddon>
                       <Input
                         type="text"
-                        placeholder="Username"
+                        placeholder="Correo electrónico"
                         autoComplete="username"
                         name="userEmail"
                         value={email}
