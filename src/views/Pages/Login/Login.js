@@ -40,7 +40,7 @@ const Login = () => {
     <div className="app flex-row align-items-center">
       <Container>
         <Row className="justify-content-center">
-          <Col md="8">
+          <Col md="9">
             <CardGroup>
               <Card
                 className="text-white  py-5 d-md-down-none"
@@ -49,11 +49,10 @@ const Login = () => {
                 <CardBody className="text-center">
                   <div>
                     <h2>Únete a nosotros!</h2>
-                    
                     <p>
-                      Mediante esta plataforma te ayudaremos a 
+                      Mediante esta plataforma te ayudaremos a
                       conocer y calificar todos los procesos que puedes tener en el dpto de TI de tu empresa. Registrate, ingresa y actúa!
-                    </p>
+                      </p>
                     <Row style={{ justifyContent: "center" }}>
                       <Link to="/register">
                         <Button
@@ -63,8 +62,8 @@ const Login = () => {
                         >
                           <medium style={{ color: "#43425D" }}>
                             {" "}
-                            Regístrate ahora!
-                          </medium>
+                              Regístrate ahora!
+                            </medium>
                         </Button>
                       </Link>
                     </Row>

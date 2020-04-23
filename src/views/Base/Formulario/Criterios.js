@@ -73,9 +73,10 @@ class Forms2 extends Component {
                                         <CardGroup >
                                             <Card className="text-white  py-5 d-md-down-none" style={{ width: '50%', backgroundColor: '#43425D' }}>
                                                 <CardBody className="text-center">
-                                                    <div>
-                                                        <h2>Niveles de capacidad para los procesos</h2>
-                                                        <p>Existen 6 diferentes opciones para calificar</p>
+                                                    <div className="app flex-row align-items-center">
+                                                        <h2>Niveles de capacidad para los procesos
+                                                        <h5> → Existen 6 diferentes opciones para calificar</h5>
+                                                        </h2>
                                                     </div>
                                                 </CardBody>
                                             </Card>
@@ -156,9 +157,10 @@ class Forms2 extends Component {
                                         <CardGroup>
                                             <Card className="text-white  py-5 d-md-down-none" style={{ width: '50%', backgroundColor: '#43425D' }}>
                                                 <CardBody className="text-center">
-                                                    <div>
-                                                        <h2>Calificaciones para las actividades los procesos</h2>
-                                                        <p>Existen 4 diferentes opciones para calificar</p>
+                                                    <div className="app flex-row align-items-center">
+                                                        <h2>Calificaciones para las actividades los procesos
+                                                        <h5> → Existen 4 diferentes opciones para calificar</h5>
+                                                        </h2>
                                                     </div>
                                                 </CardBody>
                                             </Card>
@@ -215,9 +217,10 @@ class Forms2 extends Component {
                                         <CardGroup>
                                             <Card className="text-white  py-5 d-md-down-none" style={{ width: '50%', backgroundColor: '#43425D' }}>
                                                 <CardBody className="text-center">
-                                                    <div>
-                                                        <h2>Niveles de madurez para áreas prioritarias</h2>
-                                                        <p>Existen 6 diferentes opciones para calificar</p>
+                                                    <div className="app flex-row align-items-center">
+                                                        <h2>Niveles de madurez para áreas prioritarias
+                                                        <h5> → Existen 6 diferentes opciones para calificar</h5>
+                                                        </h2>
                                                     </div>
                                                 </CardBody>
                                             </Card>
