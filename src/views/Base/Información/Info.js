@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Card, CardBody, CardHeader, Carousel, CarouselCaption, CarouselControl, CarouselIndicators, CarouselItem, Col, Row } from 'reactstrap';
 import Image1 from './Slides/imagen1.png';
+import Image2 from './Slides/imagen2.png';
+import Image3 from './Slides/imagen3.png';
 
 const items = [
   {
@@ -8,11 +10,11 @@ const items = [
     altText: 'Slide 1',
   },
   {
-    src: Image1,
+    src: Image2,
     altText: 'Slide 2',
   },
   {
-    src: Image1,
+    src: Image3,
     altText: 'Slide 3',
   },
 ];
