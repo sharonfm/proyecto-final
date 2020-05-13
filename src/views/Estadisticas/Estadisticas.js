@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import { Line, Pie } from 'react-chartjs-2';
+import { Line, Pie, Radar } from 'react-chartjs-2';
 import {
   ButtonDropdown,
   DropdownItem,
@@ -29,6 +29,8 @@ const cardChartData1 = {
     },
   ],
 };
+
+
 
 const cardChartOpts1 = {
   tooltips: {
@@ -174,6 +176,58 @@ const pie2 = {
     }],
 };
 
+const radar = {
+  labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
+  datasets: [
+    {
+      label: 'My First dataset',
+      //backgroundColor: '#43425D',
+      borderColor: '#43425D',
+      pointBackgroundColor: '#43425D',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: '#43425D',
+      data: [5, 2, 3, 5, 3, 4, 1],
+    },
+    // {
+    //   label: 'My Second dataset',
+    //   backgroundColor: 'rgba(255,99,132,0.2)',
+    //   borderColor: 'rgba(255,99,132,1)',
+    //   pointBackgroundColor: 'rgba(255,99,132,1)',
+    //   pointBorderColor: '#fff',
+    //   pointHoverBackgroundColor: '#fff',
+    //   pointHoverBorderColor: 'rgba(255,99,132,1)',
+    //   data: [28, 48, 40, 19, 96, 27, 100],
+    // },
+  ],
+};
+const radar2 = {
+  labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
+  datasets: [
+    // {
+    //   label: 'My First dataset',
+    //   //backgroundColor: '#43425D',
+    //   borderColor: '#43425D',
+    //   pointBackgroundColor: '#43425D',
+    //   pointBorderColor: '#fff',
+    //   pointHoverBackgroundColor: '#fff',
+    //   pointHoverBorderColor: '#43425D',
+    //   data: [5, 2, 3, 5, 3, 4, 1],
+    // },
+      {
+      label: 'My First dataset',
+      backgroundColor: 'rgba(255,99,132,0.2)',
+      borderColor: 'rgba(255,99,132,1)',
+      pointBackgroundColor: 'rgba(255,99,132,1)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgba(255,99,132,1)',
+      data: [1, 4, 5, 3, 4, 4, 5],
+    },
+  ],
+};
+
+
 class Estadisticas extends Component {
   constructor(props) {
     super(props);
@@ -234,12 +288,12 @@ class Estadisticas extends Component {
                   </Card>
                   <Card>
                     <CardHeader>
-                      <h5 align='center'>Datos</h5>
-                      <p align='center'>Haga click en un color para observar la calificación</p>
+                    <h5 align='center'>Datos</h5>
+                    <p align='center'>Haga click en un color para observar la calificación</p>
                     </CardHeader>
                     <CardBody>
                       <div className="chart-wrapper">
-                        <Pie data={pie} />
+                        <Radar data={radar} />
                       </div>
                     </CardBody>
                   </Card>
@@ -273,7 +327,7 @@ class Estadisticas extends Component {
                     </CardHeader>
                     <CardBody>
                       <div className="chart-wrapper">
-                        <Pie data={pie2} />
+                        <Radar data={radar2} />
                       </div>
                     </CardBody>
                   </Card>
@@ -301,13 +355,13 @@ class Estadisticas extends Component {
                     </div>
                   </Card>
                   <Card>
-                    <CardHeader>
+                  <CardHeader>
                       <h5 align='center'>Datos</h5>
                       <p align='center'>Haga click en un color para observar la calificación</p>
                     </CardHeader>
                     <CardBody>
                       <div className="chart-wrapper">
-                        <Pie data={pie} />
+                        <Radar data={radar} />
                       </div>
                     </CardBody>
                   </Card>
@@ -335,13 +389,13 @@ class Estadisticas extends Component {
                     </div>
                   </Card>
                   <Card>
-                    <CardHeader>
+                  <CardHeader>
                       <h5 align='center'>Datos</h5>
                       <p align='center'>Haga click en un color para observar la calificación</p>
                     </CardHeader>
                     <CardBody>
                       <div className="chart-wrapper">
-                        <Pie data={pie2} />
+                        <Radar data={radar2} />
                       </div>
                     </CardBody>
                   </Card>
@@ -351,7 +405,7 @@ class Estadisticas extends Component {
                 <CardGroup>
                   <Card className="text-white" style={{backgroundColor:'#43425D'}}>
                     <CardBody className="pb-0">
-                      <ButtonGroup className="float-right">
+                      <ButtonGroup className="float-right"> 
                         <ButtonDropdown id='card1' isOpen={this.state.card1} toggle={() => { this.setState({ card1: !this.state.card1 }); }}>
                           <DropdownToggle caret className="p-0" color="transparent">
                             <i className="icon-info"></i>
@@ -369,18 +423,19 @@ class Estadisticas extends Component {
                     </div>
                   </Card>
                   <Card>
-                    <CardHeader>
+                  <CardHeader>
                       <h5 align='center'>Datos</h5>
                       <p align='center'>Haga click en un color para observar la calificación</p>
                     </CardHeader>
                     <CardBody>
                       <div className="chart-wrapper">
-                        <Pie data={pie} />
+                        <Radar data={radar} />
                       </div>
                     </CardBody>
-                  </Card>
+                  </Card> 
                 </CardGroup>
               </CardBody>
+              
             </Card>
           </Col>
         </Row>

@@ -86,7 +86,7 @@ class Forms extends Component {
                     <Card className= "card-accent-primary" >
                       <CardBody>
                         <Row>
-                          <h5 style={{color:'#43425D'}}> 1. Pregunta 1</h5>
+                          <h5 style={{color:'#43425D'}}> 1. Considera usted que Cristian Yepes es hermoso?</h5>
                         </Row>                            
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio1" name="radios" value="option1" />
