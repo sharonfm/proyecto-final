@@ -100,29 +100,29 @@ class Forms extends Component {
                       <CardBody>
                         <Row>
                           <h5 style={{color:'#43425D'}}> 1. Considera usted que Cristian Yepes es hermoso?</h5>
-                        </Row>                            
-                        <FormGroup check className="radio1">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="0" />
-                          <Label check className="form-check-label" htmlFor="radio1">Option 0</Label>
+                        </Row>               
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios1" value="option0" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
+                        </FormGroup>                
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios1" value="option1" />
+                          <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
-                        <FormGroup check className="radio1">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="1" />
-                          <Label check className="form-check-label" htmlFor="radio2">Option 1</Label>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios1" value="option2" />
+                          <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
-                        <FormGroup check className="radio1">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="2" />
-                          <Label check className="form-check-label" htmlFor="radio3">Option 2</Label>
-                        </FormGroup>
-                        <FormGroup check className="radio1">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="3" />
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios1" value="option3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
-                        <FormGroup check className="radio1">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="4" />
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios1" value="option4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
-                        </FormGroup>    
-                        <FormGroup check className="radio1">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="5" />
+                        </FormGroup>
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios1" value="option5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
                         </FormGroup> 
                       </CardBody>
@@ -134,29 +134,29 @@ class Forms extends Component {
                       <CardBody>
                         <Row>
                         <h5 style={{color:'#43425D'}}>2. Pregunta 2</h5>
-                        </Row>  
+                        </Row>           
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios2" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
-                        </FormGroup>                             
+                        </FormGroup>                  
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="1" />
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios2" value="option1" />
                           <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="2" />
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios2" value="option2" />
                           <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="3" />
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios2" value="option3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="4" />
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios2" value="option4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="5" />
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios2" value="option5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
                         </FormGroup>     
                       </CardBody>
@@ -167,29 +167,29 @@ class Forms extends Component {
                       <CardBody>
                         <Row>
                         <h5 style={{color:'#43425D'}}>3. Pregunta 3</h5>
-                        </Row>                            
+                        </Row>         
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios3" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
-                        </FormGroup>                             
+                        </FormGroup>                    
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="1" />
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios3" value="option1" />
                           <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="2" />
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios3" value="option2" />
                           <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="3" />
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios3" value="option3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="4" />
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios3" value="option4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="5" />
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios3" value="option5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
                         </FormGroup>
                       </CardBody>
@@ -200,29 +200,29 @@ class Forms extends Component {
                       <CardBody>
                         <Row>
                         <h5 style={{color:'#43425D'}}>4. Pregunta 4</h5>
-                        </Row>                            
+                        </Row>    
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios4" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
-                        </FormGroup>                             
+                        </FormGroup>                         
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="1" />
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios4" value="option1" />
                           <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="2" />
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios4" value="option2" />
                           <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="3" />
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios4" value="option3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="4" />
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios4" value="option4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="5" />
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios4" value="option5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
                         </FormGroup>
                       </CardBody>
@@ -233,29 +233,29 @@ class Forms extends Component {
                       <CardBody>
                         <Row>
                         <h5 style={{color:'#43425D'}}>5. Pregunta 5</h5>
-                        </Row>                            
+                        </Row>   
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios5" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
-                        </FormGroup>                             
+                        </FormGroup>                          
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="1" />
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios5" value="option1" />
                           <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="2" />
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios5" value="option2" />
                           <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="3" />
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios5" value="option3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="4" />
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios5" value="option4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="5" />
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios5" value="option5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
                         </FormGroup>
                       </CardBody>
@@ -266,29 +266,29 @@ class Forms extends Component {
                       <CardBody>
                         <Row>
                         <h5 style={{color:'#43425D'}}>6. Pregunta 6</h5>
-                        </Row>                            
+                        </Row>   
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios6" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
-                        </FormGroup>                             
+                        </FormGroup>                          
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="1" />
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios6" value="option1" />
                           <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="2" />
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios6" value="option2" />
                           <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="3" />
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios6" value="option3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="4" />
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios6" value="option4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="5" />
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios6" value="option5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
                         </FormGroup>
                       </CardBody>
@@ -299,29 +299,29 @@ class Forms extends Component {
                       <CardBody>
                         <Row>
                         <h5 style={{color:'#43425D'}}>7. Pregunta 7</h5>
-                        </Row>                            
+                        </Row> 
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios7" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
-                        </FormGroup>                             
+                        </FormGroup>                            
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="1" />
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios7" value="option1" />
                           <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="2" />
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios7" value="option2" />
                           <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="3" />
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios7" value="option3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="4" />
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios7" value="option4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="5" />
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios7" value="option5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
                         </FormGroup>
                       </CardBody>
@@ -332,29 +332,29 @@ class Forms extends Component {
                       <CardBody>
                         <Row>
                           <h5 style={{color:'#43425D'}}>8. Pregunta 8</h5>
-                        </Row>                            
+                        </Row>         
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios8" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
-                        </FormGroup>                             
+                        </FormGroup>                    
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="1" />
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios8" value="option1" />
                           <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="2" />
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios8" value="option2" />
                           <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="3" />
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios8" value="option3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="4" />
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios8" value="option4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="5" />
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios8" value="option5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
                         </FormGroup>
                       </CardBody>
@@ -365,29 +365,29 @@ class Forms extends Component {
                       <CardBody>
                         <Row>
                           <h5 style={{color:'#43425D'}}>9. Pregunta 9</h5>
-                        </Row>                            
+                        </Row> 
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios9" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
-                        </FormGroup>                             
+                        </FormGroup>                            
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="1" />
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios9" value="option1" />
                           <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="2" />
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios9" value="option2" />
                           <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="3" />
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios9" value="option3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="4" />
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios9" value="option4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="5" />
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios9" value="option5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
                         </FormGroup>  
                       </CardBody>
@@ -398,25 +398,29 @@ class Forms extends Component {
                       <CardBody>
                         <Row>
                           <h5 style={{color:'#43425D'}}>10. Pregunta 10</h5>
-                        </Row>                            
+                        </Row>     
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios10" value="option0" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
+                        </FormGroup>                        
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios10" value="option1" />
                           <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="1" />
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios10" value="option2" />
                           <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="2" />
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios10" value="option3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="3" />
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios10" value="option4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="4" />
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios10" value="option5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
                         </FormGroup> 
                         <FormGroup check className="radio">
@@ -431,29 +435,29 @@ class Forms extends Component {
                       <CardBody>
                         <Row>
                           <h5 style={{color:'#43425D'}}>11. Pregunta 11</h5>
-                        </Row>                            
+                        </Row>   
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios11" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
-                        </FormGroup>                             
+                        </FormGroup>                          
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="1" />
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios11" value="option1" />
                           <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="2" />
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios11" value="option2" />
                           <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="3" />
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios11" value="option3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="4" />
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios11" value="option4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="5" />
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios11" value="option5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
                         </FormGroup>
                       </CardBody>
@@ -464,29 +468,29 @@ class Forms extends Component {
                       <CardBody>
                         <Row>
                           <h5 style={{color:'#43425D'}}>12. Pregunta 12</h5>
-                        </Row>                            
+                        </Row>     
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios12" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
-                        </FormGroup>                             
+                        </FormGroup>                        
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios" value="1" />
+                          <Input className="form-check-input" type="radio" id="radio1" name="radios12" value="option1" />
                           <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios" value="2" />
+                          <Input className="form-check-input" type="radio" id="radio2" name="radios12" value="option2" />
                           <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios" value="3" />
+                          <Input className="form-check-input" type="radio" id="radio3" name="radios12" value="option3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios" value="4" />
+                          <Input className="form-check-input" type="radio" id="radio4" name="radios12" value="option4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="5" />
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios12" value="option5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
                         </FormGroup>
                       </CardBody>
