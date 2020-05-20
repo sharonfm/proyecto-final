@@ -41,18 +41,6 @@ function radioCheck(radio_id) {
  }
 }
 
-<<<<<<< HEAD
-=======
-    this.toggle = this.toggle.bind(this);
-    this.toggleFade = this.toggleFade.bind(this);
-    this.state = {
-      collapse: true,
-      fadeIn: true,
-      timeout: 300,
-      value:''
-    };
-  }
->>>>>>> cd316aab8befacb26404ac5157acab3487de39a8
 
 //return radio_value;
 
@@ -99,11 +87,7 @@ const Forms = () => {
                 <h1>Revisión de estructura TI</h1> 
               </CardHeader>
               <CardBody>
-<<<<<<< HEAD
                 <Form  submit = {radioCheck}  encType="multipart/form-data" className="form-horizontal">
-=======
-                <Form action=" " method="post" encType="multipart/form-data" className="form-horizontal" target="_blank">
->>>>>>> cd316aab8befacb26404ac5157acab3487de39a8
                   <FormGroup >
                     <p>En este espacio se estará explicando de forma detallada el proceso que se estará evaluando. 
                     Teniendo en cuenta la previa observación de la sección "Criterios" donde se conocerán los criterios de evaluación para cada área.</p>
@@ -542,13 +526,6 @@ const Forms = () => {
                     </Link> 
                   </Pagination>
                 </Row>
-<<<<<<< HEAD
-              </CardBody>
-              <CardFooter>
-                <Button onClick ={checkRadio} type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Enviar</Button>
-                <Button type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reiniciar</Button>
-=======
->>>>>>> cd316aab8befacb26404ac5157acab3487de39a8
               </CardFooter>
             </Card>
           </Col>
