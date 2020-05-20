@@ -189,31 +189,12 @@ const radar = {
       pointHoverBorderColor: '#43425D',
       data: [5, 2, 3, 5, 3, 4, 1],
     },
-    // {
-    //   label: 'My Second dataset',
-    //   backgroundColor: 'rgba(255,99,132,0.2)',
-    //   borderColor: 'rgba(255,99,132,1)',
-    //   pointBackgroundColor: 'rgba(255,99,132,1)',
-    //   pointBorderColor: '#fff',
-    //   pointHoverBackgroundColor: '#fff',
-    //   pointHoverBorderColor: 'rgba(255,99,132,1)',
-    //   data: [28, 48, 40, 19, 96, 27, 100],
-    // },
+    
   ],
 };
 const radar2 = {
   labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
   datasets: [
-    // {
-    //   label: 'My First dataset',
-    //   //backgroundColor: '#43425D',
-    //   borderColor: '#43425D',
-    //   pointBackgroundColor: '#43425D',
-    //   pointBorderColor: '#fff',
-    //   pointHoverBackgroundColor: '#fff',
-    //   pointHoverBorderColor: '#43425D',
-    //   data: [5, 2, 3, 5, 3, 4, 1],
-    // },
       {
       label: 'My First dataset',
       backgroundColor: 'rgba(255,99,132,0.2)',
