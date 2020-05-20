@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardBody, CardHeader, Col, ListGroup, ListGroupItem,  Row, TabContent, TabPane, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
-
+import Forms from '../Formulario/Formulario';
 class List1 extends Component {
 
   constructor(props) {
@@ -44,6 +44,7 @@ class List1 extends Component {
                   <Col xs="12" md="8">
                     <TabContent activeTab={this.state.activeTab}>
                       <TabPane tabId={1}>
+                        
                         <p>Para este tipo de dominio(EDM) en cuanto a los objetivos de gestión 
                           y teniendo en cuenta la calificación de esta área entregada por usted como usuario nos 
                           permitimos darle retroalimentación y del paso a seguir en este proceso:... 
