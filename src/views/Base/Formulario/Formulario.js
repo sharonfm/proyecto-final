@@ -90,7 +90,7 @@ class Forms extends Component {
                 <h1>Revisión de estructura TI</h1> 
               </CardHeader>
               <CardBody>
-                <Form action=" " method="post" encType="multipart/form-data" className="form-horizontal" target="_blank">
+                <Form action="" method="post" encType="multipart/form-data" className="form-horizontal" target="_blank">
                   <FormGroup >
                     <p>En este espacio se estará explicando de forma detallada el proceso que se estará evaluando. 
                     Teniendo en cuenta la previa observación de la sección "Criterios" donde se conocerán los criterios de evaluación para cada área.</p>
