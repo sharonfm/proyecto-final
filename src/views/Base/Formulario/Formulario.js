@@ -89,7 +89,7 @@ class Forms extends Component {
                           <h5 style={{color:'#43425D'}}> 1. Considera usted que Cristian Yepes es hermoso?</h5>
                         </Row>               
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios1" value="option0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios1" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                
                         <FormGroup check className="radio">
@@ -122,7 +122,7 @@ class Forms extends Component {
                         <h5 style={{color:'#43425D'}}>2. Pregunta 2</h5>
                         </Row>           
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios2" value="option0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios2" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                  
                         <FormGroup check className="radio">
@@ -155,7 +155,7 @@ class Forms extends Component {
                         <h5 style={{color:'#43425D'}}>3. Pregunta 3</h5>
                         </Row>         
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios3" value="option0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios3" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                    
                         <FormGroup check className="radio">
@@ -188,7 +188,7 @@ class Forms extends Component {
                         <h5 style={{color:'#43425D'}}>4. Pregunta 4</h5>
                         </Row>    
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios4" value="option0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios4" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                         
                         <FormGroup check className="radio">
@@ -221,7 +221,7 @@ class Forms extends Component {
                         <h5 style={{color:'#43425D'}}>5. Pregunta 5</h5>
                         </Row>   
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios5" value="option0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios5" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                          
                         <FormGroup check className="radio">
@@ -254,7 +254,7 @@ class Forms extends Component {
                         <h5 style={{color:'#43425D'}}>6. Pregunta 6</h5>
                         </Row>   
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios6" value="option0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios6" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                          
                         <FormGroup check className="radio">
@@ -287,7 +287,7 @@ class Forms extends Component {
                         <h5 style={{color:'#43425D'}}>7. Pregunta 7</h5>
                         </Row> 
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios7" value="option0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios7" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                            
                         <FormGroup check className="radio">
@@ -320,7 +320,7 @@ class Forms extends Component {
                           <h5 style={{color:'#43425D'}}>8. Pregunta 8</h5>
                         </Row>         
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios8" value="option0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios8" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                    
                         <FormGroup check className="radio">
@@ -353,7 +353,7 @@ class Forms extends Component {
                           <h5 style={{color:'#43425D'}}>9. Pregunta 9</h5>
                         </Row> 
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios9" value="option0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios9" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                            
                         <FormGroup check className="radio">
@@ -386,7 +386,7 @@ class Forms extends Component {
                           <h5 style={{color:'#43425D'}}>10. Pregunta 10</h5>
                         </Row>     
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios10" value="option0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios10" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                        
                         <FormGroup check className="radio">
@@ -419,7 +419,7 @@ class Forms extends Component {
                           <h5 style={{color:'#43425D'}}>11. Pregunta 11</h5>
                         </Row>   
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios11" value="option0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios11" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                          
                         <FormGroup check className="radio">
@@ -452,7 +452,7 @@ class Forms extends Component {
                           <h5 style={{color:'#43425D'}}>12. Pregunta 12</h5>
                         </Row>     
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios12" value="option0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios12" value="option0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                        
                         <FormGroup check className="radio">
