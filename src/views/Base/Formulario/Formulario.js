@@ -17,6 +17,19 @@ import {
   Row,
 } from 'reactstrap';
  
+
+
+function radioCheck(radio_id) {
+  var radioGroup= document.getElementsByName(radio_id);
+  var radio_value;
+  for(var i = 0; i < radioGroup.length; i++){
+    if(radioGroup[i].checked){
+        radio_value = radioGroup[i].value;
+    }
+}
+console.log("monda")
+//return radio_value;
+}
 class Forms extends Component {
   constructor(props) {
     super(props);
@@ -112,10 +125,11 @@ class Forms extends Component {
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio5" name="radios1" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
-                        </FormGroup>     
+                        </FormGroup> 
                       </CardBody>
                     </Card>
                   </FormGroup>
+
                   <FormGroup>
                     <Card className= "card-accent-primary">
                       <CardBody>
@@ -178,7 +192,7 @@ class Forms extends Component {
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio5" name="radios3" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
-                        </FormGroup>     
+                        </FormGroup>
                       </CardBody>
                     </Card>
                   </FormGroup>
@@ -211,7 +225,7 @@ class Forms extends Component {
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio5" name="radios4" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
-                        </FormGroup>     
+                        </FormGroup>
                       </CardBody>
                     </Card>
                   </FormGroup>
@@ -244,7 +258,7 @@ class Forms extends Component {
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio5" name="radios5" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
-                        </FormGroup>     
+                        </FormGroup>
                       </CardBody>
                     </Card>
                   </FormGroup>
@@ -277,7 +291,7 @@ class Forms extends Component {
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio5" name="radios6" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
-                        </FormGroup>     
+                        </FormGroup>
                       </CardBody>
                     </Card>
                   </FormGroup>
@@ -310,7 +324,7 @@ class Forms extends Component {
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio5" name="radios7" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
-                        </FormGroup>     
+                        </FormGroup>
                       </CardBody>
                     </Card>
                   </FormGroup>
@@ -343,7 +357,7 @@ class Forms extends Component {
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio5" name="radios8" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
-                        </FormGroup>     
+                        </FormGroup>
                       </CardBody>
                     </Card>
                   </FormGroup>
@@ -376,7 +390,7 @@ class Forms extends Component {
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio5" name="radios9" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
-                        </FormGroup>     
+                        </FormGroup>  
                       </CardBody>
                     </Card>
                   </FormGroup>
@@ -409,6 +423,10 @@ class Forms extends Component {
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio5" name="radios10" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
+                        </FormGroup> 
+                        <FormGroup check className="radio">
+                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="5" />
+                          <Label check className="form-check-label" htmlFor="radio3">Option 6</Label>
                         </FormGroup>     
                       </CardBody>
                     </Card>
@@ -442,7 +460,7 @@ class Forms extends Component {
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio5" name="radios11" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
-                        </FormGroup>     
+                        </FormGroup>
                       </CardBody>
                     </Card>
                   </FormGroup>
@@ -475,7 +493,7 @@ class Forms extends Component {
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio5" name="radios12" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
-                        </FormGroup>     
+                        </FormGroup>
                       </CardBody>
                     </Card>
                   </FormGroup>
@@ -516,11 +534,15 @@ class Forms extends Component {
             </Card>
           </Col>
         </Row>
-
+      
       </div>
+      
     );
+    
   }
 }
+
+radioCheck("radio1");
 
 export default Forms;
 
