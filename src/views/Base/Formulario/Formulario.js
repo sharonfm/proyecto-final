@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
+
 import { Link } from 'react-router-dom';
 import {
   Button,
@@ -16,6 +17,17 @@ import {
   Label,
   Row,
 } from 'reactstrap';
+import { func } from 'prop-types';
+
+
+
+
+// const handleInputChange = (e) => {
+//   setFormData({
+//     ...formData,
+//     [e.target.name]: e.target.value,
+//   });
+// };
  
 
 
@@ -26,32 +38,18 @@ function radioCheck(radio_id) {
     if(radioGroup[i].checked){
         radio_value = radioGroup[i].value;
     }
+ }
 }
-console.log("monda")
+
+
 //return radio_value;
-}
-class Forms extends Component {
-  constructor(props) {
-    super(props);
 
-    this.toggle = this.toggle.bind(this);
-    this.toggleFade = this.toggleFade.bind(this);
-    this.state = {
-      collapse: true,
-      fadeIn: true,
-      timeout: 300
-    };
+const Forms = () => {
+  const [radio,setRadio] = useState("");
+
+  function checkRadio(e) {
+    console.log("monda")
   }
-
-  toggle() {
-    this.setState({ collapse: !this.state.collapse });
-  }
-
-  toggleFade() {
-    this.setState((prevState) => { return { fadeIn: !prevState }});
-  }
-
-  render() {
     return (
       <div className="animated fadeIn">
         <Row style={{justifyContent: 'center'}}>
@@ -89,12 +87,11 @@ class Forms extends Component {
                 <h1>Revisión de estructura TI</h1> 
               </CardHeader>
               <CardBody>
-                <Form action="" method="post" encType="multipart/form-data" className="form-horizontal">
+                <Form  submit = {radioCheck}  encType="multipart/form-data" className="form-horizontal">
                   <FormGroup >
                     <p>En este espacio se estará explicando de forma detallada el proceso que se estará evaluando. 
                     Teniendo en cuenta la previa observación de la sección "Criterios" donde se conocerán los criterios de evaluación para cada área.</p>
                   </FormGroup>
-                  
                   <FormGroup>
                     <Card className= "card-accent-primary" >
                       <CardBody>
@@ -528,7 +525,7 @@ class Forms extends Component {
                 </Row>
               </CardBody>
               <CardFooter>
-                <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Enviar</Button>
+                <Button onClick ={checkRadio} type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Enviar</Button>
                 <Button type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reiniciar</Button>
               </CardFooter>
             </Card>
@@ -538,11 +535,9 @@ class Forms extends Component {
       </div>
       
     );
-    
-  }
 }
 
-radioCheck("radio1");
+
 
 export default Forms;
 
