@@ -97,7 +97,7 @@ const Forms = () => {
                 <h1>Revisión de estructura TI</h1> 
               </CardHeader>
               <CardBody>
-                <Form  id= "form1" onSubmit = {checkRadio} encType="multipart/form-data" className="form-horizontal">
+                <Form  submit = {radioCheck}  encType="multipart/form-data" className="form-horizontal">
                   <FormGroup >
                     <p>En este espacio se estará explicando de forma detallada el proceso que se estará evaluando. 
                     Teniendo en cuenta la previa observación de la sección "Criterios" donde se conocerán los criterios de evaluación para cada área.</p>
