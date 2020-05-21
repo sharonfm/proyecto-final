@@ -41,26 +41,24 @@ function radioCheck(radio_id) {
  }
 }
 
-<<<<<<< HEAD
-=======
-    this.toggle = this.toggle.bind(this);
-    this.toggleFade = this.toggleFade.bind(this);
-    this.state = {
-      collapse: true,
-      fadeIn: true,
-      timeout: 300,
-      value:''
-    };
-  }
->>>>>>> cd316aab8befacb26404ac5157acab3487de39a8
 
 //return radio_value;
 
 const Forms = () => {
   const [radio,setRadio] = useState("");
 
-  function checkRadio(e) {
-    console.log("monda")
+  function checkRadio(event) {
+    event.preventDefault()
+    const radioGroup= document.getElementsById("form1").elements;
+    //console.log(radioGroup[0].childNodes[0].value)
+    let radio_value;
+    for(var i = 0; i < radioGroup.length; i++){
+      if(radioGroup[i].checked){
+          radio_value = radioGroup[i].value;
+          console.log(radio_value)
+      }
+    }
+    
   }
     return (
       <div className="animated fadeIn">
@@ -99,11 +97,7 @@ const Forms = () => {
                 <h1>Revisión de estructura TI</h1> 
               </CardHeader>
               <CardBody>
-<<<<<<< HEAD
-                <Form  submit = {radioCheck}  encType="multipart/form-data" className="form-horizontal">
-=======
-                <Form action=" " method="post" encType="multipart/form-data" className="form-horizontal" target="_blank">
->>>>>>> cd316aab8befacb26404ac5157acab3487de39a8
+                <Form  id= "form1" onSubmit = {checkRadio} encType="multipart/form-data" className="form-horizontal">
                   <FormGroup >
                     <p>En este espacio se estará explicando de forma detallada el proceso que se estará evaluando. 
                     Teniendo en cuenta la previa observación de la sección "Criterios" donde se conocerán los criterios de evaluación para cada área.</p>
@@ -115,7 +109,7 @@ const Forms = () => {
                           <h5 style={{color:'#43425D'}}> 1. Considera usted que Cristian Yepes es hermoso?</h5>
                         </Row>               
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios1" value="0" required />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios1" value="0"  />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                
                         <FormGroup check className="radio">
@@ -149,7 +143,7 @@ const Forms = () => {
                         <h5 style={{color:'#43425D'}}>2. Pregunta 2</h5>
                         </Row>           
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios2" value="0" required/>
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios2" value="0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                  
                         <FormGroup check className="radio">
@@ -182,7 +176,7 @@ const Forms = () => {
                         <h5 style={{color:'#43425D'}}>3. Pregunta 3</h5>
                         </Row>         
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios3" value="0" required/>
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios3" value="0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                    
                         <FormGroup check className="radio">
@@ -215,7 +209,7 @@ const Forms = () => {
                         <h5 style={{color:'#43425D'}}>4. Pregunta 4</h5>
                         </Row>    
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios4" value="0" required/>
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios4" value="0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                         
                         <FormGroup check className="radio">
@@ -248,7 +242,7 @@ const Forms = () => {
                         <h5 style={{color:'#43425D'}}>5. Pregunta 5</h5>
                         </Row>   
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios5" value="0" required/>
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios5" value="0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                          
                         <FormGroup check className="radio">
@@ -281,7 +275,7 @@ const Forms = () => {
                         <h5 style={{color:'#43425D'}}>6. Pregunta 6</h5>
                         </Row>   
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios6" value="0" required/>
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios6" value="0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                          
                         <FormGroup check className="radio">
@@ -314,7 +308,7 @@ const Forms = () => {
                         <h5 style={{color:'#43425D'}}>7. Pregunta 7</h5>
                         </Row> 
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios7" value="0" required/>
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios7" value="0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                            
                         <FormGroup check className="radio">
@@ -347,7 +341,7 @@ const Forms = () => {
                           <h5 style={{color:'#43425D'}}>8. Pregunta 8</h5>
                         </Row>         
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios8" value="0" required/>
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios8" value="0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                    
                         <FormGroup check className="radio">
@@ -380,7 +374,7 @@ const Forms = () => {
                           <h5 style={{color:'#43425D'}}>9. Pregunta 9</h5>
                         </Row> 
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios9" value="0" required/>
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios9" value="0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                            
                         <FormGroup check className="radio">
@@ -413,7 +407,7 @@ const Forms = () => {
                           <h5 style={{color:'#43425D'}}>10. Pregunta 10</h5>
                         </Row>     
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios10" value="0" required/>
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios10" value="0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                        
                         <FormGroup check className="radio">
@@ -450,7 +444,7 @@ const Forms = () => {
                           <h5 style={{color:'#43425D'}}>11. Pregunta 11</h5>
                         </Row>   
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios11" value="0" required/>
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios11" value="0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                          
                         <FormGroup check className="radio">
@@ -483,7 +477,7 @@ const Forms = () => {
                           <h5 style={{color:'#43425D'}}>12. Pregunta 12</h5>
                         </Row>     
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios12" value="0" required/>
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios12" value="0" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                        
                         <FormGroup check className="radio">
@@ -509,7 +503,7 @@ const Forms = () => {
                       </CardBody>
                     </Card>
                   </FormGroup>
-                  <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o" value="Enviar datos"></i> Enviar</Button>
+                  <Button  type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o" value="Enviar datos"></i> Enviar</Button>
                   <Button type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reiniciar</Button>
                 </Form>
               </CardBody>
@@ -542,13 +536,6 @@ const Forms = () => {
                     </Link> 
                   </Pagination>
                 </Row>
-<<<<<<< HEAD
-              </CardBody>
-              <CardFooter>
-                <Button onClick ={checkRadio} type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Enviar</Button>
-                <Button type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reiniciar</Button>
-=======
->>>>>>> cd316aab8befacb26404ac5157acab3487de39a8
               </CardFooter>
             </Card>
           </Col>
