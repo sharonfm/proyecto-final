@@ -17,28 +17,9 @@ import {
   Row,
 } from 'reactstrap';
 
-class Forms3 extends Component {
-  constructor(props) {
-    super(props);
+const Forms3 = () => {  
 
-    this.toggle = this.toggle.bind(this);
-    this.toggleFade = this.toggleFade.bind(this);
-    this.state = {
-      collapse: true,
-      fadeIn: true,
-      timeout: 300
-    };
-  }
-
-  toggle() {
-    this.setState({ collapse: !this.state.collapse });
-  }
-
-  toggleFade() {
-    this.setState((prevState) => { return { fadeIn: !prevState }});
-  }
-
-  render() {
+  
     return (
       <div className="animated fadeIn">
         <Row style={{justifyContent: 'center'}}>
@@ -288,7 +269,7 @@ class Forms3 extends Component {
 
       </div>
     );
-  }
+  
 }
 
 export default Forms3;

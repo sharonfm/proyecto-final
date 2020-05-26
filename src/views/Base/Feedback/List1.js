@@ -1,27 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Card, CardBody, CardHeader, Col, ListGroup, ListGroupItem,  Row, TabContent, TabPane, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Forms from '../Formulario/Formulario';
-class List1 extends Component {
 
-  constructor(props) {
-    super(props);
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      activeTab: 1
-    };
-  }
 
-  toggle(tab) {
-    if (this.state.activeTab !== tab) {
-      this.setState({
-        activeTab: tab
-      });
-    }
-  }
+const List1 = () => {
 
-  render() {
+  const [activeTab, setActiveTab] = useState(1)
+  
+  
     return (
       <div className="animated fadeIn">
         <Row>
@@ -34,15 +22,15 @@ class List1 extends Component {
                 <Row>
                   <Col xs="12" md="4">
                     <ListGroup id="list-tab" role="tablist">
-                      <ListGroupItem onClick={() => this.toggle(1)} action active={this.state.activeTab === 1} >Uno</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(2)} action active={this.state.activeTab === 2} >Dos</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(3)} action active={this.state.activeTab === 3} >Tres</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(4)} action active={this.state.activeTab === 4} >Cuatro</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(5)} action active={this.state.activeTab === 5} >Cinco</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(1)} action active={activeTab === 1} >Uno</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(2)} action active={activeTab === 2} >Dos</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(3)} action active={activeTab === 3} >Tres</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(4)} action active={activeTab === 4} >Cuatro</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(5)} action active={activeTab === 5} >Cinco</ListGroupItem>
                     </ListGroup>
                   </Col>
                   <Col xs="12" md="8">
-                    <TabContent activeTab={this.state.activeTab}>
+                    <TabContent activeTab={activeTab}>
                       <TabPane tabId={1}>
                         
                         <p>Para este tipo de dominio(EDM) en cuanto a los objetivos de gestión 
@@ -116,7 +104,7 @@ class List1 extends Component {
         </Row>
       </div>
     );
-  }
+  
 }
 
 export default List1;

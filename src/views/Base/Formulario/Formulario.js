@@ -1,6 +1,7 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useState, FormControlLabel, Radio, RadioGroup, renderCount} from 'react';
+import {Controller, useForm} from 'react-hook-form'
 
-import { Link } from 'react-router-dom';
+import { Link,useHistory } from 'react-router-dom';
 import {
   Button,
   Card,
@@ -15,7 +16,7 @@ import {
   PaginationLink,
   Input,
   Label,
-  Row,
+  Row
 } from 'reactstrap';
 import { func } from 'prop-types';
 
@@ -28,38 +29,40 @@ import { func } from 'prop-types';
 //     [e.target.name]: e.target.value,
 //   });
 // };
- 
 
-
-function radioCheck(radio_id) {
-  var radioGroup= document.getElementsByName(radio_id);
-  var radio_value;
-  for(var i = 0; i < radioGroup.length; i++){
-    if(radioGroup[i].checked){
-        radio_value = radioGroup[i].value;
-    }
- }
-}
-
-
-//return radio_value;
 
 const Forms = () => {
-  const [radio,setRadio] = useState("");
 
-  function checkRadio(event) {
-    event.preventDefault()
-    const radioGroup= document.getElementsById("form1").elements;
-    //console.log(radioGroup[0].childNodes[0].value)
-    let radio_value;
-    for(var i = 0; i < radioGroup.length; i++){
-      if(radioGroup[i].checked){
-          radio_value = radioGroup[i].value;
-          console.log(radio_value)
-      }
-    }
-    
+  const history = useHistory()
+
+  const [selectedOption1, setSelectedOption1] = useState(null)
+  const [selectedOption2, setSelectedOption2] = useState(null)
+
+  const onValueChange1 = (event) => {
+    setSelectedOption1(event.target.value)
+    console.log(selectedOption1) 
   }
+  const onValueChange2 = (event) => {
+    setSelectedOption2(event.target.value)
+    console.log(selectedOption2) 
+  }
+
+  
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    const selectedGroup = {
+      ...selectedOption1,
+      ...selectedOption2
+    }
+    localStorage.setItem("p1",JSON.stringify(selectedGroup))
+    history.push("/base/form2")
+
+  }
+  //const [data, setData] = useState(null);
+  //renderCount++;
+
+
+  
     return (
       <div className="animated fadeIn">
         <Row style={{justifyContent: 'center'}}>
@@ -97,78 +100,79 @@ const Forms = () => {
                 <h1>Revisión de estructura TI</h1> 
               </CardHeader>
               <CardBody>
-                <Form  submit = {radioCheck}  encType="multipart/form-data" className="form-horizontal">
+                <Form onSubmit = {handleSubmit}  encType="multipart/form-data" className="form-horizontal">
                   <FormGroup >
                     <p>En este espacio se estará explicando de forma detallada el proceso que se estará evaluando. 
                     Teniendo en cuenta la previa observación de la sección "Criterios" donde se conocerán los criterios de evaluación para cada área.</p>
                   </FormGroup>
-                  <FormGroup>
+                  <FormGroup onChange = {onValueChange1}>
                     <Card className= "card-accent-primary" >
                       <CardBody>
                         <Row>
                           <h5 style={{color:'#43425D'}}> 1. Considera usted que Cristian Yepes es hermoso?</h5>
-                        </Row>               
-                        <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios1" value="0"  />
+                        </Row> 
+                        <FormGroup  check className="radio">
+                          <Input checked={selectedOption1 ==="0"} className="form-check-input" type="radio" id="radio0" name="radios1" value= "0"  />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios1" value="1" />
+                          <Input checked={selectedOption1 ==="1"} className="form-check-input" type="radio" id="radio1" name="radios1" value="1" />
                           <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios1" value="2" />
+                          <Input checked={selectedOption1 ==="2"} className="form-check-input" type="radio" id="radio2" name="radios1" value="2" />
                           <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios1" value="3" />
+                          <Input checked={selectedOption1 ==="3"} className="form-check-input" type="radio" id="radio3" name="radios1" value="3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios1" value="4" />
+                          <Input checked={selectedOption1 ==="4"} className="form-check-input" type="radio" id="radio4" name="radios1" value="4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios1" value="5" />
+                          <Input checked={selectedOption1 ==="5"} className="form-check-input" type="radio" id="radio5" name="radios1" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
                         </FormGroup> 
                       </CardBody>
                     </Card>
                   </FormGroup>
 
-                  <FormGroup>
-                    <Card className= "card-accent-primary">
+                  <FormGroup onChange = {onValueChange2}>
+                    <Card className= "card-accent-primary" >
                       <CardBody>
                         <Row>
-                        <h5 style={{color:'#43425D'}}>2. Pregunta 2</h5>
-                        </Row>           
-                        <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios2" value="0" />
+                          <h5 style={{color:'#43425D'}}> 2. Considera usted que Cristian Yepes es hermoso?</h5>
+                        </Row> 
+                        <FormGroup  check className="radio">
+                          <Input checked={selectedOption2 ==="0"} className="form-check-input" type="radio" id="radio0" name="radios2" value= "0"  />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
-                        </FormGroup>                  
+                        </FormGroup>                
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio1" name="radios2" value="1" />
+                          <Input checked={selectedOption2 ==="1"} className="form-check-input" type="radio" id="radio1" name="radios2" value="1" />
                           <Label check className="form-check-label" htmlFor="radio1">Option 1</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio2" name="radios2" value="2" />
+                          <Input checked={selectedOption2 ==="2"} className="form-check-input" type="radio" id="radio2" name="radios2" value="2" />
                           <Label check className="form-check-label" htmlFor="radio2">Option 2</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio3" name="radios2" value="3" />
+                          <Input checked={selectedOption2 ==="3"} className="form-check-input" type="radio" id="radio3" name="radios2" value="3" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 3</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio4" name="radios2" value="4" />
+                          <Input checked={selectedOption2 ==="4"} className="form-check-input" type="radio" id="radio4" name="radios2" value="4" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 4</Label>
                         </FormGroup>
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios2" value="5" />
+                          <Input checked={selectedOption2 ==="5"} className="form-check-input" type="radio" id="radio5" name="radios1" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
-                        </FormGroup>     
+                        </FormGroup> 
                       </CardBody>
                     </Card>
                   </FormGroup>
+
                   <FormGroup>
                     <Card className= "card-accent-primary">
                       <CardBody>
@@ -429,11 +433,7 @@ const Forms = () => {
                         <FormGroup check className="radio">
                           <Input className="form-check-input" type="radio" id="radio5" name="radios10" value="5" />
                           <Label check className="form-check-label" htmlFor="radio3">Option 5</Label>
-                        </FormGroup> 
-                        <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio5" name="radios" value="5" />
-                          <Label check className="form-check-label" htmlFor="radio3">Option 6</Label>
-                        </FormGroup>     
+                        </FormGroup>      
                       </CardBody>
                     </Card>
                   </FormGroup>
@@ -539,10 +539,8 @@ const Forms = () => {
               </CardFooter>
             </Card>
           </Col>
-        </Row>
-      
+        </Row> 
       </div>
-      
     );
 }
 

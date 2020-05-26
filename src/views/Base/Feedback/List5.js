@@ -2,26 +2,8 @@ import React, { Component } from 'react';
 import { Card, CardBody, CardHeader, Col, ListGroup, ListGroupItem, Row, TabContent, TabPane, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-class List5 extends Component {
-
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      activeTab: 1
-    };
-  }
-
-  toggle(tab) {
-    if (this.state.activeTab !== tab) {
-      this.setState({
-        activeTab: tab
-      });
-    }
-  }
-
-  render() {
+const List5 = () => {
+  
     return (
       <div className="animated fadeIn">
         <Row>
@@ -102,7 +84,7 @@ class List5 extends Component {
         </Row>
       </div>
     );
-  }
+  
 }
 
 export default List5;
