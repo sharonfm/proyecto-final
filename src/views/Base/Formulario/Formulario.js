@@ -112,7 +112,7 @@ const Forms = () => {
                           <h5 style={{color:'#43425D'}}> 1. Considera usted que Cristian Yepes es hermoso?</h5>
                         </Row> 
                         <FormGroup  check className="radio">
-                          <Input checked={selectedOption1 ==="0"} className="form-check-input" type="radio" id="radio0" name="radios1" value= "0"  />
+                          <Input checked={selectedOption1 ==="0"} className="form-check-input" type="radio" id="radio0" name="radios1" value= "0" required />
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                
                         <FormGroup check className="radio">
@@ -146,7 +146,7 @@ const Forms = () => {
                           <h5 style={{color:'#43425D'}}> 2. Considera usted que Cristian Yepes es hermoso?</h5>
                         </Row> 
                         <FormGroup  check className="radio">
-                          <Input checked={selectedOption2 ==="0"} className="form-check-input" type="radio" id="radio0" name="radios2" value= "0"  />
+                          <Input checked={selectedOption2 ==="0"} className="form-check-input" type="radio" id="radio0" name="radios2" value= "0" required/>
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                
                         <FormGroup check className="radio">
@@ -180,7 +180,7 @@ const Forms = () => {
                         <h5 style={{color:'#43425D'}}>3. Pregunta 3</h5>
                         </Row>         
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios3" value="0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios3" value="0" required/>
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                    
                         <FormGroup check className="radio">
@@ -213,7 +213,7 @@ const Forms = () => {
                         <h5 style={{color:'#43425D'}}>4. Pregunta 4</h5>
                         </Row>    
                         <FormGroup check className="radio">
-                          <Input className="form-check-input" type="radio" id="radio0" name="radios4" value="0" />
+                          <Input className="form-check-input" type="radio" id="radio0" name="radios4" value="0" required/>
                           <Label check className="form-check-label" htmlFor="radio3">Option 0</Label>
                         </FormGroup>                         
                         <FormGroup check className="radio">
