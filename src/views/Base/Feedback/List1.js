@@ -9,7 +9,7 @@ const List1 = () => {
 
   const [activeTab, setActiveTab] = useState(1)
   
-  
+
     return (
       <div className="animated fadeIn">
         <Row>

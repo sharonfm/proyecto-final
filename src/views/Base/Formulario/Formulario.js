@@ -65,10 +65,9 @@ const Forms = () => {
     const tempAnswers = Object.assign({}, answers);
     tempAnswers[index] = event.target.value;   
     setAnswers(tempAnswers);
-      
+    console.log(tempAnswers)
   }
   
-
   const handleSubmit = (event) => {
     event.preventDefault()
     

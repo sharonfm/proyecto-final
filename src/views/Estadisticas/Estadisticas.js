@@ -17,201 +17,16 @@ import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 
 
 
-// Card Chart 1 (Contiene cardChartData1 y cardChartOpts1)
-const cardChartData1 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
-  datasets: [
-    {
-      label: 'Resultado',
-      backgroundColor: '#3b6978',
-      borderColor: '#F2F2F2',
-      data: [30, 10, 15, 22, 23],
-    },
-  ],
-};
-
-
-
-const cardChartOpts1 = {
-  tooltips: {
-    enabled: false,
-    custom: CustomTooltips
-  },
-  maintainAspectRatio: false,
-  legend: {
-    display: false,
-  },
-  scales: {
-    xAxes: [
-      {
-        gridLines: {
-          color: 'transparent',
-          zeroLineColor: 'transparent',
-        },
-        ticks: {
-          fontSize: 2,
-          fontColor: 'transparent',
-        },
-
-      }],
-    yAxes: [
-      {
-        display: false,
-        ticks: {
-          display: false,
-          min: Math.min.apply(Math, cardChartData1.datasets[0].data) - 5,
-          max: Math.max.apply(Math, cardChartData1.datasets[0].data) + 5,
-        },
-      }],
-  },
-  elements: {
-    line: {
-      borderWidth: 1,
-    },
-    point: {
-      radius: 4,
-      hitRadius: 10,
-      hoverRadius: 4,
-    },
-  }
-}
-
-
-// Card Chart 2 (Contiene cardChartData2 y cardChartOpts2)
-const cardChartData2 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
-  datasets: [
-    {
-      label: 'Resultado',
-      backgroundColor: '#43425D',
-      borderColor: '#F2F2F2',
-      data: [30, 10, 15, 22, 23],
-    },
-  ],
-};
-
-const cardChartOpts2 = {
-  tooltips: {
-    enabled: false,
-    custom: CustomTooltips
-  },
-  maintainAspectRatio: false,
-  legend: {
-    display: false,
-  },
-  scales: {
-    xAxes: [
-      {
-        gridLines: {
-          color: 'transparent',
-          zeroLineColor: 'transparent',
-        },
-        ticks: {
-          fontSize: 2,
-          fontColor: 'transparent',
-        },
-
-      }],
-    yAxes: [
-      {
-        display: false,
-        ticks: {
-          display: false,
-          min: Math.min.apply(Math, cardChartData2.datasets[0].data) - 5,
-          max: Math.max.apply(Math, cardChartData2.datasets[0].data) + 5,
-        },
-      }],
-  },
-  elements: {
-    line: {
-      tension: 0.00001,
-      borderWidth: 1,
-    },
-    point: {
-      radius: 4,
-      hitRadius: 10,
-      hoverRadius: 4,
-    },
-  },
-};
-
-const pie = {
-  labels: [
-    'P1',
-    'P2',
-    'P3',
-    'P4',
-    'P5',
-  ],
-  datasets: [
-    {
-      data: [30, 10, 15, 22, 23],
-      backgroundColor: [
-        '#43425D',
-        '#413c69',
-        '#3b6978',
-        '#ad62aa',
-        '#eab9c9',
-      ],
-    }],
-};
-const pie2 = {
-  labels: [
-    'P1',
-    'P2',
-    'P3',
-    'P4',
-    'P5',
-  ],
-  datasets: [
-    {
-      data: [30, 10, 15, 22, 23],
-      backgroundColor: [
-        '#21243d',
-        '#512b58',
-        '#b80d57',
-        '#ea9085',
-        '#ffa372',
-      ],
-    }],
-};
-
-const radar = {
-  labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
-  datasets: [
-    {
-      label: 'My First dataset',
-      //backgroundColor: '#43425D',
-      borderColor: '#43425D',
-      pointBackgroundColor: '#43425D',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: '#43425D',
-      data: [5, 2, 3, 5, 3, 4, 1],
-    },
-    
-  ],
-};
-const radar2 = {
-  labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
-  datasets: [
-      {
-      label: 'My First dataset',
-      backgroundColor: 'rgba(255,99,132,0.2)',
-      borderColor: 'rgba(255,99,132,1)',
-      pointBackgroundColor: 'rgba(255,99,132,1)',
-      pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(255,99,132,1)',
-      data: [1, 4, 5, 3, 4, 4, 5],
-    },
-  ],
-};
-
 
 const Estadisticas= () => {
 
-  const [answers,setAnswers] = useState([])
+  const [answers1,setAnswers1] = useState([])
+  const [answers2,setAnswers2] = useState([])
+  const [answers3,setAnswers3] = useState([])
+  const [answers4,setAnswers4] = useState([])
+  const [answers5,setAnswers5] = useState([])
+
+
   const [dropdownOpen,setDropDownOpen] = useState(false)
   const [radioSelected,setRadioSelected] = useState(2)
   const toggle = () => {setDropDownOpen((previousState)=>!previousState)}
@@ -219,27 +34,34 @@ const Estadisticas= () => {
 
   const loading = () => <div className="animated fadeIn pt-1 text-center">Loading...</div>
 
-
-  
   React.useEffect(()=>{
-    setAnswers(JSON.parse(localStorage.getItem("p1")))
+    setAnswers1(JSON.parse(localStorage.getItem("p1")))
+    setAnswers2(JSON.parse(localStorage.getItem("p2")))
+    setAnswers3(JSON.parse(localStorage.getItem("p3")))
+    setAnswers4(JSON.parse(localStorage.getItem("p4")))
+    setAnswers5(JSON.parse(localStorage.getItem("p5")))
+
     console.log(JSON.parse(localStorage.getItem("p1")))
+    console.log(JSON.parse(localStorage.getItem("p2")))
+    console.log(JSON.parse(localStorage.getItem("p3")))
+    console.log(JSON.parse(localStorage.getItem("p4")))
+    console.log(JSON.parse(localStorage.getItem("p5")))
   },[])
 
-  // Card Chart 1 (Contiene cardChartData1 y cardChartOpts1)
+
+
+  // Card Chart form 1
 const cardChartData1 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
+  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5', 'Pregunta 6', 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12'],
   datasets: [
     {
       label: 'Resultado',
-      backgroundColor: '#3b6978',
+      backgroundColor: '#43425D',
       borderColor: '#F2F2F2',
-      data: [30, 10, 15, 22, 23],
+      data:  Object.values(answers1),
     },
   ],
 };
-
-
 
 const cardChartOpts1 = {
   tooltips: {
@@ -292,9 +114,9 @@ const cardChartData2 = {
   datasets: [
     {
       label: 'Resultado',
-      backgroundColor: '#43425D',
+      backgroundColor: '#3b6978',
       borderColor: '#F2F2F2',
-      data: Object.values(answers),
+      data: Object.values(answers2),
     },
   ],
 };
@@ -342,6 +164,42 @@ const cardChartOpts2 = {
       hoverRadius: 4,
     },
   },
+};
+
+const cardChartData3 = {
+  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5', 'Pregunta 6', 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12'],
+  datasets: [
+    {
+      label: 'Resultado',
+      backgroundColor: '#43425D',
+      borderColor: '#F2F2F2',
+      data:  Object.values(answers3),
+    },
+  ],
+};
+
+const cardChartData4 = {
+  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5', 'Pregunta 6', 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12'],
+  datasets: [
+    {
+      label: 'Resultado',
+      backgroundColor: '#3b6978',
+      borderColor: '#F2F2F2',
+      data: Object.values(answers4),
+    },
+  ],
+};
+
+const cardChartData5 = {
+  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5', 'Pregunta 6', 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12'],
+  datasets: [
+    {
+      label: 'Resultado',
+      backgroundColor: '#43425D',
+      borderColor: '#F2F2F2',
+      data:  Object.values(answers5),
+    },
+  ],
 };
 
 const pie = {
@@ -428,21 +286,11 @@ const radar2 = {
                 <CardGroup>
                   <Card className="text-white" style={{backgroundColor:'#43425D'}}>
                     <CardBody className="pb-0">
-                      {/* <ButtonGroup className="float-right">
-                        <ButtonDropdown id='card1' isOpen={this.state.card1} toggle={() => { this.setState({ card1: !this.state.card1 }); }}>
-                          <DropdownToggle caret className="p-0" color="transparent">
-                            <i className="icon-info"></i>
-                          </DropdownToggle>
-                          <DropdownMenu right>
-                          <DropdownItem>Click en algún punto de la gráfica para observar la calificación</DropdownItem>
-                          </DropdownMenu>
-                        </ButtonDropdown>
-                      </ButtonGroup> */}
                       <div className="text-value">#Valor (Calificación)</div>
                       <div>Área evaluada (APO, BAI, DSS o MEA)</div>
                     </CardBody>
                     <div className="chart-wrapper mx-3" style={{ height: '70px' }}>
-                      <Line data={cardChartData2} options={cardChartOpts2} height={70} />
+                      <Line data={cardChartData1} options={cardChartOpts1} height={70} />
                     </div>
                   </Card>
                   <Card>
@@ -462,21 +310,12 @@ const radar2 = {
                 <CardGroup>
                   <Card className="text-white " style={{backgroundColor:'#3b6978'}}>
                     <CardBody className="pb-0">
-                      {/* <ButtonGroup className="float-right">
-                        <ButtonDropdown id='card2' isOpen={this.state.card2} toggle={() => { this.setState({ card2: !this.state.card2 }); }}>
-                          <DropdownToggle caret className="p-0" color="transparent">
-                            <i className="icon-info"></i>
-                          </DropdownToggle>
-                          <DropdownMenu right>
-                            <DropdownItem>Haga click en un color para observar la calificación</DropdownItem>
-                          </DropdownMenu>
-                        </ButtonDropdown>
-                      </ButtonGroup> */}
+                     
                       <div className="text-value">#Valor (Calificación)</div>
                       <div>Área evaluada (APO, BAI, DSS o MEA)</div>
                     </CardBody>
                     <div className="chart-wrapper mx-3" style={{ height: '70px' }}>
-                      <Line data={cardChartData1} options={cardChartOpts1} height={70} />
+                      <Line data={cardChartData2} options={cardChartOpts2} height={70} />
                     </div>
                   </Card>
                   <Card>
@@ -496,21 +335,12 @@ const radar2 = {
                 <CardGroup>
                   <Card className="text-white" style={{backgroundColor:'#43425D'}}>
                     <CardBody className="pb-0">
-                      {/* <ButtonGroup className="float-right">
-                        <ButtonDropdown id='card1' isOpen={this.state.card1} toggle={() => { this.setState({ card1: !this.state.card1 }); }}>
-                          <DropdownToggle caret className="p-0" color="transparent">
-                            <i className="icon-info"></i>
-                          </DropdownToggle>
-                          <DropdownMenu right>
-                          <DropdownItem>Click en algún punto de la gráfica para observar la calificación</DropdownItem>
-                          </DropdownMenu>
-                        </ButtonDropdown>
-                      </ButtonGroup> */}
+                     
                       <div className="text-value">#Valor (Calificación)</div>
                       <div>Área evaluada (APO, BAI, DSS o MEA)</div>
                     </CardBody>
                     <div className="chart-wrapper mx-3" style={{ height: '70px' }}>
-                      <Line data={cardChartData2} options={cardChartOpts2} height={70} />
+                      <Line data={cardChartData3} options={cardChartOpts1} height={70} />
                     </div>
                   </Card>
                   <Card>
@@ -530,21 +360,12 @@ const radar2 = {
                 <CardGroup>
                   <Card className="text-white " style={{backgroundColor:'#3b6978'}}>
                     <CardBody className="pb-0">
-                      {/* <ButtonGroup className="float-right">
-                        <ButtonDropdown id='card2' isOpen={this.state.card2} toggle={() => { this.setState({ card2: !this.state.card2 }); }}>
-                          <DropdownToggle caret className="p-0" color="transparent">
-                            <i className="icon-info"></i>
-                          </DropdownToggle>
-                          <DropdownMenu right>
-                            <DropdownItem>Haga click en un color para observar la calificación</DropdownItem>
-                          </DropdownMenu>
-                        </ButtonDropdown>
-                      </ButtonGroup> */}
+                     
                       <div className="text-value">#Valor (Calificación)</div>
                       <div>Área evaluada (APO, BAI, DSS o MEA)</div>
                     </CardBody>
                     <div className="chart-wrapper mx-3" style={{ height: '70px' }}>
-                      <Line data={cardChartData1} options={cardChartOpts1} height={70} />
+                      <Line data={cardChartData4} options={cardChartOpts2} height={70} />
                     </div>
                   </Card>
                   <Card>
@@ -564,21 +385,12 @@ const radar2 = {
                 <CardGroup>
                   <Card className="text-white" style={{backgroundColor:'#43425D'}}>
                     <CardBody className="pb-0">
-                      {/* <ButtonGroup className="float-right"> 
-                        <ButtonDropdown id='card1' isOpen={this.state.card1} toggle={() => { this.setState({ card1: !this.state.card1 }); }}>
-                          <DropdownToggle caret className="p-0" color="transparent">
-                            <i className="icon-info"></i>
-                          </DropdownToggle>
-                          <DropdownMenu right>
-                          <DropdownItem>Click en algún punto de la gráfica para observar la calificación</DropdownItem>
-                          </DropdownMenu>
-                        </ButtonDropdown>
-                      </ButtonGroup> */}
+                     
                       <div className="text-value">#Valor (Calificación)</div>
                       <div>Área evaluada (APO, BAI, DSS o MEA)</div>
                     </CardBody>
                     <div className="chart-wrapper mx-3" style={{ height: '70px' }}>
-                      <Line data={cardChartData2} options={cardChartOpts2} height={70} />
+                      <Line data={cardChartData5} options={cardChartOpts1} height={70} />
                     </div>
                   </Card>
                   <Card>

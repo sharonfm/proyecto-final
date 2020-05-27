@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Card, CardBody, CardHeader, Col, ListGroup, ListGroupItem,  Row, TabContent, TabPane, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const List2 = () => {
+
+  const [activeTab, setActiveTab] = useState(1)
 
     return (
       <div className="animated fadeIn">
@@ -16,17 +18,18 @@ const List2 = () => {
                 <Row>
                   <Col xs="12" md="4">
                     <ListGroup id="list-tab" role="tablist">
-                      <ListGroupItem onClick={() => this.toggle(1)} action active={this.state.activeTab === 1} >Uno</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(2)} action active={this.state.activeTab === 2} >Dos</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(3)} action active={this.state.activeTab === 3} >Tres</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(4)} action active={this.state.activeTab === 4} >Cuatro</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(5)} action active={this.state.activeTab === 5} >Cinco</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(6)} action active={this.state.activeTab === 6} >Seis</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(7)} action active={this.state.activeTab === 7} >Siete</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(1)} action active={activeTab === 1} >Uno</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(2)} action active={activeTab === 2} >Dos</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(3)} action active={activeTab === 3} >Tres</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(4)} action active={activeTab === 4} >Cuatro</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(5)} action active={activeTab === 5} >Cinco</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(6)} action active={activeTab === 6} >Seis</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(7)} action active={activeTab === 7} >Siete</ListGroupItem>
+
                     </ListGroup>
                   </Col>
                   <Col  xs="12" md="8">
-                    <TabContent activeTab={this.state.activeTab}>
+                    <TabContent activeTab={activeTab}>
                       <TabPane tabId={1}>
                         <p>Para este tipo de dominio(APO) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
                            de esta área entregada por usted como usuario nos permitimos darle retroalimentación y del paso a seguir en este proceso:
@@ -69,17 +72,18 @@ const List2 = () => {
                 <Row>
                   <Col xs="12" md="4">
                     <ListGroup id="list-tab" role="tablist">
-                      <ListGroupItem onClick={() => this.toggle(8)} action active={this.state.activeTab === 8} >Ocho</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(9)} action active={this.state.activeTab === 9} >Nueve</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(10)} action active={this.state.activeTab === 10} >Diez</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(11)} action active={this.state.activeTab === 11} >Once</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(12)} action active={this.state.activeTab === 12} >Doce</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(13)} action active={this.state.activeTab === 13} >Trece</ListGroupItem>
-                      <ListGroupItem onClick={() => this.toggle(14)} action active={this.state.activeTab === 14} >Catorce</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(8)} action active={activeTab === 8} >Ocho</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(9)} action active={activeTab === 9} >Nueve</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(10)} action active={activeTab === 10} >Diez</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(11)} action active={activeTab === 11} >Once</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(12)} action active={activeTab === 12} >Doce</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(13)} action active={activeTab === 13} >Trece</ListGroupItem>
+                      <ListGroupItem onClick={() => setActiveTab(14)} action active={activeTab === 14} >Catorce</ListGroupItem>
+
                     </ListGroup>
                   </Col>
                   <Col xs="12" md="8">
-                    <TabContent activeTab={this.state.activeTab}>
+                    <TabContent activeTab={activeTab}>
                       <TabPane tabId={8}>
                         <p>Para este tipo de dominio(APO) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
                            de esta área entregada por usted como usuario nos permitimos darle retroalimentación y del paso a seguir en este proceso:
