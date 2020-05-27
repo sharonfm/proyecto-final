@@ -49,94 +49,8 @@ const Estadisticas= () => {
   },[])
 
 
-  const cardChartOpts1 = {
-    tooltips: {
-      enabled: false,
-      custom: CustomTooltips
-    },
-    maintainAspectRatio: false,
-    legend: {
-      display: false,
-    },
-    scales: {
-      xAxes: [
-        {
-          gridLines: {
-            color: 'transparent',
-            zeroLineColor: 'transparent',
-          },
-          ticks: {
-            fontSize: 2,
-            fontColor: 'transparent',
-          },
-  
-        }],
-      yAxes: [
-        {
-          display: false,
-          ticks: {
-            display: false,
-            min: Math.min.apply(Math, cardChartData1.datasets[0].data) - 5,
-            max: Math.max.apply(Math, cardChartData1.datasets[0].data) + 5,
-          },
-        }],
-    },
-    elements: {
-      line: {
-        borderWidth: 1,
-      },
-      point: {
-        radius: 4,
-        hitRadius: 10,
-        hoverRadius: 4,
-      },
-    }
-  }
-  const cardChartOpts2 = {
-    tooltips: {
-      enabled: false,
-      custom: CustomTooltips
-    },
-    maintainAspectRatio: false,
-    legend: {
-      display: false,
-    },
-    scales: {
-      xAxes: [
-        {
-          gridLines: {
-            color: 'transparent',
-            zeroLineColor: 'transparent',
-          },
-          ticks: {
-            fontSize: 2,
-            fontColor: 'transparent',
-          },
-  
-        }],
-      yAxes: [
-        {
-          display: false,
-          ticks: {
-            display: false,
-            min: Math.min.apply(Math, cardChartData2.datasets[0].data) - 5,
-            max: Math.max.apply(Math, cardChartData2.datasets[0].data) + 5,
-          },
-        }],
-    },
-    elements: {
-      line: {
-        tension: 0.00001,
-        borderWidth: 1,
-      },
-      point: {
-        radius: 4,
-        hitRadius: 10,
-        hoverRadius: 4,
-      },
-    },
-  };
 
+  // Card Chart form 1
 const cardChartData1 = {
   labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'/* , 'Pregunta 6', 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12' */],
   datasets: [
@@ -149,6 +63,52 @@ const cardChartData1 = {
   ],
 };
 
+const cardChartOpts1 = {
+  tooltips: {
+    enabled: false,
+    custom: CustomTooltips
+  },
+  maintainAspectRatio: false,
+  legend: {
+    display: false,
+  },
+  scales: {
+    xAxes: [
+      {
+        gridLines: {
+          color: 'transparent',
+          zeroLineColor: 'transparent',
+        },
+        ticks: {
+          fontSize: 2,
+          fontColor: 'transparent',
+        },
+
+      }],
+    yAxes: [
+      {
+        display: false,
+        ticks: {
+          display: false,
+          min: Math.min.apply(Math, cardChartData1.datasets[0].data) - 5,
+          max: Math.max.apply(Math, cardChartData1.datasets[0].data) + 5,
+        },
+      }],
+  },
+  elements: {
+    line: {
+      borderWidth: 1,
+    },
+    point: {
+      radius: 4,
+      hitRadius: 10,
+      hoverRadius: 4,
+    },
+  }
+}
+
+
+// Card Chart 2 (Contiene cardChartData2 y cardChartOpts2)
 const cardChartData2 = {
   labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'/* , 'Pregunta 6', 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12' */],
   datasets: [
@@ -161,8 +121,53 @@ const cardChartData2 = {
   ],
 };
 
+const cardChartOpts2 = {
+  tooltips: {
+    enabled: false,
+    custom: CustomTooltips
+  },
+  maintainAspectRatio: false,
+  legend: {
+    display: false,
+  },
+  scales: {
+    xAxes: [
+      {
+        gridLines: {
+          color: 'transparent',
+          zeroLineColor: 'transparent',
+        },
+        ticks: {
+          fontSize: 2,
+          fontColor: 'transparent',
+        },
+
+      }],
+    yAxes: [
+      {
+        display: false,
+        ticks: {
+          display: false,
+          min: Math.min.apply(Math, cardChartData2.datasets[0].data) - 5,
+          max: Math.max.apply(Math, cardChartData2.datasets[0].data) + 5,
+        },
+      }],
+  },
+  elements: {
+    line: {
+      tension: 0.00001,
+      borderWidth: 1,
+    },
+    point: {
+      radius: 4,
+      hitRadius: 10,
+      hoverRadius: 4,
+    },
+  },
+};
+
 const cardChartData3 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'/* , 'Pregunta 6', 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12' */],
+  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'/*, 'Pregunta 6' , 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12' */],
   datasets: [
     {
       label: 'Resultado',
@@ -174,7 +179,7 @@ const cardChartData3 = {
 };
 
 const cardChartData4 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'/* , 'Pregunta 6', 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12' */],
+  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'/* ,'Pregunta 6', 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12' */],
   datasets: [
     {
       label: 'Resultado',
@@ -198,8 +203,9 @@ const cardChartData5 = {
 };
 
 
+
 const radar = {
-  labels: ['Eating', 'Drinking', 'Sleeping', 'Designing'],
+  labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
   datasets: [
     {
       label: 'My First dataset',
@@ -215,7 +221,7 @@ const radar = {
   ],
 };
 const radar2 = {
-  labels: ['Eating', 'Drinking', 'Sleeping', 'Designing'],
+  labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
   datasets: [
       {
       label: 'My First dataset',
