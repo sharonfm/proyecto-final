@@ -18,29 +18,42 @@ import {
 } from 'reactstrap';
 
 const Forms2 = () => {
-
+  //Preguntas de APO
   const [questionGroup] = useState([
-    "1. Pregunta",
-    "2. Pregunta",
-    "3. Pregunta",
-    "4. Pregunta",
-    "5. Pregunta",
-    "6. Pregunta",
+    "1. Califique el conocimiento de la visión, dirección y estrategia empresarial, así como el contexto empresarial actual y sus desafíos.",
+    "2. ¿En que grado se encuentra la comprobación regular de la adecuación y eficacia de las estructuras organizativas?",
+    "3. ¿Que porcentaje se aplica prácticas de gestión de la calidad para actualizar el proceso?",
+    "4. ¿Que porcentaje de entendimiento cumplen las metas y objetivos estratégicos empresariales actuales? Teniendo en cuenta el proceso de planificación estratégico que garantiza que se aprovechen las oportunidades de la arquitectura empresarial de TI para el desarrollo del plan estratégico.",
+    "5. Indique el grado de manutención de un repositorio  de arquitectura que contiene estándares, componentes reutilizables, artefactos de modelado, relaciones, dependencias y visualizaciones que permiten la uniformidad de la organización y el mantenimiento de la arquitectura.",
+ /* "6. Califique la identificación de las prioridades de la arquitectura empresarial. Teniendo en cuenta la alineación de las prioridades con los factores que proporcionan valor, definir y recopilar métricas de valor y la medición y comunicación del valor de la arquitectura empresarial.",
     "7. Pregunta",
     "8. Pregunta",
     "9. Pregunta",
     "10. Pregunta",
     "11. Pregunta",
     "12. Pregunta",
+    "13. Pregunta",
+    "14. Pregunta",
+    "15. Pregunta",
+    "16. Pregunta",
+    "17. Pregunta",
+    "18. Pregunta", 
+    "19. Pregunta",
+    "20. Pregunta",
+    "21. Pregunta",
+    "22. Pregunta",
+    "23. Pregunta",
+    "24. Pregunta",
+    "25. Pregunta",
+    "26. Pregunta",
+    "27. Pregunta",*/
+
   ])
   const [optionsGroup] = useState([
-    "Opción 0",
-    "Opción 1",
-    "Opción 2",
-    "Opción 3",
-    "Opción 4",
-    "Opción 5",
-
+    "NO: (Menos del 15%)",
+    "PARCIALMENTE (Entre el 15% y el 50%)",
+    "LARGAMENTE (Entre el 50% y el 85%)",
+    "COMPLETAMENTE (Más del 85%)",
   ])
 
   const [answers, setAnswers] = useState([])
@@ -97,7 +110,8 @@ const Forms2 = () => {
                   </Link>
                 </Pagination>
               </Row>
-              <h1>Revisión de estructura TI</h1>
+              <h1>Revisión de estructura TI </h1>
+              <h1>Componentes del dominio "APO"</h1>
             </CardHeader>
             <CardBody>
               <Form onSubmit={handleSubmit} encType="multipart/form-data" className="form-horizontal">

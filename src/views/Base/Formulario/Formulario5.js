@@ -18,29 +18,26 @@ import {
 } from 'reactstrap';
 
 const Forms5 = () => {
-
+  //Preguntas de MEA
   const [questionGroup] = useState([
-    "1. Pregunta",
-    "2. Pregunta",
-    "3. Pregunta",
-    "4. Pregunta",
-    "5. Pregunta",
-    "6. Pregunta",
+    "1. Califique si se colabora con las partes interesadas y comunica los requisitos y objetivos empresariales de supervisión, recopilación y reporte por medio del uso de definiciones comunes.",
+    "2. Identifique si se analiza la causa de las desviaciones con respecto a los objetivos, inicia medidas correctivas, asigna responsabilidades para su corrección y hace seguimiento. Luego califique:",
+    "3. Verifique el porcentaje de persistencia al momento de aplicar la revisión de las respuestas, opciones y recomendaciones de la dirección para abordar problemas y desviaciones importantes.",
+    "4. Indique el grado de realización de actividades de supervisión y evaluación del control interno basadas en estándares de gobierno de la organización y marcos y prácticas aceptados por la industria.",
+    "5. Verifique el grado de conservación de evidencias de la eficacia del control.",
+/*  "6. Pregunta",
     "7. Pregunta",
     "8. Pregunta",
     "9. Pregunta",
     "10. Pregunta",
     "11. Pregunta",
-    "12. Pregunta",
+    "12. Pregunta", */
   ])
   const [optionsGroup] = useState([
-    "Opción 0",
-    "Opción 1",
-    "Opción 2",
-    "Opción 3",
-    "Opción 4",
-    "Opción 5",
-
+    "NO: (Menos del 15%)",
+    "PARCIALMENTE (Entre el 15% y el 50%)",
+    "LARGAMENTE (Entre el 50% y el 85%)",
+    "COMPLETAMENTE (Más del 85%)",
   ])
 
   const [answers, setAnswers] = useState([])
@@ -95,7 +92,8 @@ const Forms5 = () => {
                   <PaginationItem disabled><PaginationLink style={{ color: '#43425D' }} next></PaginationLink></PaginationItem>
                 </Pagination>
               </Row>
-              <h1>Revisión de estructura TI</h1>
+              <h1>Revisión de estructura TI </h1>
+              <h1>Componentes del dominio "MEA"</h1>
             </CardHeader>
             <CardBody>
               <Form onSubmit={handleSubmit} encType="multipart/form-data" className="form-horizontal">

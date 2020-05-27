@@ -18,29 +18,23 @@ import {
 } from 'reactstrap';
 
 const Forms4 = () => {
-
+  //Preguntas de DSS
   const [questionGroup] = useState([
-    "1. Pregunta",
-    "2. Pregunta",
-    "3. Pregunta",
-    "4. Pregunta",
-    "5. Pregunta",
-    "6. Pregunta",
-    "7. Pregunta",
-    "8. Pregunta",
-    "9. Pregunta",
-    "10. Pregunta",
-    "11. Pregunta",
-    "12. Pregunta",
+    "1. Califique el desarrolla y mantenimiento de los procedimientos operativos y de las actividades relacionadas para respaldar todos los servicios prestados.",
+    "2. Porcentaje de identificación y mantenimiento de una lista de activos de infraestructura que deben monitorizarse conforme a la criticidad del servicio y la relación entre los elementos de configuración y servicios que dependen de ellos.",
+    "3. Calificación de registro, monitorización, gestión y resolución de incidentes en las instalaciones en línea con el proceso de gestión de incidentes de TI. Poniendo a disposición informes sobre incidentes en las instalaciones que la legislación y las regulaciones obligan a hacer públicos.",
+    "4. Defina el grado de definición de esquemas de priorización y clasificación de solicitudes de servicios e incidentes, y los criterios para el registro de problemas. ",
+    "5. Cumplimiento de que la selección y aplicación de las resoluciones de incidentes se implementan de manera adecuada (Workaround o solución permanente).",
+ /* "6. Califique el uso de la información como un insumo a la planificación de la mejora continua.",
+    "7. Indique la calificación en cuanto a la instalación y activación de herramientas de protección en contra de software maliciosos en todas las instalaciones de procesamiento, con archivos de definición de software malicioso que se actualizan según sea necesario.",
+    "8. Califique si se llevan a cabo pruebas de penetración periódicas para determinar la idoneidad de la protección de la red.",
+    "9. Grado de calificación teniendo en cuenta si se encripta la información almacenada de acuerdo a la clasificación de los datos.",*/
   ])
   const [optionsGroup] = useState([
-    "Opción 0",
-    "Opción 1",
-    "Opción 2",
-    "Opción 3",
-    "Opción 4",
-    "Opción 5",
-
+    "NO: (Menos del 15%)",
+    "PARCIALMENTE (Entre el 15% y el 50%)",
+    "LARGAMENTE (Entre el 50% y el 85%)",
+    "COMPLETAMENTE (Más del 85%)",
   ])
 
   const [answers, setAnswers] = useState([])
@@ -97,7 +91,8 @@ const Forms4 = () => {
                   </Link>
                 </Pagination>
               </Row>
-              <h1>Revisión de estructura TI</h1>
+              <h1>Revisión de estructura TI </h1>
+              <h1>Componentes del dominio "DSS"</h1>
             </CardHeader>
             <CardBody>
               <Form onSubmit={handleSubmit} encType="multipart/form-data" className="form-horizontal">

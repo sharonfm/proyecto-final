@@ -32,29 +32,27 @@ import { func } from 'prop-types';
 
 
 const Forms = () => {
-
+  //Preguntas de EDM
   const [questionGroup] = useState([
-    "1. Pregunta",
-    "2. Pregunta",
-    "3. Pregunta",
-    "4. Pregunta",
-    "5. Pregunta",
-    "6. Pregunta",
-    "7. Pregunta",
-    "8. Pregunta",
-    "9. Pregunta",
-    "10. Pregunta",
-    "11. Pregunta",
-    "12. Pregunta",
+    "1. ¿Cómo cree usted que se encuentran completados porcentualmente los principios para el gobierno y la toma de decisiones TI y el número de altos ejecutivos empleados en este proceso?",
+    "2. ¿En qué grado se encuentran los principios de  gobierno de I&T en los procesos y prácticas?",
+    "3. Indique el nivel de satisfacción de la parte interesada (medido a partir de encuestas).",
+    "4. Indique el grado de conocimiento del contexto de su organización en cuanto al riesgo de TI.",
+    "5. ¿Qué porcentaje de proyectos de la empresa se consideran con riesgo de TI? ",
+/*  "6. Indique el nivel de satisfacción en el que se encuentra la monitorización de las metas y métricas de los procesos de gobierno y gestión de riesgos contra  los objetivos presentes.",
+    "7. ¿En que grado se encuentra la definición de los principios fundamentales de la asignación y gestión de recursos y capacidades (de manera que la TI pueda satisfacer las necesidades de la empresa conforme a las prioridades acordadas y los límites presupuestados?",
+    "8. Califique la adopción de estrategias de gestión de recursos, principios y del plan de recursos y arquitectura empresarial acordados.",
+    "9. Califique la monitoría del rendimiento de los recursos en relación a los objetivos, analizando la causa de las posibles desviaciones.",
+    "10. Indique el porcentaje en el que se encuentra la identificación de todas las partes interesadas de I&T relevantes dentro y fuera de la empresa. Agrupando a las partes interesadas en categorías de partes interesadas con requisitos similares.",
+    "11. Indique la satisfacción de las partes interesadas con la comunicación y elaboración de informes.",
+    "12. Indique el grado de evaluación que se realiza de forma periódica sobre la efectividad de los mecanismos para la participación y comunicación con partes interesadas internas y externas.", */
   ])
+  
   const [optionsGroup] = useState([
-    "Opción 0",
-    "Opción 1",
-    "Opción 2",
-    "Opción 3",
-    "Opción 4",
-    "Opción 5",
-
+    "NO: (Menos del 15%)",
+    "PARCIALMENTE (Entre el 15% y el 50%)",
+    "LARGAMENTE (Entre el 50% y el 85%)",
+    "COMPLETAMENTE (Más del 85%)",
   ])
 
   const [answers,setAnswers] = useState([])
@@ -111,7 +109,8 @@ const Forms = () => {
                   </Link>
                 </Pagination>
               </Row>
-              <h1>Revisión de estructura TI</h1>
+              <h1>Revisión de estructura TI </h1>
+              <h1>Componentes del dominio "EDM"</h1>
             </CardHeader>
             <CardBody>
               <Form onSubmit={handleSubmit} encType="multipart/form-data" className="form-horizontal">
