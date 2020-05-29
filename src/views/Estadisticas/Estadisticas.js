@@ -202,39 +202,86 @@ const cardChartData5 = {
   ],
 };
 
-
-
 const radar = {
-  labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
+  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
   datasets: [
     {
-      label: 'My First dataset',
+      label: 'EDM',
       //backgroundColor: '#43425D',
       borderColor: '#43425D',
       pointBackgroundColor: '#43425D',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
       pointHoverBorderColor: '#43425D',
-      data: [5, 2, 3, 5, 3, 4, 1],
+      data:  Object.values(answers1),
     },
     
   ],
 };
 const radar2 = {
-  labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
+  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
   datasets: [
       {
-      label: 'My First dataset',
+      label: 'APO',
       backgroundColor: 'rgba(255,99,132,0.2)',
       borderColor: 'rgba(255,99,132,1)',
       pointBackgroundColor: 'rgba(255,99,132,1)',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
       pointHoverBorderColor: 'rgba(255,99,132,1)',
-      data: [1, 4, 5, 3, 4, 4, 5],
+      data:Object.values(answers2),
     },
   ],
 };
+
+const radar3 = {
+  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
+  datasets: [
+    {
+      label: 'BAI',
+      //backgroundColor: '#43425D',
+      borderColor: '#43425D',
+      pointBackgroundColor: '#43425D',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: '#43425D',
+      data:  Object.values(answers3),
+    },
+    
+  ],
+};
+const radar4 = {
+  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
+  datasets: [
+      {
+      label: 'DSS',
+      backgroundColor: 'rgba(255,99,132,0.2)',
+      borderColor: 'rgba(255,99,132,1)',
+      pointBackgroundColor: 'rgba(255,99,132,1)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgba(255,99,132,1)',
+      data:Object.values(answers4),
+    },
+  ],
+};
+const radar5 = {
+  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
+  datasets: [
+    {
+      label: 'MEA',
+      //backgroundColor: '#43425D',
+      borderColor: '#43425D',
+      pointBackgroundColor: '#43425D',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: '#43425D',
+      data:  Object.values(answers5),
+    },
+    
+  ],
+};
+
     return (
       <div className="animated fadeIn">
         <Row style={{ justifyContent: 'center' }}>
@@ -311,7 +358,7 @@ const radar2 = {
                     </CardHeader>
                     <CardBody>
                       <div className="chart-wrapper">
-                        <Radar data={radar} />
+                        <Radar data={radar3} />
                       </div>
                     </CardBody>
                   </Card>
@@ -336,7 +383,7 @@ const radar2 = {
                     </CardHeader>
                     <CardBody>
                       <div className="chart-wrapper">
-                        <Radar data={radar2} />
+                        <Radar data={radar4} />
                       </div>
                     </CardBody>
                   </Card>
@@ -361,7 +408,7 @@ const radar2 = {
                     </CardHeader>
                     <CardBody>
                       <div className="chart-wrapper">
-                        <Radar data={radar} />
+                        <Radar data={radar5} />
                       </div>
                     </CardBody>
                   </Card> 
