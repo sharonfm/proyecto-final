@@ -52,7 +52,7 @@ const Estadisticas= () => {
 
   // Card Chart form 1
 const cardChartData1 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'/* , 'Pregunta 6', 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12' */],
+  labels: ['EDM01', 'EDM01', 'EDM01', 'EDM03', 'EDM03' , 'EDM03', 'EDM04', 'EDM04', 'EDM04', 'EDM05', 'EDM05', 'EDM05' ],
   datasets: [
     {
       label: 'Resultado',
@@ -203,7 +203,7 @@ const cardChartData5 = {
 };
 
 const radar = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
+  labels: ['', '', 'EDM01', '', 'EDM03' , '', '', '', 'EDM04', '', 'EDM05', ''],
   datasets: [
     {
       label: 'EDM',

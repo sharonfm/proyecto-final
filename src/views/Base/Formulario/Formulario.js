@@ -34,25 +34,27 @@ import { func } from 'prop-types';
 const Forms = () => {
   //Preguntas de EDM
   const [questionGroup] = useState([
-    "1. ¿Cómo cree usted que se encuentran completados porcentualmente los principios para el gobierno y la toma de decisiones TI y el número de altos ejecutivos empleados en este proceso?",
-    "2. ¿En qué grado se encuentran los principios de  gobierno de I&T en los procesos y prácticas?",
-    "3. Indique el nivel de satisfacción de la parte interesada (medido a partir de encuestas).",
-    "4. Indique el grado de conocimiento del contexto de su organización en cuanto al riesgo de TI.",
+    "1. Número de principios guía definidos para el gobierno y la toma de decisiones IT.",
+    "2. Número de altos ejecutivos implicados en establecer el rumbo del gobierno para el IT.",
+    "3. Porcentaje en el cual  los principios de gobierno de I&T acordados son evidentes en procesos y prácticas (porcentaje de procesos y prácticas que se atribuyen a los principios).",
+    "4. ¿Qué porcentaje de riesgo de I&T excede la tolerancia al riesgo de la empresa?",
     "5. ¿Qué porcentaje de proyectos de la empresa se consideran con riesgo de TI? ",
-/*  "6. Indique el nivel de satisfacción en el que se encuentra la monitorización de las metas y métricas de los procesos de gobierno y gestión de riesgos contra  los objetivos presentes.",
-    "7. ¿En que grado se encuentra la definición de los principios fundamentales de la asignación y gestión de recursos y capacidades (de manera que la TI pueda satisfacer las necesidades de la empresa conforme a las prioridades acordadas y los límites presupuestados?",
-    "8. Califique la adopción de estrategias de gestión de recursos, principios y del plan de recursos y arquitectura empresarial acordados.",
-    "9. Califique la monitoría del rendimiento de los recursos en relación a los objetivos, analizando la causa de las posibles desviaciones.",
-    "10. Indique el porcentaje en el que se encuentra la identificación de todas las partes interesadas de I&T relevantes dentro y fuera de la empresa. Agrupando a las partes interesadas en categorías de partes interesadas con requisitos similares.",
-    "11. Indique la satisfacción de las partes interesadas con la comunicación y elaboración de informes.",
-    "12. Indique el grado de evaluación que se realiza de forma periódica sobre la efectividad de los mecanismos para la participación y comunicación con partes interesadas internas y externas.", */
+    "6. ¿Qué porcentaje de planes de acción de riesgo de I&T son ejecutados a tiempo?",
+    "7. ¿Qué porcentaje de estrategias del plan de recursos y arquitectura empresarial  proporcionan valor y mitiga el riesgo con recursos asignados?",
+    "8. ¿Cuál es el porcentaje de reutilización de componentes de la arquitectura?",
+    "9. ¿Cuál es el porcentaje de proyectos con asignaciones de recursos adecuadas?",
+    "10. ¿Qué porcentaje de partes interesadas son incluidas en los requisitos de informes?",
+    "11. ¿Cuál es el porcentaje de satisfacción de las partes interesadas con la comunicación y elaboración de informes?",
+    "12. ¿Cuál es el nivel de participación de las partes interesadas en I&T de la empresa?", 
   ])
   
   const [optionsGroup] = useState([
-    "NO: (Menos del 15%)",
-    "PARCIALMENTE (Entre el 15% y el 50%)",
-    "LARGAMENTE (Entre el 50% y el 85%)",
-    "COMPLETAMENTE (Más del 85%)",
+    "Calificación cero: menos del 15%",
+    "Calificación uno: entre 15% y 30%",
+    "Calificación dos: entre 30% y 45%",
+    "Calificación tres: entre 45% y 60%",
+    "Calificación cuatro: entre 60% y 75%",
+    "Calificación cinco: más del 75%"
   ])
 
   const [answers,setAnswers] = useState([])

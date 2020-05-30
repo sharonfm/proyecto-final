@@ -80,27 +80,27 @@ const List1 = () => {
 
                   <TabContent activeTab={activeTab}>
                     <TabPane tabId={1}>
-                      <p>Para este tipo de dominio(APO) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
+                      <p>Para este tipo de dominio(EDM) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
                       de esta área entregada por usted como usuario nos permitimos darle retroalimentación y del paso a seguir en este proceso:
                            ... (en este espacio se especificará la retroalimentación de las preguntas realizadas anteriormente).</p>
                     </TabPane>
                     <TabPane tabId={2}>
-                      <p>Para este tipo de dominio(APO) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
+                      <p>Para este tipo de dominio(EDN) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
                       de esta área entregada por usted como usuario nos permitimos darle retroalimentación y del paso a seguir en este proceso:
                            ... (en este espacio se especificará la retroalimentación de las preguntas realizadas anteriormente).</p>
                     </TabPane>
                     <TabPane tabId={3}>
-                      <p>Para este tipo de dominio(APO) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
+                      <p>Para este tipo de dominio(EDM) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
                       de esta área entregada por usted como usuario nos permitimos darle retroalimentación y del paso a seguir en este proceso:
                            ... (en este espacio se especificará la retroalimentación de las preguntas realizadas anteriormente).</p>
                     </TabPane>
                     <TabPane tabId={4}>
-                      <p>Para este tipo de dominio(APO) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
+                      <p>Para este tipo de dominio(EDM) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
                       de esta área entregada por usted como usuario nos permitimos darle retroalimentación y del paso a seguir en este proceso:
                            ... (en este espacio se especificará la retroalimentación de las preguntas realizadas anteriormente).</p>
                     </TabPane>
                     <TabPane tabId={5}>
-                      <p>Para este tipo de dominio(APO) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
+                      <p>Para este tipo de dominio(EDM) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
                       de esta área entregada por usted como usuario nos permitimos darle retroalimentación y del paso a seguir en este proceso:
                            ... (en este espacio se especificará la retroalimentación de las preguntas realizadas anteriormente).</p>
                     </TabPane>

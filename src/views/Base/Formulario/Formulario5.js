@@ -34,10 +34,12 @@ const Forms5 = () => {
     "12. Pregunta", */
   ])
   const [optionsGroup] = useState([
-    "NO: (Menos del 15%)",
-    "PARCIALMENTE (Entre el 15% y el 50%)",
-    "LARGAMENTE (Entre el 50% y el 85%)",
-    "COMPLETAMENTE (Más del 85%)",
+    "Calificación cero: menos del 15%",
+    "Calificación uno: entre 15% y 30%",
+    "Calificación dos: entre 30% y 45%",
+    "Calificación tres: entre 45% y 60%",
+    "Calificación cuatro: entre 60% y 75%",
+    "Calificación cinco: más del 75%"
   ])
 
   const [answers, setAnswers] = useState([])
