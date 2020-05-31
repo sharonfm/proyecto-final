@@ -40,7 +40,7 @@ class DefaultLayout extends Component {
         </AppHeader>
         <div className="app-body" >
           <AppSidebar fixed display="lg" >
-            <AppSidebarHeader style={{backgroundColor:'#3A3950'}}> G&G TI</AppSidebarHeader>
+            <AppSidebarHeader style={{backgroundColor:'#3A3950'}}>Menú de Opciones</AppSidebarHeader>
             <Suspense >
               <AppSidebarNav style= {{backgroundColor:'#43425D'}} navConfig={navigation} {...this.props} router={router}/>
             </Suspense>
@@ -48,7 +48,7 @@ class DefaultLayout extends Component {
             <AppSidebarMinimizer style={{backgroundColor:'#3A3950'}} />
           </AppSidebar>
           <main className="main">
-            <AppBreadcrumb appRoutes={routes} router={router}/>
+            <AppBreadcrumb appRoutes={routes} router={router} />
             <Container fluid >
               <Suspense fallback={this.loading()} style={{backgroundColor:'#3A3950'}}>
                 <Switch >
