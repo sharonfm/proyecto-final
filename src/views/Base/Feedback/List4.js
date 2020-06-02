@@ -5,6 +5,56 @@ import { Link } from 'react-router-dom';
 const List4 = () => {
 
   const [activeTab, setActiveTab] = useState(1)
+
+  const [answers, setAnswers] = useState([])
+
+  const [options0] = useState([
+    "respuesta 0 calif 0",
+    "respuesta 0 calif 1",
+    "respuesta 0 calif 2",
+    "respuesta 0 calif 3",
+    "respuesta 0 calif 4",
+    "respuesta 0 calif 5"
+  ])
+  const [options1] = useState([
+    "respuesta 1 calif 0",
+    "respuesta 1 calif 1",
+    "respuesta 1 calif 2",
+    "respuesta 1 calif 3",
+    "respuesta 1 calif 4",
+    "respuesta 1 calif 5"
+  ])
+  const [options2] = useState([
+    "respuesta 2 calif 0",
+    "respuesta 2 calif 1",
+    "respuesta 2 calif 2",
+    "respuesta 2 calif 3",
+    "respuesta 2 calif 4",
+    "respuesta 2 calif 5"
+  ])
+  const [options3] = useState([
+    "respuesta 3 calif 0",
+    "respuesta 3 calif 1",
+    "respuesta 3 calif 2",
+    "respuesta 3 calif 3",
+    "respuesta 3 calif 4",
+    "respuesta 3 calif 5"
+  ])
+  const [options4] = useState([
+    "respuesta 4 calif 0",
+    "respuesta 4 calif 1",
+    "respuesta 4 calif 2",
+    "respuesta 4 calif 3",
+    "respuesta 4 calif 4",
+    "respuesta 4 calif 5"
+  ])
+
+  const [answerslist4] = useState([options0, options1, options2, options3, options4/* , options5, options6, options7, options8, options9, options10, options11 */])
+
+  React.useEffect(() => {
+    setAnswers(JSON.parse(localStorage.getItem("p4")))
+  }, [])
+  
     return (
       <div className="animated fadeIn">
         <Row>
@@ -22,41 +72,26 @@ const List4 = () => {
                       <ListGroupItem onClick={() => setActiveTab(3)} action active={activeTab === 3} >Tres</ListGroupItem>
                       <ListGroupItem onClick={() => setActiveTab(4)} action active={activeTab === 4} >Cuatro</ListGroupItem>
                       <ListGroupItem onClick={() => setActiveTab(5)} action active={activeTab === 5} >Cinco</ListGroupItem>
-                      <ListGroupItem onClick={() => setActiveTab(6)} action active={activeTab === 6} >Seis</ListGroupItem>
+                      {/* <ListGroupItem onClick={() => setActiveTab(6)} action active={activeTab === 6} >Seis</ListGroupItem> */}
                     </ListGroup>
                   </Col>
                   <Col xs="12" md="8">
                     <TabContent activeTab={activeTab}>
-                      <TabPane tabId={1}>
-                        <p>Para este tipo de dominio(DSS) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
-                        de esta área entregada por usted como usuario nos permitimos darle retroalimentación y del paso a seguir en este proceso:
-                        ... (en este espacio se especificará la retroalimentación de las preguntas realizadas anteriormente).</p>
-                      </TabPane>
-                      <TabPane tabId={2}>
-                        <p>Para este tipo de dominio(DSS) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
-                        de esta área entregada por usted como usuario nos permitimos darle retroalimentación y del paso a seguir en este proceso:
-                        ... (en este espacio se especificará la retroalimentación de las preguntas realizadas anteriormente).</p>
-                      </TabPane>
-                      <TabPane tabId={3}>
-                        <p>Para este tipo de dominio(DSS) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
-                        de esta área entregada por usted como usuario nos permitimos darle retroalimentación y del paso a seguir en este proceso:
-                        ... (en este espacio se especificará la retroalimentación de las preguntas realizadas anteriormente).</p>
-                      </TabPane>
-                      <TabPane tabId={4}>
-                        <p>Para este tipo de dominio(DSS) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
-                        de esta área entregada por usted como usuario nos permitimos darle retroalimentación y del paso a seguir en este proceso:
-                        ... (en este espacio se especificará la retroalimentación de las preguntas realizadas anteriormente).</p>
-                      </TabPane>
-                      <TabPane tabId={5}>
-                        <p>Para este tipo de dominio(DSS) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
-                        de esta área entregada por usted como usuario nos permitimos darle retroalimentación y del paso a seguir en este proceso:
-                        ... (en este espacio se especificará la retroalimentación de las preguntas realizadas anteriormente).</p>
-                      </TabPane>
-                      <TabPane tabId={6}>
-                        <p>Para este tipo de dominio(DSS) en cuanto a los objetivos de gestión y teniendo en cuenta la calificación
-                        de esta área entregada por usted como usuario nos permitimos darle retroalimentación y del paso a seguir en este proceso:
-                        ... (en este espacio se especificará la retroalimentación de las preguntas realizadas anteriormente).</p>
-                      </TabPane>
+                    <TabPane tabId={1}>
+                      {answerslist4[0][answers[0]]}
+                    </TabPane>
+                    <TabPane tabId={2}>
+                      {answerslist4[1][answers[1]]}
+                    </TabPane>
+                    <TabPane tabId={3}>
+                      {answerslist4[2][answers[2]]}
+                    </TabPane>
+                    <TabPane tabId={4}>
+                      {answerslist4[3][answers[3]]}
+                    </TabPane>
+                    <TabPane tabId={5}>
+                      {answerslist4[4][answers[4]]}
+                    </TabPane>
                     </TabContent>
                   </Col>
                 </Row>
