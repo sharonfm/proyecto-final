@@ -95,7 +95,7 @@ const Forms3 = () => {
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">2</PaginationLink></PaginationItem>
                   </Link>
                   <PaginationItem active>
-                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D' }} tag="button">3</PaginationLink></PaginationItem>
+                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D', borderColor:'#43425D'}} tag="button">3</PaginationLink></PaginationItem>
                   </PaginationItem>
                   <Link to="/base/form4">
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">4</PaginationLink></PaginationItem>
@@ -144,7 +144,7 @@ const Forms3 = () => {
 
               
                 <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Enviar</Button>
-                <Button type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reiniciar</Button>
+                <Button style={{ position: "absolute", left: "107px", right: "20px"}} type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reiniciar</Button>
               </Form>
             </CardBody>
             <CardFooter>
@@ -163,7 +163,7 @@ const Forms3 = () => {
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">2</PaginationLink></PaginationItem>
                   </Link>
                   <PaginationItem active>
-                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D' }} tag="button">3</PaginationLink></PaginationItem>
+                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D', borderColor:'#43425D' }} tag="button">3</PaginationLink></PaginationItem>
                   </PaginationItem>
                   <Link to="/base/form4">
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">4</PaginationLink></PaginationItem>

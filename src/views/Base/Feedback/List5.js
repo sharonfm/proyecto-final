@@ -121,7 +121,7 @@ const List5 = () => {
                   </Link>
                 </PaginationItem>
                 <PaginationItem active>
-                  <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D' }} tag="button">5</PaginationLink></PaginationItem>
+                  <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D',  borderColor:'#43425D' }} tag="button">5</PaginationLink></PaginationItem>
                 </PaginationItem>
                 <PaginationItem disabled><PaginationLink style={{ color: '#43425D' }} next></PaginationLink></PaginationItem>
               </Pagination>

@@ -1,1 +1,12 @@
 // Here you can add other styles
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #43425D;
+    border-color: #43425D;
+}
+a {
+    color: #43425D;
+    text-decoration: none;
+    background-color: transparent;
+}

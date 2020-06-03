@@ -44,7 +44,7 @@ class Forms2 extends Component {
                             <Row style={{ justifyContent: 'center' }}>
                                     <Pagination>
                                         <PaginationItem disabled><PaginationLink style={{ color: '#43425D' }} previous tag="button"></PaginationLink></PaginationItem>
-                                        <PaginationItem active><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D' }} tag="button">Criterios</PaginationLink></PaginationItem>
+                                        <PaginationItem active><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D', borderColor:'#43425D' }} tag="button">Criterios</PaginationLink></PaginationItem>
                                         <Link to="/base/form">
                                             <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">1</PaginationLink></PaginationItem>
                                         </Link>
@@ -288,7 +288,7 @@ class Forms2 extends Component {
                                 <Row style={{ justifyContent: 'center' }}>
                                     <Pagination>
                                         <PaginationItem disabled><PaginationLink style={{ color: '#43425D' }} previous tag="button"></PaginationLink></PaginationItem>
-                                        <PaginationItem active><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D' }} tag="button">Criterios</PaginationLink></PaginationItem>
+                                        <PaginationItem active><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D', borderColor:'#43425D' }} tag="button">Criterios</PaginationLink></PaginationItem>
                                         <Link to="/base/form">
                                             <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">1</PaginationLink></PaginationItem>
                                         </Link>

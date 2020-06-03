@@ -92,7 +92,7 @@ const Forms = () => {
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">Criterios</PaginationLink></PaginationItem>
                   </Link>
                   <PaginationItem active>
-                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D' }} tag="button">1</PaginationLink></PaginationItem>
+                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D', borderColor:'#43425D'}} tag="button">1</PaginationLink></PaginationItem>
                   </PaginationItem>
                   <Link to="/base/form2">
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">2</PaginationLink></PaginationItem>
@@ -145,20 +145,20 @@ const Forms = () => {
                   )
                 })}
                 <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o" value="Enviar datos"></i> Enviar</Button>
-                <Button type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reiniciar</Button>
+                <Button style={{ position: "absolute", left: "107px", right: "20px"}} type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reiniciar</Button>
               </Form>
             </CardBody>
             <CardFooter>
               <Row style={{ justifyContent: 'center' }}>
                 <Pagination>
                   <Link to="/base/form0">
-                    <PaginationItem><PaginationLink style={{ color: '#43425D' }} previous></PaginationLink></PaginationItem>
+                    <PaginationItem><PaginationLink style={{ color: '#43425D'}} previous></PaginationLink></PaginationItem>
                   </Link>
                   <Link to="/base/form0">
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">Criterios</PaginationLink></PaginationItem>
                   </Link>
                   <PaginationItem active>
-                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D' }} tag="button">1</PaginationLink></PaginationItem>
+                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D', borderColor:'#43425D' }} tag="button">1</PaginationLink></PaginationItem>
                   </PaginationItem>
                   <Link to="/base/form2">
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">2</PaginationLink></PaginationItem>

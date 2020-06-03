@@ -82,7 +82,7 @@ const Login = () => {
                     {error ? <span>{error}</span> : null}
                     <InputGroup className="mb-3">
 
-                    <InputGroupAddon addonType="prepend">
+                      <InputGroupAddon addonType="prepend">
                         <InputGroupText>@</InputGroupText>
                       </InputGroupAddon>
                       <Input
@@ -131,15 +131,17 @@ const Login = () => {
                           </Button>
                         </Col>
                       </Link>
-                      <Col xs="6" className="text-right">
-                        <Button
-                          style={{ color: "#43425D" }}
-                          color="link"
-                          className="px-0"
-                        >
-                          Olvidé mi contraseña
+                      <Link to="/register">
+                        <Col xs="6" className="text-right">
+                          <Button
+                            style={{ color: "#43425D" }}
+                            color="link"
+                            className="px-0"
+                          >
+                            Registrarme
                         </Button>
-                      </Col>
+                        </Col>
+                      </Link>
                     </Row>
                   </Form>
                 </CardBody>

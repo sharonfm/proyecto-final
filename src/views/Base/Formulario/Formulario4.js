@@ -83,7 +83,7 @@ const Forms4 = () => {
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">3</PaginationLink></PaginationItem>
                   </Link>
                   <PaginationItem active>
-                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D' }} tag="button">4</PaginationLink></PaginationItem>
+                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D', borderColor:'#43425D' }} tag="button">4</PaginationLink></PaginationItem>
                   </PaginationItem>
                   <Link to="/base/form5">
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">5</PaginationLink></PaginationItem>
@@ -128,7 +128,7 @@ const Forms4 = () => {
                 })}
 
                 <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Enviar</Button>
-                <Button type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reiniciar</Button>
+                <Button style={{ position: "absolute", left: "107px", right: "20px"}} type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reiniciar</Button>
 
               </Form>
             </CardBody>
@@ -151,7 +151,7 @@ const Forms4 = () => {
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">3</PaginationLink></PaginationItem>
                   </Link>
                   <PaginationItem active>
-                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D' }} tag="button">4</PaginationLink></PaginationItem>
+                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D', borderColor:'#43425D' }} tag="button">4</PaginationLink></PaginationItem>
                   </PaginationItem>
                   <Link to="/base/form5">
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">5</PaginationLink></PaginationItem>
