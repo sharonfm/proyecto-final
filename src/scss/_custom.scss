@@ -10,3 +10,31 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
+.sidebar .nav-link:hover {
+    color: #fff;
+    background: #212032;
+}
+.sidebar .nav-link:hover .nav-icon{
+    color:#696791;
+}
+.sidebar .nav-link .nav-icon {
+    color: #696791;
+}
+.sidebar .nav-link.active .nav-icon {
+    color: #696791;
+}
+.sidebar .nav-link.active {
+    color: #fff;
+    background: #212032;
+}
+.sidebar-minimized .sidebar .nav-item:hover > .nav-link {
+    background: #212032;
+}
+
+.sidebar-minimized .sidebar .nav-item:hover > .nav-link .nav-icon {
+    color: #696791;
+}
+.badge-info {
+    color: #23282c;
+    background-color: #212032;
+}
