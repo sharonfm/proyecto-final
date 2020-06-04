@@ -110,7 +110,7 @@ const cardChartOpts1 = {
 
 // Card Chart 2 (Contiene cardChartData2 y cardChartOpts2)
 const cardChartData2 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'/* , 'Pregunta 6', 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12' */],
+  labels: ['APO1', 'APO1', 'APO1', 'APO3', 'APO3' , 'APO3', 'APO04', 'APO04', 'APO04', 'APO6', 'APO6', 'APO6', 'APO8', 'APO8', 'APO8', 'APO9', 'APO9', 'APO9', 'APO11', 'APO11', 'APO11', 'APO13', 'APO13', 'APO13', 'APO14', 'APO14', 'APO14'],
   datasets: [
     {
       label: 'Resultado',
@@ -167,7 +167,7 @@ const cardChartOpts2 = {
 };
 
 const cardChartData3 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'/*, 'Pregunta 6' , 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12' */],
+  labels: ['BAI01', 'BAI01', 'BAI01', 'BAI02', 'BAI02' , 'BAI02', 'BAI003', 'BAI003', 'BAI003', 'BAI04', 'BAI04', 'BAI04', 'BAI05', 'BAI05', 'BAI05', 'BAI06', 'BAI06', 'BAI06', 'BAI07', 'BAI07', 'BAI07', 'BAI011', 'BAI011', 'BAI011'],
   datasets: [
     {
       label: 'Resultado',
@@ -179,7 +179,7 @@ const cardChartData3 = {
 };
 
 const cardChartData4 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'/* ,'Pregunta 6', 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12' */],
+  labels: ['DSS01', 'DSS01', 'DSS01', 'DSS02', 'DSS02' , 'DSS02', 'DSS05', 'DSS05', 'DSS05'],
   datasets: [
     {
       label: 'Resultado',
@@ -191,7 +191,7 @@ const cardChartData4 = {
 };
 
 const cardChartData5 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'/* , 'Pregunta 6', 'Pregunta 7', 'Pregunta 8', 'Pregunta 9', 'Pregunta 10', 'Pregunta 11', 'Pregunta 12' */],
+  labels: ['MEA01', 'MEA01', 'MEA01','MEA02', 'MEA02', 'MEA02', 'MEA03', 'MEA03' , 'MEA03', 'MEA04', 'MEA04', 'MEA04'],
   datasets: [
     {
       label: 'Resultado',
@@ -219,7 +219,7 @@ const radar = {
   ],
 };
 const radar2 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
+  labels: ['APO1', '', '', 'APO3', '' , '', 'APO04', '', '', 'APO6', '', '', 'APO8', '', '', 'APO9', '', '', 'APO11', '', '', 'APO13', '', '', 'APO14', '', ''],
   datasets: [
       {
       label: 'APO',
@@ -235,7 +235,7 @@ const radar2 = {
 };
 
 const radar3 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
+  labels: ['BAI01', '', '', 'BAI02', '' , '', 'BAI03', '', '', 'BAI04', '', '', 'BAI05', '', '', 'BAI06', '', '', 'BAI07', '', '', 'BAI011', '', ''],
   datasets: [
     {
       label: 'BAI',
@@ -251,7 +251,7 @@ const radar3 = {
   ],
 };
 const radar4 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
+  labels: ['DSS01', '', '', 'DSS02', '' , '', 'DSS05', '', ''],
   datasets: [
       {
       label: 'DSS',
@@ -266,7 +266,7 @@ const radar4 = {
   ],
 };
 const radar5 = {
-  labels: ['Pregunta 1', 'Pregunta 2', 'Pregunta 3', 'Pregunta 4', 'Pregunta 5'],
+  labels: ['MEA01', '', '','MEA02', '', '', 'MEA03', '' , '', 'MEA04', '', ''],
   datasets: [
     {
       label: 'MEA',
@@ -294,8 +294,8 @@ const radar5 = {
                 <CardGroup>
                   <Card className="text-white" style={{backgroundColor:'#43425D'}}>
                     <CardBody className="pb-0">
-                      <div className="text-value">#Valor (Calificación)</div>
-                      <div>Área evaluada (APO, BAI, DSS o MEA)</div>
+                      <div className="text-value">Calificación</div>
+                      <div>Área evaluada: EDM</div>
                     </CardBody>
                     <div className="chart-wrapper mx-3" style={{ height: '70px' }}>
                       <Line data={cardChartData1} options={cardChartOpts1} height={70} />
@@ -304,7 +304,7 @@ const radar5 = {
                   <Card>
                     <CardHeader>
                     <h5 align='center'>Datos</h5>
-                    <p align='center'>Haga click en un color para observar la calificación</p>
+                    <p align='center'>Gráfica obtenida para EDM</p>
                     </CardHeader>
                     <CardBody>
                       <div className="chart-wrapper">
@@ -319,8 +319,8 @@ const radar5 = {
                   <Card className="text-white " style={{backgroundColor:'#3b6978'}}>
                     <CardBody className="pb-0">
                      
-                      <div className="text-value">#Valor (Calificación)</div>
-                      <div>Área evaluada (APO, BAI, DSS o MEA)</div>
+                      <div className="text-value">Calificación</div>
+                      <div>Área evaluada: APO</div>
                     </CardBody>
                     <div className="chart-wrapper mx-3" style={{ height: '70px' }}>
                       <Line data={cardChartData2} options={cardChartOpts2} height={70} />
@@ -329,7 +329,7 @@ const radar5 = {
                   <Card>
                     <CardHeader>
                       <h5 align='center'>Datos</h5>
-                      <p align='center'>Haga click en un color para observar la calificación</p>
+                      <p align='center'>Gráfica obtenida para APO</p>
                     </CardHeader>
                     <CardBody>
                       <div className="chart-wrapper">
@@ -344,8 +344,8 @@ const radar5 = {
                   <Card className="text-white" style={{backgroundColor:'#43425D'}}>
                     <CardBody className="pb-0">
                      
-                      <div className="text-value">#Valor (Calificación)</div>
-                      <div>Área evaluada (APO, BAI, DSS o MEA)</div>
+                      <div className="text-value">Calificación</div>
+                      <div>Área evaluada: BAI</div>
                     </CardBody>
                     <div className="chart-wrapper mx-3" style={{ height: '70px' }}>
                       <Line data={cardChartData3} options={cardChartOpts1} height={70} />
@@ -354,7 +354,7 @@ const radar5 = {
                   <Card>
                   <CardHeader>
                       <h5 align='center'>Datos</h5>
-                      <p align='center'>Haga click en un color para observar la calificación</p>
+                      <p align='center'>Gráfica obtenida para BAI</p>
                     </CardHeader>
                     <CardBody>
                       <div className="chart-wrapper">
@@ -369,8 +369,8 @@ const radar5 = {
                   <Card className="text-white " style={{backgroundColor:'#3b6978'}}>
                     <CardBody className="pb-0">
                      
-                      <div className="text-value">#Valor (Calificación)</div>
-                      <div>Área evaluada (APO, BAI, DSS o MEA)</div>
+                      <div className="text-value">Calificación</div>
+                      <div>Área evaluada: DSS</div>
                     </CardBody>
                     <div className="chart-wrapper mx-3" style={{ height: '70px' }}>
                       <Line data={cardChartData4} options={cardChartOpts2} height={70} />
@@ -379,7 +379,7 @@ const radar5 = {
                   <Card>
                   <CardHeader>
                       <h5 align='center'>Datos</h5>
-                      <p align='center'>Haga click en un color para observar la calificación</p>
+                      <p align='center'>Gráfica obtenida para DSS</p>
                     </CardHeader>
                     <CardBody>
                       <div className="chart-wrapper">
@@ -394,8 +394,8 @@ const radar5 = {
                   <Card className="text-white" style={{backgroundColor:'#43425D'}}>
                     <CardBody className="pb-0">
                      
-                      <div className="text-value">#Valor (Calificación)</div>
-                      <div>Área evaluada (APO, BAI, DSS o MEA)</div>
+                      <div className="text-value">Calificación</div>
+                      <div>Área evaluada: MEA</div>
                     </CardBody>
                     <div className="chart-wrapper mx-3" style={{ height: '70px' }}>
                       <Line data={cardChartData5} options={cardChartOpts1} height={70} />
@@ -404,7 +404,7 @@ const radar5 = {
                   <Card>
                   <CardHeader>
                       <h5 align='center'>Datos</h5>
-                      <p align='center'>Haga click en un color para observar la calificación</p>
+                      <p align='center'>Gráfica obtenida para MEA</p>
                     </CardHeader>
                     <CardBody>
                       <div className="chart-wrapper">

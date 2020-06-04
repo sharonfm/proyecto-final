@@ -48,8 +48,64 @@ const List5 = () => {
     "respuesta 4 calif 4",
     "respuesta 4 calif 5"
   ])
+  const [options5] = useState([
+    "respuesta 5 calif 0",
+    "respuesta 5 calif 1",
+    "respuesta 5 calif 2",
+    "respuesta 5 calif 3",
+    "respuesta 5 calif 4",
+    "respuesta 5 calif 5"
+  ])
+  const [options6] = useState([
+    "respuesta 6 calif 0",
+    "respuesta 6 calif 1",
+    "respuesta 6 calif 2",
+    "respuesta 6 calif 3",
+    "respuesta 6 calif 4",
+    "respuesta 6 calif 5"
+  ])
+  const [options7] = useState([
+    "respuesta 7 calif 0",
+    "respuesta 7 calif 1",
+    "respuesta 7 calif 2",
+    "respuesta 7 calif 3",
+    "respuesta 7 calif 4",
+    "respuesta 7 calif 5"
+  ])
+  const [options8] = useState([
+    "respuesta 8 calif 0",
+    "respuesta 8 calif 1",
+    "respuesta 8 calif 2",
+    "respuesta 8 calif 3",
+    "respuesta 8 calif 4",
+    "respuesta 8 calif 5"
+  ])
+  const [options9] = useState([
+    "respuesta 9 calif 0",
+    "respuesta 9 calif 1",
+    "respuesta 9 calif 2",
+    "respuesta 9 calif 3",
+    "respuesta 9 calif 4",
+    "respuesta 9 calif 5"
+  ])
+  const [options10] = useState([
+    "respuesta 10 calif 0",
+    "respuesta 10 calif 1",
+    "respuesta 10 calif 2",
+    "respuesta 10 calif 3",
+    "respuesta 10 calif 4",
+    "respuesta 10 calif 5"
+  ])
+  const [options11] = useState([
+    "respuesta 11 calif 0",
+    "respuesta 11 calif 1",
+    "respuesta 11 calif 2",
+    "respuesta 11 calif 3",
+    "respuesta 11 calif 4",
+    "respuesta 11 calif 5"
+  ])
 
-  const [answerslist5] = useState([options0, options1, options2, options3, options4/* , options5, options6, options7, options8, options9, options10, options11 */])
+  const [answerslist5] = useState([options0, options1, options2, options3, options4, options5, options6, options7, options8, options9, options10, options11])
 
   React.useEffect(() => {
     setAnswers(JSON.parse(localStorage.getItem("p5")))
@@ -72,6 +128,13 @@ const List5 = () => {
                     <ListGroupItem onClick={() => setActiveTab(3)} action active={activeTab === 3} >Tres</ListGroupItem>
                     <ListGroupItem onClick={() => setActiveTab(4)} action active={activeTab === 4} >Cuatro</ListGroupItem>
                     <ListGroupItem onClick={() => setActiveTab(5)} action active={activeTab === 5} >Cinco</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(6)} action active={activeTab === 6} >Seis</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(7)} action active={activeTab === 7} >Siete</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(8)} action active={activeTab === 8} >Ocho</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(9)} action active={activeTab === 9} >Nueve</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(10)} action active={activeTab === 10} >Diez</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(11)} action active={activeTab === 11} >Once</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(12)} action active={activeTab === 12} >Doce</ListGroupItem>
                   </ListGroup>
                 </Col>
                 <Col xs="12" md="8">
@@ -90,6 +153,27 @@ const List5 = () => {
                     </TabPane>
                     <TabPane tabId={5}>
                       {answerslist5[4][answers[4]]}
+                    </TabPane>
+                    <TabPane tabId={6}>
+                      {answerslist5[5][answers[5]]}
+                    </TabPane>
+                    <TabPane tabId={7}>
+                      {answerslist5[6][answers[6]]}
+                    </TabPane>
+                    <TabPane tabId={8}>
+                      {answerslist5[7][answers[7]]}
+                    </TabPane>
+                    <TabPane tabId={9}>
+                      {answerslist5[8][answers[8]]}
+                    </TabPane>
+                    <TabPane tabId={10}>
+                      {answerslist5[9][answers[9]]}
+                    </TabPane>
+                    <TabPane tabId={11}>
+                      {answerslist5[10][answers[10]]}
+                    </TabPane>
+                    <TabPane tabId={12}>
+                      {answerslist5[11][answers[11]]}
                     </TabPane>
                   </TabContent>
                 </Col>

@@ -20,15 +20,16 @@ import {
 const Forms4 = () => {
   //Preguntas de DSS
   const [questionGroup] = useState([
-    "1. Califique el desarrolla y mantenimiento de los procedimientos operativos y de las actividades relacionadas para respaldar todos los servicios prestados.",
-    "2. Porcentaje de identificación y mantenimiento de una lista de activos de infraestructura que deben monitorizarse conforme a la criticidad del servicio y la relación entre los elementos de configuración y servicios que dependen de ellos.",
-    "3. Calificación de registro, monitorización, gestión y resolución de incidentes en las instalaciones en línea con el proceso de gestión de incidentes de TI. Poniendo a disposición informes sobre incidentes en las instalaciones que la legislación y las regulaciones obligan a hacer públicos.",
-    "4. Defina el grado de definición de esquemas de priorización y clasificación de solicitudes de servicios e incidentes, y los criterios para el registro de problemas. ",
-    "5. Cumplimiento de que la selección y aplicación de las resoluciones de incidentes se implementan de manera adecuada (Workaround o solución permanente).",
- /* "6. Califique el uso de la información como un insumo a la planificación de la mejora continua.",
-    "7. Indique la calificación en cuanto a la instalación y activación de herramientas de protección en contra de software maliciosos en todas las instalaciones de procesamiento, con archivos de definición de software malicioso que se actualizan según sea necesario.",
-    "8. Califique si se llevan a cabo pruebas de penetración periódicas para determinar la idoneidad de la protección de la red.",
-    "9. Grado de calificación teniendo en cuenta si se encripta la información almacenada de acuerdo a la clasificación de los datos.",*/
+    "1. Número de KPI específicos/SMART incluidos en los contratos de externalización.",
+    "2. ¿Cuál es el porcentaje de activos de infraestructura monitorizados conforme a la criticidad del servicio y la relación entre los elementos de configuración y servicios que dependen de ellos?",
+    "3. Número de personas capacitadas para responder a los procedimientos de alarma medioambiental.",
+    "4. Califique el tiempo promedio transcurrido para la gestión de cada tipo de solicitud de servicio",
+    "5. ¿Qué porcentaje de solicitudes de servicio cumplen con los criterios de solicitud definidos?",
+    "6. ¿Cuál es el nivel de satisfacción del usuario con el cumplimiento  de la petición de servicio?",
+    "7. ¿Qué porcentaje de personas reciben formación de concienciación relacionada con el uso de dispositivos endpoint?",
+    "8. Calificación promedio de las evaluaciones de seguridad física.",
+    "9. ¿Cuál es el porcentaje de tickets creados de forma oportuna cuando los sistemas de monitorización identifican posibles incidentes de seguridad?"
+
   ])
   const [optionsGroup] = useState([
     "Calificación cero: menos del 15%",

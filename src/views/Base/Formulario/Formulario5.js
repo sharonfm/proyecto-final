@@ -20,18 +20,18 @@ import {
 const Forms5 = () => {
   //Preguntas de MEA
   const [questionGroup] = useState([
-    "1. Califique si se colabora con las partes interesadas y comunica los requisitos y objetivos empresariales de supervisión, recopilación y reporte por medio del uso de definiciones comunes.",
-    "2. Identifique si se analiza la causa de las desviaciones con respecto a los objetivos, inicia medidas correctivas, asigna responsabilidades para su corrección y hace seguimiento. Luego califique:",
-    "3. Verifique el porcentaje de persistencia al momento de aplicar la revisión de las respuestas, opciones y recomendaciones de la dirección para abordar problemas y desviaciones importantes.",
-    "4. Indique el grado de realización de actividades de supervisión y evaluación del control interno basadas en estándares de gobierno de la organización y marcos y prácticas aceptados por la industria.",
-    "5. Verifique el grado de conservación de evidencias de la eficacia del control.",
-/*  "6. Pregunta",
-    "7. Pregunta",
-    "8. Pregunta",
-    "9. Pregunta",
-    "10. Pregunta",
-    "11. Pregunta",
-    "12. Pregunta", */
+    "1. ¿Cuál es el porcentaje de procesos con metas y métricas definidos?",
+    "2. ¿Qué porcentaje del entorno de controles es supervisado, analizado comparativamente y mejorado para cumplir con los objetivos de la organización?",
+    "3. ¿Qué porcentaje de metas y métricas se encuentran alineadas con el sistema de supervisión de la empresa?",
+    "4. ¿Cuál es el porcentaje de entorno de controles y marco supervisados, analizados comparativamente y mejorados continuamente para cumplir con los objetivos de la organización?",
+    "5. Número de controles supervisados y probados para garantizar que los controles de los procesos de negocio operan de forma eficaz.",
+    "6. ¿Qué porcentaje de implementación de acciones correctivas son derivadas de las evaluaciones de control?",
+    "7. ¿Cuál es el porcentaje de satisfacción del personal relevante con la comunicación de los requisitos de cumplimiento regulatorio, nuevos y modificados?",
+    "8. ¿Qué porcentaje de dueños de procesos aprueban y confirman el cumplimiento de éstos?",
+    "9. Número de informes de acciones  correctivas que tratan brechas de cumplimiento  cerradas oportunamente",
+    "10. ¿Qué porcentaje de iniciativas de aseguramiento siguen los estándares del programa y plan de aseguramiento?",
+    "11. ¿Cuál es el porcentaje de objetivos alcanzados durante la iniciativa de aseguramiento?",
+    "12. ¿Cuál es el  número de debilidades identificadas resueltas?", 
   ])
   const [optionsGroup] = useState([
     "Calificación cero: menos del 15%",

@@ -54,7 +54,7 @@ const Forms = () => {
     "Calificación dos: entre 30% y 45%",
     "Calificación tres: entre 45% y 60%",
     "Calificación cuatro: entre 60% y 75%",
-    "Calificación cinco: más del 75%"
+    "Calificación cinco: más del 75%" 
   ])
 
   const [answers,setAnswers] = useState([])

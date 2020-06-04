@@ -20,33 +20,38 @@ import {
 const Forms2 = () => {
   //Preguntas de APO
   const [questionGroup] = useState([
-    "1. Califique el conocimiento de la visión, dirección y estrategia empresarial, así como el contexto empresarial actual y sus desafíos.",
-    "2. ¿En que grado se encuentra la comprobación regular de la adecuación y eficacia de las estructuras organizativas?",
-    "3. ¿Que porcentaje se aplica prácticas de gestión de la calidad para actualizar el proceso?",
-    "4. ¿Que porcentaje de entendimiento cumplen las metas y objetivos estratégicos empresariales actuales? Teniendo en cuenta el proceso de planificación estratégico que garantiza que se aprovechen las oportunidades de la arquitectura empresarial de TI para el desarrollo del plan estratégico.",
-    "5. Indique el grado de manutención de un repositorio  de arquitectura que contiene estándares, componentes reutilizables, artefactos de modelado, relaciones, dependencias y visualizaciones que permiten la uniformidad de la organización y el mantenimiento de la arquitectura.",
- /* "6. Califique la identificación de las prioridades de la arquitectura empresarial. Teniendo en cuenta la alineación de las prioridades con los factores que proporcionan valor, definir y recopilar métricas de valor y la medición y comunicación del valor de la arquitectura empresarial.",
-    "7. Pregunta",
-    "8. Pregunta",
-    "9. Pregunta",
-    "10. Pregunta",
-    "11. Pregunta",
-    "12. Pregunta",
-    "13. Pregunta",
-    "14. Pregunta",
-    "15. Pregunta",
-    "16. Pregunta",
-    "17. Pregunta",
-    "18. Pregunta", 
-    "19. Pregunta",
-    "20. Pregunta",
-    "21. Pregunta",
-    "22. Pregunta",
-    "23. Pregunta",
-    "24. Pregunta",
-    "25. Pregunta",
-    "26. Pregunta",
-    "27. Pregunta",*/
+    "1. ¿Qué porcentaje de  los componentes de gobierno se encuentran  integrados y alineados con el gobierno, filosofía de gestión y estilo operativo de la empresa?",
+    "2. ¿Cuál es el nivel de satisfacción ejecutiva en cuanto a la toma de decisiones de gestión?",
+    "3. ¿Cuál porcentaje de políticas y procedimientos activos , se encuentran documentados y actualizados?",
+    "4. ¿Cuál es el porcentaje de partes interesadas clave del negocio y de TI para evaluar la disposición de transformación de la empresa, e identificar oportunidades, soluciones y todas las restricciones de implementación?",
+    "5. ¿En qué porcentaje se encuentra la claridad de los requisitos de gobierno para  la implementación de la arquitectura?",
+    "6. ¿Qué porcentaje de proyectos que utilizan servicios de arquitectura empresarial?",
+
+    "7. ¿Qué porcentaje de oportunidades son habilitadas por nuevas tecnologías identificadas",
+    "8. ¿Qué porcentaje de las iniciativas implementadas logran los beneficios previstos?",
+    "9. Número de lecciones aprendidas y oportunidades de mejora captadas para su uso futuro",
+
+    "10. ¿Cuánto es la utilidad de la información financiera como información para casos de negocio para nuevas inversiones en activos y servicios de I&T.?",
+    "11. ¿Qué porcentaje de costes generales de I&T que se asignan de acuerdo con los modelos de costes acordados?",
+    "12. ¿Cuál es el porcentaje de variación entre presupuestos, previsiones y costes reales?",
+
+    "13. ¿Qué porcentaje de roles y responsabilidades en las relaciones se encuentran definidos, asignados y comunicados?",
+    "14. ¿Cuál es el porcentaje de satisfacción del dueño de negocio con la coordinación de la prestación íntegra de servicios y soluciones de I&T?",
+    "15. ¿Qué porcentaje  de servicios de I&T están alineados con los requisitos de negocio de la empresa?",
+
+    "16. ¿Cuál es el número de actividades empresariales que no reciben el apoyo de ningún servicio de I&T?",
+    "17. ¿Qué porcentaje de servicios monitorizados contra los niveles de servicio?",
+    "18. ¿Cuál es el porcentaje de objetivos de servicio alcanzados?",
+
+    "19. ¿Qué porcentaje de requisitos y expectativas del cliente son comunicadas a la empresa y la organización de TI?",
+    "20. ¿Cuál es el porcentaje de proyectos revisados que cumplen con las metas y los objetivos de calidad esperados?",
+    "21. ¿Qué porcentaje de servicios y productos son completados dentro del plazo?",
+    "22. ¿Cuál es el nivel de satisfacción de las partes interesadas con el plan de seguridad de toda la empresa?",
+    "23. Número de empleados que han completado con éxito una formación de concienciación sobre seguridad de la información.",
+    "24. ¿Cuál es el nivel de satisfacción de las partes interesadas con el plan de seguridad?",
+    "25. ¿Cuál es el porcentaje de metadatos que contienen medidas y métricas para evaluar la precisión y adopción de metadatos?",
+    "26. ¿Qué número de esfuerzos  de mejora de la calidad de los datos identificados y registrados en un plan secuencial?",
+    "27. Número de problemas identificados en los resultados de evaluaciones de la calidad de los datos"
 
   ])
   const [optionsGroup] = useState([
