@@ -123,6 +123,7 @@ const Login = () => {
                             }}
                             tabIndex={-1}
                             style={{ backgroundColor: "#43425D" }}
+                            type="submit"
                           >
                             {" "}
                             <medium style={{ color: "#F2F2F2" }}>
