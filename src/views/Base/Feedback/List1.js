@@ -30,100 +30,100 @@ const List1 = () => {
   ])
 
   const [options0] = useState([
-    "respuesta 0 calif 0",
-    "respuesta 0 calif 1",
-    "respuesta 0 calif 2",
-    "respuesta 0 calif 3",
-    "respuesta 0 calif 4",
-    "respuesta 0 calif 5"
+    "Analizar e identificar los factores ambientales internos y externos (obligaciones legales, regulatorias y contractuales), así como las tendencias en el entorno de negocio que pueden influir en el diseño del gobierno.",
+    "Analizar e identificar los factores ambientales internos y externos (obligaciones legales, regulatorias y contractuales), así como las tendencias en el entorno de negocio que pueden influir en el diseño del gobierno.",
+    "Determinar la importancia de I&T y su papel con respecto al negocio.",
+    "Determinar la importancia de I&T y su papel con respecto al negocio.",
+    "Considerar las regulaciones, leyes, y obligaciones contractuales externas y determinar cómo deberían aplicarse dentro del gobierno de I&T de una empresa.",
+    "Considerar las regulaciones, leyes, y obligaciones contractuales externas y determinar cómo deberían aplicarse dentro del gobierno de I&T de una empresa."
   ])
   const [options1] = useState([
-    "respuesta 1 calif 0",
-    "respuesta 1 calif 1",
-    "respuesta 1 calif 2",
-    "respuesta 1 calif 3",
-    "respuesta 1 calif 4",
-    "respuesta 1 calif 5"
+    "Alinear el uso ético y el procesamiento de la información y su impacto en la sociedad, el entorno natural y los intereses de los interesados internos y externos con la dirección, las metas y los objetivos de la empresa.",
+    "Alinear el uso ético y el procesamiento de la información y su impacto en la sociedad, el entorno natural y los intereses de los interesados internos y externos con la dirección, las metas y los objetivos de la empresa.",
+    "Articular los principios que guiarán el diseño del gobierno y la toma de decisiones de I&T.respuesta 1 calif 2",
+    "Determinar el modelo óptimo de toma de decisiones para I&T.",
+    "Determinar los niveles adecuados de delegación de autoridad, incluidas las reglas de limitaciones, para las decisiones de I&T.",
+    "Determinar los niveles adecuados de delegación de autoridad, incluidas las reglas de limitaciones, para las decisiones de I&T."
   ])
   const [options2] = useState([
-    "respuesta 2 calif 0",
-    "respuesta 2 calif 1",
-    "respuesta 2 calif 2",
-    "respuesta 2 calif 3",
-    "respuesta 2 calif 4",
-    "respuesta 2 calif 5"
+    "Comunicar el gobierno de los principios de I&T y acordar con la administración ejecutiva la forma de establecer un liderazgo informado y comprometido",
+    "Establecer o delegar el establecimiento de estructuras, procesos y prácticas de gobierno en línea con los principios de diseño acordados.",
+    "Establecer un consejo de administración de gobierno de I&T (o equivalente) a nivel del consejo de administración. Este consejo de administración debería garantizar que el gobierno de la información y la tecnología, como parte del gobierno de la empresa, se aborda de forma adecuada; aconsejar sobre la dirección estratégica a seguir; y determinar la priorización de los programas de inversión habilitados por I&T en línea con la estrategia y prioridades del negocio de la empresa.",
+    "Asignar la responsabilidad, autoridad y rendición de cuentas por las decisiones de I&T en línea con los principios de diseño de gobierno, de los modelos de toma de decisiones y de delegación acordados.",
+    "Direccionar al personal para que siga las directrices relevantes en cuanto al comportamiento ético y profesional y asegurar que se conozcan y se apliquen las consecuencias del incumplimiento.",
+    "Direccionar el establecimiento de un sistema de recompensas para fomentar el cambio cultural deseado."
   ])
   const [options3] = useState([
-    "respuesta 3 calif 0",
-    "respuesta 3 calif 1",
-    "respuesta 3 calif 2",
-    "respuesta 3 calif 3",
-    "respuesta 3 calif 4",
-    "respuesta 3 calif 5"
+    "Conocer la organización y su contexto en relación al riesgo de I&T.",
+    "Determinar el apetito al riesgo de la organización, es decir, el nivel de riesgo relacionado con I&T que la empresa está dispuesta a tomar en la búsqueda de sus objetivos empresariales",
+    "Determinar los niveles de tolerancia al riesgo frente al apetito al riesgo, es decir, las desviaciones aceptables temporalmente del apetito alriesgo.",
+    "Determinar el grado de alineamiento de la estrategia de riesgos en I&T de la empresa con la estrategia de riesgos de la empresa en su conjunto y garantizar que el apetito al riesgo se sitúe por debajo de la capacidad de riesgo de la organización.",
+    "Evaluar los factores de riesgo de I&T de forma proactiva antes de tomar decisiones estratégicas a nivel de empresa y garantizar que las consideraciones del riesgo formen parte del proceso de decisión estratégico de la empresa.",
+    "Atraer y conservar las habilidades y el personal necesarios para la gestión de riesgos de las I&T"
   ])
   const [options4] = useState([
-    "respuesta 4 calif 0",
-    "respuesta 4 calif 1",
-    "respuesta 4 calif 2",
-    "respuesta 4 calif 3",
-    "respuesta 4 calif 4",
-    "respuesta 4 calif 5"
+    "Dirigir la traducción e integración de la estrategia de riesgo de I&T en las prácticas de gestión de riesgos y las actividades operativas.",
+    "Dirigir la traducción e integración de la estrategia de riesgo de I&T en las prácticas de gestión de riesgos y las actividades operativas.",
+    "Dirigir el desarrollo de planes de comunicación de riesgos (que se extiendan a todos los niveles de la empresa).",
+    "Dirigir la implementación de los mecanismos adecuados para responder de forma rápida al cambio de riesgos e informar inmediatamente a los cargos de dirección correspondientes, siguiendo los principios de escalamiento (qué comunicar, cuándo, dónde y cómo).",
+    "Ordenar que el riesgo, oportunidades, problemas o preocupaciones puedan identificarse y comunicarse por cualquier persona a la parte correspondiente en cualquier momento. El riesgo debe gestionarse conforme a las políticas y procedimientos publicados y comunicados a los responsables de la toma de decisiones.",
+    "Identificar las metas y métricas claves de los procesos de gobierno y gestión de riesgos que deben monitorizarse, y aprobar las estrategias, métodos, técnicas y procesos para capturar y comunicar la información de las mediciones."
   ])
   const [options5] = useState([
-    "respuesta 5 calif 0",
-    "respuesta 5 calif 1",
-    "respuesta 5 calif 2",
-    "respuesta 5 calif 3",
-    "respuesta 5 calif 4",
-    "respuesta 5 calif 5"
+    "Monitorizarr las metas y métricas de los procesos de gobierno y gestión de riesgos contra los objetivos, analizar la causa de las posibles desviaciones, y poner en marcha las acciones remediales s para solucionar las causas subyacentes.",
+    "Monitorizarr las metas y métricas de los procesos de gobierno y gestión de riesgos contra los objetivos, analizar la causa de las posibles desviaciones, y poner en marcha las acciones remediales s para solucionar las causas subyacentes.",
+    "Supervise hasta qué punto se gestiona el perfil de riesgo dentro de los umbrales de tolerancia y apetito de riesgo de la empresa.",
+    "Supervise hasta qué punto se gestiona el perfil de riesgo dentro de los umbrales de tolerancia y apetito de riesgo de la empresa.",
+    "Facilitar la revisión por parte de las partes interesadas clave del progreso de la empresa con respecto a las metas identificadas.",
+    "Facilitar la revisión por parte de las partes interesadas clave del progreso de la empresa con respecto a las metas identificadas."
   ])
   const [options6] = useState([
-    "respuesta 6 calif 0",
-    "respuesta 6 calif 1",
-    "respuesta 6 calif 2",
-    "respuesta 6 calif 3",
-    "respuesta 6 calif 4",
-    "respuesta 6 calif 5"
+    "Definir los principios fundamentales de la asignación y gestión de recursos y capacidades, de forma que I&T puede satisfacer las necesidades de la empresa conforme a las prioridades acordadas y los límites presupuestarios. Por ejemplo, definir opciones preferidas de abastecimiento definidas para determinados servicios y los límites presupuestarios por opción de abastecimiento.",
+    "Definir los principios fundamentales de la asignación y gestión de recursos y capacidades, de forma que I&T puede satisfacer las necesidades de la empresa conforme a las prioridades acordadas y los límites presupuestarios. Por ejemplo, definir opciones preferidas de abastecimiento definidas para determinados servicios y los límites presupuestarios por opción de abastecimiento.",
+    "Partiendo de las estrategias actuales y futuras, examinar las posibles opciones para proporcionar recursos relacionados con I&T (recursos tecnológicos, financieros y humanos), y desarrollar capacidades para hacer frente a las necesidades actuales y futuras (incluidas opciones de abastecimiento).",
+    "Partiendo de las estrategias actuales y futuras, examinar las posibles opciones para proporcionar recursos relacionados con I&T (recursos tecnológicos, financieros y humanos), y desarrollar capacidades para hacer frente a las necesidades actuales y futuras (incluidas opciones de abastecimiento).",
+    "Definir los principios para la gestión y el control de la arquitectura empresarial",
+    "Definir los principios para la gestión y el control de la arquitectura empresarial"
   ])
   const [options7] = useState([
-    "respuesta 7 calif 0",
-    "respuesta 7 calif 1",
-    "respuesta 7 calif 2",
-    "respuesta 7 calif 3",
-    "respuesta 7 calif 4",
-    "respuesta 7 calif 5"
+    "Comunicar y dirigir la adopción de estrategias de gestión de recursos, principios y del plan de recursos y arquitectura empresarial acordados.",
+    "Comunicar y dirigir la adopción de estrategias de gestión de recursos, principios y del plan de recursos y arquitectura empresarial acordados.",
+    "Alinear la gestión de recursos con la planificación financiera y de RR. HH. de la empresa.",
+    "Alinear la gestión de recursos con la planificación financiera y de RR. HH. de la empresa.",
+    "Asignar responsabilidades para la ejecución de la gestión de recursos.",
+    "Establecer los principios relacionados con la protección de los recursos."
   ])
   const [options8] = useState([
-    "respuesta 8 calif 0",
-    "respuesta 8 calif 1",
-    "respuesta 8 calif 2",
-    "respuesta 8 calif 3",
-    "respuesta 8 calif 4",
-    "respuesta 8 calif 5"
+    "Supervisar las estrategias de abastecimiento de I&T, las estrategias de arquitectura empresarial y las capacidades y recursos empresariales y de TI para garantizar que se puedan satisfacer las necesidades y objetivos actuales y futuros de la empresa.",
+    "Supervisar las estrategias de abastecimiento de I&T, las estrategias de arquitectura empresarial y las capacidades y recursos empresariales y de TI para garantizar que se puedan satisfacer las necesidades y objetivos actuales y futuros de la empresa.",
+    "Monitorizar el rendimiento de los recursos en relación a los objetivos, analizar la causa de las posibles desviaciones, y poner en marcha las acciones remediales para solucionar las causas subyacentes.",
+    "Monitorizar el rendimiento de los recursos en relación a los objetivos, analizar la causa de las posibles desviaciones, y poner en marcha las acciones remediales para solucionar las causas subyacentes.",
+    "Supervisar la asignación y optimización de recursos conforme a los objetivos y prioridades de la empresa usando metas y métricas acordadas",
+    "Supervisar la asignación y optimización de recursos conforme a los objetivos y prioridades de la empresa usando metas y métricas acordadas"
   ])
   const [options9] = useState([
-    "respuesta 9 calif 0",
-    "respuesta 9 calif 1",
-    "respuesta 9 calif 2",
-    "respuesta 9 calif 3",
-    "respuesta 9 calif 4",
-    "respuesta 9 calif 5"
+    "Examinar y juzgar los requisitos de comunicación e informes actuales y futuros para otras partes interesadas relacionados con el uso de I&T dentro de la empresa, incluidos el nivel requerido de participación/consulta y el alcance de la comunicación/nivel de detalle y condiciones.",
+    "Examinar y juzgar los requisitos de comunicación e informes actuales y futuros para otras partes interesadas relacionados con el uso de I&T dentro de la empresa, incluidos el nivel requerido de participación/consulta y el alcance de la comunicación/nivel de detalle y condiciones.",
+    "Examinar y juzgar los requisitos de informes obligatorios actuales y futuros relacionados con el uso de I&T dentro de la empresa (regulación, legislación, leyes comunes, contractuales), incluidos su alcance y frecuencia.",
+    "Examinar y juzgar los requisitos de informes obligatorios actuales y futuros relacionados con el uso de I&T dentro de la empresa (regulación, legislación, leyes comunes, contractuales), incluidos su alcance y frecuencia.",
+    "Mantener los principios para la comunicación con partes interesadas externas e internas, incluidos formatos y canales de comunicación, así como la aceptación y firma de informes de las partes interesadas.",
+    "Identificar todas las partes interesadas de I&T relevantes dentro y fuera de la empresa. Agrupar a las partes interesadas en categorías de partes interesadas con requisitos similares."
   ])
   const [options10] = useState([
-    "respuesta 10 calif 0",
-    "respuesta 10 calif 1",
-    "respuesta 10 calif 2",
-    "respuesta 10 calif 3",
-    "respuesta 10 calif 4",
-    "respuesta 10 calif 5"
+    "Dirigir la implementación de mecanismos para asegurar que la información cumple con todos los criterios de los requisitos de elaboración de informes obligatorios de I&T para la empresa.",
+    "Dirigir la implementación de mecanismos para asegurar que la información cumple con todos los criterios de los requisitos de elaboración de informes obligatorios de I&T para la empresa.",
+    "Dirigir el establecimiento de la estrategia de consulta y comunicación para las partes interesadas externas e internas.",
+    "Dirigir el establecimiento de la estrategia de consulta y comunicación para las partes interesadas externas e internas.",
+    "Establecer los mecanismos de escalamiento de los informes.",
+    "Establecer los mecanismos de escalamiento de los informes."
   ])
   const [options11] = useState([
-    "respuesta 11 calif 0",
-    "respuesta 11 calif 1",
-    "respuesta 11 calif 2",
-    "respuesta 11 calif 3",
-    "respuesta 11 calif 4",
-    "respuesta 11 calif 5"
+    "Evaluar de forma periódica la efectividad de los mecanismos para, y los resultados de, la participación y comunicación con partes interesadas internas y externas.",
+    "Evaluar de forma periódica la efectividad de los mecanismos para, y los resultados de, la participación y comunicación con partes interesadas internas y externas.",
+    "Determinar si se cumplen con los requisitos de las distintas partes interesadas y evaluar los niveles de participación de las partes interesadas.",
+    "Determinar si se cumplen con los requisitos de las distintas partes interesadas y evaluar los niveles de participación de las partes interesadas.",
+    "Evaluar periódicamente la eficiencia de los mecanismos para garantizar la precisión y confiabilidad de informes obligatorios.",
+    "Evaluar periódicamente la eficiencia de los mecanismos para garantizar la precisión y confiabilidad de informes obligatorios."
   ])
 
   const [answerslist1] = useState([options0, options1, options2, options3, options4, options5, options6, options7, options8, options9, options10, options11])
@@ -131,7 +131,6 @@ const List1 = () => {
   React.useEffect(() => {
     setAnswers(JSON.parse(localStorage.getItem("p1")))
   }, [])
-
 
 
   return (
@@ -145,15 +144,7 @@ const List1 = () => {
             <CardBody>
               <Row>
                 <Col xs="12" md="4">
-                  {/* {feedbackOption.map((option, index) => {
-                    return (
-                      <ListGroup key={index} id="list-tab" role="tablist">
-                        <ListGroupItem onClick={() => setActiveTab({ index })} action active={activeTab === { index }} >{option}</ListGroupItem>
-                      </ListGroup>
-                    )
-                  }
-                  )} */}
-
+          
                   <ListGroup id="list-tab" role="tablist">
                     <ListGroupItem onClick={() => setActiveTab(1)} action active={activeTab === 1} >Uno</ListGroupItem>
                     <ListGroupItem onClick={() => setActiveTab(2)} action active={activeTab === 2} >Dos</ListGroupItem>
@@ -171,18 +162,6 @@ const List1 = () => {
                 </Col>
 
                 <Col xs="12" md="8">
-
-                  {/* {feedbackAnswer.map((fOption, index) => {
-                    return (
-                      <TabContent activeTab={activeTab}>
-                        <TabPane tabId={index}>
-                          {fOption}
-                        </TabPane>
-                      </TabContent>
-                    )
-                  }
-
-                  )} */}
 
                   <TabContent activeTab={activeTab}>
                     <TabPane tabId={1}>
