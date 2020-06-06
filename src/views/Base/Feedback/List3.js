@@ -6,198 +6,198 @@ const List3 = () => {
 
   const [activeTab, setActiveTab] = useState(1)
   const [answers, setAnswers] = useState([])
-
+  /*FEEDBACK BAI */ 
   const [options0] = useState([
-    "respuesta 0 calif 0",
-    "respuesta 0 calif 1",
-    "respuesta 0 calif 2",
-    "respuesta 0 calif 3",
-    "respuesta 0 calif 4",
-    "respuesta 0 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options1] = useState([
-    "respuesta 1 calif 0",
-    "respuesta 1 calif 1",
-    "respuesta 1 calif 2",
-    "respuesta 1 calif 3",
-    "respuesta 1 calif 4",
-    "respuesta 1 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options2] = useState([
-    "respuesta 2 calif 0",
-    "respuesta 2 calif 1",
-    "respuesta 2 calif 2",
-    "respuesta 2 calif 3",
-    "respuesta 2 calif 4",
-    "respuesta 2 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options3] = useState([
-    "respuesta 3 calif 0",
-    "respuesta 3 calif 1",
-    "respuesta 3 calif 2",
-    "respuesta 3 calif 3",
-    "respuesta 3 calif 4",
-    "respuesta 3 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options4] = useState([
-    "respuesta 4 calif 0",
-    "respuesta 4 calif 1",
-    "respuesta 4 calif 2",
-    "respuesta 4 calif 3",
-    "respuesta 4 calif 4",
-    "respuesta 4 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options5] = useState([
-    "respuesta 5 calif 0",
-    "respuesta 5 calif 1",
-    "respuesta 5 calif 2",
-    "respuesta 5 calif 3",
-    "respuesta 5 calif 4",
-    "respuesta 5 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options6] = useState([
-    "respuesta 6 calif 0",
-    "respuesta 6 calif 1",
-    "respuesta 6 calif 2",
-    "respuesta 6 calif 3",
-    "respuesta 6 calif 4",
-    "respuesta 6 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options7] = useState([
-    "respuesta 7 calif 0",
-    "respuesta 7 calif 1",
-    "respuesta 7 calif 2",
-    "respuesta 7 calif 3",
-    "respuesta 7 calif 4",
-    "respuesta 7 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options8] = useState([
-    "respuesta 8 calif 0",
-    "respuesta 8 calif 1",
-    "respuesta 8 calif 2",
-    "respuesta 8 calif 3",
-    "respuesta 8 calif 4",
-    "respuesta 8 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options9] = useState([
-    "respuesta 9 calif 0",
-    "respuesta 9 calif 1",
-    "respuesta 9 calif 2",
-    "respuesta 9 calif 3",
-    "respuesta 9 calif 4",
-    "respuesta 9 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options10] = useState([
-    "respuesta 10 calif 0",
-    "respuesta 10 calif 1",
-    "respuesta 10 calif 2",
-    "respuesta 10 calif 3",
-    "respuesta 10 calif 4",
-    "respuesta 10 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options11] = useState([
-    "respuesta 11 calif 0",
-    "respuesta 11 calif 1",
-    "respuesta 11 calif 2",
-    "respuesta 11 calif 3",
-    "respuesta 11 calif 4",
-    "respuesta 11 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options12] = useState([
-    "respuesta 12 calif 0",
-    "respuesta 12 calif 1",
-    "respuesta 12 calif 2",
-    "respuesta 12 calif 3",
-    "respuesta 12 calif 4",
-    "respuesta 12 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options13] = useState([
-    "respuesta 13 calif 0",
-    "respuesta 13 calif 1",
-    "respuesta 13 calif 2",
-    "respuesta 13 calif 3",
-    "respuesta 13 calif 4",
-    "respuesta 13 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options14] = useState([
-    "respuesta 14 calif 0",
-    "respuesta 14 calif 1",
-    "respuesta 14 calif 2",
-    "respuesta 14 calif 3",
-    "respuesta 14 calif 4",
-    "respuesta 14 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options15] = useState([
-    "respuesta 15 calif 0",
-    "respuesta 15 calif 1",
-    "respuesta 15 calif 2",
-    "respuesta 15 calif 3",
-    "respuesta 15 calif 4",
-    "respuesta 15 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options16] = useState([
-    "respuesta 16 calif 0",
-    "respuesta 16 calif 1",
-    "respuesta 16 calif 2",
-    "respuesta 16 calif 3",
-    "respuesta 16 calif 4",
-    "respuesta 16 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options17] = useState([
-    "respuesta 17 calif 0",
-    "respuesta 17 calif 1",
-    "respuesta 17 calif 2",
-    "respuesta 17 calif 3",
-    "respuesta 17 calif 4",
-    "respuesta 17 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options18] = useState([
-    "respuesta 18 calif 0",
-    "respuesta 18 calif 1",
-    "respuesta 18 calif 2",
-    "respuesta 18 calif 3",
-    "respuesta 18 calif 4",
-    "respuesta 18 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options19] = useState([
-    "respuesta 19 calif 0",
-    "respuesta 19 calif 1",
-    "respuesta 19 calif 2",
-    "respuesta 19 calif 3",
-    "respuesta 19 calif 4",
-    "respuesta 19 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options20] = useState([
-    "respuesta 20 calif 0",
-    "respuesta 20 calif 1",
-    "respuesta 20 calif 2",
-    "respuesta 20 calif 3",
-    "respuesta 20 calif 4",
-    "respuesta 20 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options21] = useState([
-    "respuesta 21 calif 0",
-    "respuesta 21 calif 1",
-    "respuesta 21 calif 2",
-    "respuesta 21 calif 3",
-    "respuesta 21 calif 4",
-    "respuesta 21 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options22] = useState([
-    "respuesta 22 calif 0",
-    "respuesta 22 calif 1",
-    "respuesta 22 calif 2",
-    "respuesta 22 calif 3",
-    "respuesta 22 calif 4",
-    "respuesta 22 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
   const [options23] = useState([
-    "respuesta 23 calif 0",
-    "respuesta 23 calif 1",
-    "respuesta 23 calif 2",
-    "respuesta 23 calif 3",
-    "respuesta 23 calif 4",
-    "respuesta 23 calif 5"
+    "Para una calificación de 0 en esta área se recomienda:",
+    "Para una calificación de 1 en esta área se recomienda:",
+    "Para una calificación de 2 en esta área se recomienda:",
+    "Para una calificación de 3 en esta área se recomienda:",
+    "Para una calificación de 4 en esta área se recomienda:",
+    "Para una calificación de 5 en esta área se recomienda:"
   ])
 
 

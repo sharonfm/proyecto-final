@@ -84,7 +84,7 @@ const Forms4 = () => {
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">3</PaginationLink></PaginationItem>
                   </Link>
                   <PaginationItem active>
-                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D', borderColor:'#43425D' }} tag="button">4</PaginationLink></PaginationItem>
+                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#3b6978', borderColor:'#3b6978' }} tag="button">4</PaginationLink></PaginationItem>
                   </PaginationItem>
                   <Link to="/base/form5">
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">5</PaginationLink></PaginationItem>
@@ -100,14 +100,15 @@ const Forms4 = () => {
             <CardBody>
               <Form onSubmit={handleSubmit} encType="multipart/form-data" className="form-horizontal">
                 <FormGroup >
-                  <p>En este espacio se estará explicando de forma detallada el proceso que se estará evaluando.
-                  Teniendo en cuenta la previa observación de la sección "Criterios" donde se conocerán los criterios de evaluación para cada área.</p>
+                <p>Teniendo en cuenta la previa observación de la sección "Criterios" donde se conocieron los 
+                    posibles tipos de evaluación para cada área existente, damos paso a realizar la siguiente encuesta 
+                    adecuada con el tipo de calificación para las actividades los procesos del dominio DSS: </p>
                 </FormGroup>
 
                 {questionGroup.map((question, index1) => {
                   return (
                     <FormGroup key={index1} >
-                      <Card className="card-accent-primary" >
+                      <Card><CardHeader style={{backgroundColor:'#3b6978'}}></CardHeader>
                         <CardBody>
                           <Row>
                             <h5 style={{ color: '#43425D' }}> {question}</h5>
@@ -152,7 +153,7 @@ const Forms4 = () => {
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">3</PaginationLink></PaginationItem>
                   </Link>
                   <PaginationItem active>
-                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#43425D', borderColor:'#43425D' }} tag="button">4</PaginationLink></PaginationItem>
+                    <PaginationItem><PaginationLink style={{ color: '#F2F2F2', backgroundColor: '#3b6978', borderColor:'#3b6978' }} tag="button">4</PaginationLink></PaginationItem>
                   </PaginationItem>
                   <Link to="/base/form5">
                     <PaginationItem><PaginationLink style={{ color: '#43425D' }} tag="button">5</PaginationLink></PaginationItem>

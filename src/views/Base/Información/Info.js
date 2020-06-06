@@ -115,14 +115,15 @@ class Carousels extends Component {
         {/* <Card className="card-accent-primary text-center">
             <CardHeader><h3 style={{color:'#43425D'}}>Definición de los dominios activos en G&G TI</h3></CardHeader>
         </Card> */}
-        <Card className="card-accent-primary text-center">
-            <CardHeader><h3 style={{color:'#43425D'}}>EDM→ Evaluar, Dirigir y Monitorizar</h3></CardHeader>
+        <Card className=" text-center">
+            <CardHeader style={{backgroundColor:'#696791'}}></CardHeader>
+            <CardBody><h3 style={{color:'#43425D'}}>EDM→ Evaluar, Dirigir y Monitorizar</h3></CardBody>
         </Card>
         
         <Row >
           <Col xs="6" sm="3" >
             <Card className="  text-justify">
-              <CardHeader className="text-center">
+              <CardHeader className='text-center'>
               <h4 style={{color:'#43425D'}}>EDM01</h4> 
               </CardHeader>
               <CardBody className= 'text-center'>
@@ -162,8 +163,9 @@ class Carousels extends Component {
           </Col>
         </Row>
 
-        <Card className="card-accent-primary text-center">
-            <CardHeader><h3 style={{color:'#43425D'}}>APO→ Alinear, Planificar y Organizar</h3></CardHeader>
+        <Card className="text-center">
+            <CardHeader style={{backgroundColor:'#696791'}}></CardHeader>
+            <CardBody><h3 style={{color:'#43425D'}}>APO→ Alinear, Planificar y Organizar</h3></CardBody>
         </Card>
 
         <Row style={{justifyContent: 'center'}}>
@@ -259,8 +261,9 @@ class Carousels extends Component {
           </Col>
         </Row>
 
-        <Card className="card-accent-primary text-center">
-            <CardHeader><h3 style={{color:'#43425D'}}>BAI→ Construir, Adquirir e Implementar</h3></CardHeader>
+        <Card className="text-center">
+            <CardHeader style={{backgroundColor:'#696791'}}></CardHeader>
+            <CardBody><h3 style={{color:'#43425D'}}>BAI→ Construir, Adquirir e Implementar</h3></CardBody>
         </Card>
         
         <Row>
@@ -346,8 +349,9 @@ class Carousels extends Component {
           </Col>
         </Row>
 
-        <Card className="card-accent-primary text-center">
-            <CardHeader><h3 style={{color:'#43425D'}}>DSS→ Entregar, Dar Servicio y Soporte</h3></CardHeader>
+        <Card className="text-center">
+            <CardHeader style={{backgroundColor:'#696791'}}></CardHeader>
+            <CardBody><h3 style={{color:'#43425D'}}>DSS→ Entregar, Dar Servicio y Soporte</h3></CardBody>
         </Card>
         
         <Row style={{justifyContent: 'center'}}>
@@ -383,8 +387,9 @@ class Carousels extends Component {
           </Col>
         </Row>
       
-        <Card className="card-accent-primary text-center">
-            <CardHeader><h3 style={{color:'#43425D'}}>MEA→ Monitorizar, Evaluar y Valorar</h3></CardHeader>
+        <Card className="text-center">
+            <CardHeader style={{backgroundColor:'#696791'}}></CardHeader>
+            <CardBody><h3 style={{color:'#43425D'}}>MEA→ Monitorizar, Evaluar y Valorar</h3></CardBody>
         </Card>
         
         <Row>

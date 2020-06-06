@@ -114,14 +114,15 @@ const Forms3 = () => {
             <CardBody>
               <Form onSubmit={handleSubmit}  encType="multipart/form-data" className="form-horizontal">
                 <FormGroup >
-                  <p>En este espacio se estará explicando de forma detallada el proceso que se estará evaluando.
-                  Teniendo en cuenta la previa observación de la sección "Criterios" donde se conocerán los criterios de evaluación para cada área.</p>
+                <p>Teniendo en cuenta la previa observación de la sección "Criterios" donde se conocieron los 
+                    posibles tipos de evaluación para cada área existente, damos paso a realizar la siguiente encuesta 
+                    adecuada con el tipo de calificación para las actividades los procesos del dominio BAI: </p>
                 </FormGroup>
 
                 {questionGroup.map((question, index1) => {
                   return (
                     <FormGroup key={index1} >
-                      <Card className="card-accent-primary" >
+                      <Card><CardHeader style={{backgroundColor:'#696791'}}></CardHeader>
                         <CardBody>
                           <Row>
                             <h5 style={{ color: '#43425D' }}> {question}</h5>
