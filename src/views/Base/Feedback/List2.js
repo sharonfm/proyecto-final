@@ -152,76 +152,76 @@ const List2 = () => {
     "Para una calificación de 5 en esta área se recomienda: Cuando sea necesario, revisar el acuerdo de servicio vigentes con el proveedor de servicios. Acordar y actualizar los acuerdos operativos internos."
   ])
   const [options18] = useState([
-    "Para una calificación de 0 en esta área se recomienda:",
-    "Para una calificación de 1 en esta área se recomienda:",
-    "Para una calificación de 2 en esta área se recomienda:",
-    "Para una calificación de 3 en esta área se recomienda:",
-    "Para una calificación de 4 en esta área se recomienda:",
-    "Para una calificación de 5 en esta área se recomienda:"
+    "Para una calificación de 0 en esta área se recomienda: Enfocar la gestión de la calidad en los clientes para determinar los requisitos del cliente interno y externo y asegurar el alineamiento de los estándares y las prácticas de I&T. Definir y comunicar los roles y responsabilidades relacionados con la resolución de conflictos entre el usuario/cliente y la organización de TI.",
+    "Para una calificación de 1 en esta área se recomienda: Gestionar las necesidades y expectativas empresariales para cada proceso de negocio y servicio operativo y nuevas soluciones de TI. Mantener sus criterios de aceptación de calidad.",
+    "Para una calificación de 2 en esta área se recomienda: Gestionar las necesidades y expectativas empresariales para cada proceso de negocio y servicio operativo y nuevas soluciones de TI     Mantener sus criterios de aceptación de calidad.",
+    "Para una calificación de 3 en esta área se recomienda: Obtener las opiniones de clientes de forma periódica sobre los procesos de negocio y la prestación de servicios y entrega de soluciones de TI. Determinar el impacto de los estándares y prácticas de I&T y garantizar que se satisfagan y pongan en práctica las expectativas del cliente.",
+    "Para una calificación de 4 en esta área se recomienda: Obtener las opiniones de clientes de forma periódica sobre los procesos de negocio y la prestación de servicios y entrega de soluciones de TI. Determinar el impacto de los estándares y prácticas de I&T y garantizar que se satisfagan y pongan en práctica las expectativas del cliente.",
+    "Para una calificación de 5 en esta área se recomienda: Continuar comunicando los requisitos y expectativas del cliente al negocio y la organización de TI."
   ])
   const [options19] = useState([
-    "Para una calificación de 0 en esta área se recomienda:",
-    "Para una calificación de 1 en esta área se recomienda:",
-    "Para una calificación de 2 en esta área se recomienda:",
-    "Para una calificación de 3 en esta área se recomienda:",
-    "Para una calificación de 4 en esta área se recomienda:",
-    "Para una calificación de 5 en esta área se recomienda:"
+    "Para una calificación de 0 en esta área se recomienda: Preparar y realizar las revisiones de calidad para procesos y soluciones organizativas clave.",
+    "Para una calificación de 1 en esta área se recomienda: Monitorizar las métricas de calidad basadas en metas alineadas con los objetivos generales en cuanto a calidad.",
+    "Para una calificación de 2 en esta área se recomienda: Asegurar que la dirección y los responsables de los procesos revisen regularmente el rendimiento de la gestión de la calidad en comparación con las métricas de calidad definidas.",
+    "Para una calificación de 3 en esta área se recomienda: Asegurar que la dirección y los responsables de los procesos revisen regularmente el rendimiento de la gestión de la calidad en comparación con las métricas de calidad definidas.",
+    "Para una calificación de 4 en esta área se recomienda: Analizar los resultados generales del rendimiento de gestión de la calidad.",
+    "Para una calificación de 5 en esta área se recomienda: Informar sobre los resultados de revisión de rendimiento y gestión de la calidad e iniciar las mejoras necesarias."
   ])
   const [options20] = useState([
-    "Para una calificación de 0 en esta área se recomienda:",
-    "Para una calificación de 1 en esta área se recomienda:",
-    "Para una calificación de 2 en esta área se recomienda:",
-    "Para una calificación de 3 en esta área se recomienda:",
-    "Para una calificación de 4 en esta área se recomienda:",
-    "Para una calificación de 5 en esta área se recomienda:"
+    "Para una calificación de 0 en esta área se recomienda: Establecer una plataforma para compartir buenas prácticas y captar información sobre los defectos y errores para permitir el aprendizaje a partir de ellos.",
+    "Para una calificación de 1 en esta área se recomienda: Identificar ejemplos de procesos de entrega de calidad excelente que puedan beneficiar a otros servicios o proyectos. Compartirlos con los equipos de ejecución de proyectos y servicios para fomentar la mejora",
+    "Para una calificación de 2 en esta área se recomienda: Identificar ejemplos recurrentes de defectos de calidad. Determinar su causa raíz, evaluar su impacto y resultado y acordar acciones de mejora con los equipos de ejecución del servicio y/o proyecto.",
+    "Para una calificación de 3 en esta área se recomienda: Identificar ejemplos recurrentes de defectos de calidad. Determinar su causa raíz, evaluar su impacto y resultado y acordar acciones de mejora con los equipos de ejecución del servicio y/o proyecto.",
+    "Para una calificación de 4 en esta área se recomienda: Proporcionar a los empleados formación en métodos y herramientas de mejora continua.",
+    "Para una calificación de 5 en esta área se recomienda: Hacer un análisis comparativo de los resultados de benchmarks de calidad con los datos históricos internos, directrices de la industria, estándares y datos de tipos de empresas similares."
   ])
   const [options21] = useState([
-    "Para una calificación de 0 en esta área se recomienda:",
-    "Para una calificación de 1 en esta área se recomienda:",
-    "Para una calificación de 2 en esta área se recomienda:",
-    "Para una calificación de 3 en esta área se recomienda:",
-    "Para una calificación de 4 en esta área se recomienda:",
-    "Para una calificación de 5 en esta área se recomienda:"
+    "Para una calificación de 0 en esta área se recomienda: Definir el alcance y los límites del sistema de gestión de seguridad de la información (SGSI) en términos de las características de la empresa, organización, ubicación, activos y tecnología. Incluir detalles y justificación de las exclusiones del alcance.",
+    "Para una calificación de 1 en esta área se recomienda: Definir un SGSI conforme a la política empresarial y el contexto en el que opera la empresa.",
+    "Para una calificación de 2 en esta área se recomienda: linear el SGSI con el enfoque global de la empresa hacia la gestión de la seguridad.",
+    "Para una calificación de 3 en esta área se recomienda: Obtener la autorización de la dirección para implementar y operar o cambiar el SGSI. Preparar y mantener una declaración de aplicabilidad que describa el alcance del SGSI.",
+    "Para una calificación de 4 en esta área se recomienda: Definir y comunicar los roles y responsabilidades de la gestión de seguridad de la información.",
+    "Para una calificación de 5 en esta área se recomienda: Comunicar la estrategia de SGSI."
   ])
   const [options22] = useState([
-    "Para una calificación de 0 en esta área se recomienda:",
-    "Para una calificación de 1 en esta área se recomienda:",
-    "Para una calificación de 2 en esta área se recomienda:",
-    "Para una calificación de 3 en esta área se recomienda:",
-    "Para una calificación de 4 en esta área se recomienda:",
-    "Para una calificación de 5 en esta área se recomienda:"
+    "Para una calificación de 0 en esta área se recomienda: Formular y mantener un plan de tratamiento de riesgos de seguridad de la información alineado con objetivos estratégicos y la arquitectura empresarial. Asegurar que el plan identifique las prácticas de gestión y las soluciones de seguridad apropiadas y óptimas, con los recursos, responsabilidades y prioridades asociados para la gestión de los riesgos de seguridad de la información identificados.",
+    "Para una calificación de 1 en esta área se recomienda: Mantener, como parte de la arquitectura de la empresa, un inventario de los componentes de la solución establecida para gestionar los riesgos relacionados con la seguridad.",
+    "Para una calificación de 2 en esta área se recomienda: Desarrollar propuestas para implementar el plan de tratamiento de riesgos de seguridad, apoyadas por casos de negocio apropiados que incluyan consideraciones de financiación y asignación de roles y responsabilidades.",
+    "Para una calificación de 3 en esta área se recomienda: Proporcionar aportes para el diseño y desarrollo de prácticas y soluciones de gestión, seleccionadas en el plan de tratamiento de riesgos de seguridad de la información. Implementar programas de formación y concienciación sobre seguridad de la información y privacidad.",
+    "Para una calificación de 4 en esta área se recomienda: Integrar la planificación, diseño, implementación y monitorización de procedimientos de seguridad de la información y privacidad y otros controles capaces de permitir la prevención, detección rápida de eventos de seguridad y la respuesta a incidentes de seguridad.",
+    "Para una calificación de 5 en esta área se recomienda: Definir cómo medir la eficacia de las prácticas de gestión seleccionadas. Especificar cómo deben usarse estas medidas para evaluar la eficacia para producir resultados comparables y reproducibles."
   ])
   const [options23] = useState([
-    "Para una calificación de 0 en esta área se recomienda:",
-    "Para una calificación de 1 en esta área se recomienda:",
-    "Para una calificación de 2 en esta área se recomienda:",
-    "Para una calificación de 3 en esta área se recomienda:",
-    "Para una calificación de 4 en esta área se recomienda:",
-    "Para una calificación de 5 en esta área se recomienda:"
+    "Para una calificación de 0 en esta área se recomienda: Llevar a cabo revisiones regulares de la eficacia del SGSI. Incluir el cumplimiento de la política y los objetivos del SGSI y revisar las prácticas de seguridad y privacidad.",
+    "Para una calificación de 1 en esta área se recomienda: Realizar auditorías de SGSI a intervalos planificados.",
+    "Para una calificación de 2 en esta área se recomienda: Realizar auditorías de SGSI a intervalos planificados.",
+    "Para una calificación de 3 en esta área se recomienda: Realizar periódicamente una revisión de la gestión del SGSI para asegurar que el alcance sigue siendo adecuado y que se identifican mejoras en el proceso del SGSI.",
+    "Para una calificación de 4 en esta área se recomienda: Registrar acciones y eventos que podrían tener un impacto en la eficacia o el rendimiento del SGSI.",
+    "Para una calificación de 5 en esta área se recomienda: Hacer aportes para el mantenimiento de los planes de seguridad para tener en cuenta los hallazgos de las actividades de monitorización y revisión."
   ])
   const [options24] = useState([
-    "Para una calificación de 0 en esta área se recomienda:",
-    "Para una calificación de 1 en esta área se recomienda:",
-    "Para una calificación de 2 en esta área se recomienda:",
-    "Para una calificación de 3 en esta área se recomienda:",
-    "Para una calificación de 4 en esta área se recomienda:",
-    "Para una calificación de 5 en esta área se recomienda:"
+    "Para una calificación de 0 en esta área se recomienda: Establecer y seguir un proceso de gestión de metadatos.",
+    "Para una calificación de 1 en esta área se recomienda: Asegurar que la documentación de metadatos considera las interdependencias entre los datos. Establecer y seguir categorías, propiedades y estándares de metadatos.",
+    "Para una calificación de 2 en esta área se recomienda: Desarrollar y usar los metadatos para realizar un análisis del impacto de los posibles cambios en los datos.",
+    "Para una calificación de 3 en esta área se recomienda: Poblar el repositorio de metadatos de la organización con categorías y clasificaciones adicionales de metadatos conforme a un plan de implementación por fases. Vincularlo con las capas de arquitectura. Validar los metadatos y cualquier cambio a los metadatos con la arquitectura actual.",
+    "Para una calificación de 4 en esta área se recomienda: Asegurar que los tipos de metadatos y las definiciones de datos respaldan prácticas de importación, suscripción y consumo consistentes. Usar medidas y métricas para evaluar la precisión y la adopción de los metadatos.",
+    "Para una calificación de 5 en esta área se recomienda: Evaluar los cambios de datos planificados para generar un impacto en el repositorio de metadatos. Mejorar continuamente los procesos de captura, cambio y perfeccionamiento de los metadatos."
   ])
   const [options25] = useState([
-    "Para una calificación de 0 en esta área se recomienda:",
-    "Para una calificación de 1 en esta área se recomienda:",
-    "Para una calificación de 2 en esta área se recomienda:",
-    "Para una calificación de 3 en esta área se recomienda:",
-    "Para una calificación de 4 en esta área se recomienda:",
-    "Para una calificación de 5 en esta área se recomienda:"
+    "Para una calificación de 0 en esta área se recomienda: Definir una estrategia de calidad de los datos en colaboración con las partes interesadas empresariales y tecnológicas, aprobada y gestionada por la dirección ejecutiva. La estrategia debería favorecer pasar del estado actual al objetivo. También debe alinearse de forma explícita con los objetivos empresariales y la estrategia de gestión de datos de la organización.",
+    "Para una calificación de 1 en esta área se recomienda: Asegurar que la estrategia de calidad de los datos se respete en toda la organización y venga acompañada de las políticas, procesos y directrices correspondientes.",
+    "Para una calificación de 2 en esta área se recomienda: Afianzar las políticas, procesos y gobierno de la estrategia de calidad de los datos durante todo el ciclo de vida de los datos. Exigir los procesos correspondientes en la metodología del ciclo de vida de desarrollo del sistema.",
+    "Para una calificación de 3 en esta área se recomienda: Desarrollar, monitorizar y mantener un plan secuencial para el esfuerzo de mejora de la calidad de los datos en toda la organización.",
+    "Para una calificación de 4 en esta área se recomienda: Para evaluar el progreso, supervisar los planes a fin de cumplir las metas y objetivos de la estrategia de calidad de los datos.",
+    "Para una calificación de 5 en esta área se recomienda: Recopilar sistemáticamente los informes de las partes interesadas sobre problemas de calidad de los datos. Incluir sus expectativas para mejorar la calidad de los datos en la estrategia de calidad de los datos. Medirlos y monitorizarlos."
   ])
   const [options26] = useState([
-    "Para una calificación de 0 en esta área se recomienda:",
-    "Para una calificación de 1 en esta área se recomienda:",
-    "Para una calificación de 2 en esta área se recomienda:",
-    "Para una calificación de 3 en esta área se recomienda:",
-    "Para una calificación de 4 en esta área se recomienda:",
-    "Para una calificación de 5 en esta área se recomienda:"
+    "Para una calificación de 0 en esta área se recomienda: Realizar de forma periódica evaluaciones de la calidad de los datos, conforme a una frecuencia aprobada por la política de evaluación de calidad de los datos. Asegurar que el gobierno de los datos determine la serie de atributos clave por área temática para las evaluaciones de calidad de los datos.",
+    "Para una calificación de 1 en esta área se recomienda: Incluir recomendaciones para su remediación , con explicaciones, en los resultados de evaluaciones de calidad de los datos.",
+    "Para una calificación de 2 en esta área se recomienda: Evaluar la calidad de los datos, usar los umbrales y los objetivos establecidos para cada dimensión de calidad seleccionada.",
+    "Para una calificación de 3 en esta área se recomienda: Generar informes de medición de la calidad de los datos de forma sistemática, basados en la criticidad de atributos y la volatilidad de los datos.",
+    "Para una calificación de 4 en esta área se recomienda: Generar informes de medición de la calidad de los datos de forma sistemática, basados en la criticidad de atributos y la volatilidad de los datos.",
+    "Para una calificación de 5 en esta área se recomienda: Revisar y mejorar continuamente la evaluación de calidad de los datos y los procesos de generación de informes."
   ])
 
 
