@@ -308,15 +308,6 @@ const List2 = () => {
                     <ListGroupItem onClick={() => setActiveTab(16)} action active={activeTab === 16} >Dieciseis</ListGroupItem>
                     <ListGroupItem onClick={() => setActiveTab(17)} action active={activeTab === 17} >Diecisiete</ListGroupItem>
                     <ListGroupItem onClick={() => setActiveTab(18)} action active={activeTab === 18} >Dieciocho</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(19)} action active={activeTab === 19} >Diecinueve</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(20)} action active={activeTab === 20} >Veinte</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(21)} action active={activeTab === 21} >Veintiuno</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(22)} action active={activeTab === 22} >Veintidos</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(23)} action active={activeTab === 23} >Veintitres</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(24)} action active={activeTab === 24} >Veinticuatro</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(25)} action active={activeTab === 25} >Veinticinco</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(26)} action active={activeTab === 26} >Veintiseis</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(27)} action active={activeTab === 27} >Veintisiete</ListGroupItem>
                   </ListGroup>
                 </Col>
                 <Col xs="12" md="8">
@@ -348,33 +339,52 @@ const List2 = () => {
                     <TabPane tabId={18}>
                       {answerslist2[17][answers[17]]}
                     </TabPane>
-                    <TabPane tabId={19}>
-                      {answerslist2[18][answers[18]]}
-                    </TabPane>
-                    <TabPane tabId={20}>
-                      {answerslist2[19][answers[19]]}
-                    </TabPane>
-                    <TabPane tabId={21}>
-                      {answerslist2[20][answers[20]]}
-                    </TabPane>
-                    <TabPane tabId={22}>
-                      {answerslist2[21][answers[21]]}
-                    </TabPane>
-                    <TabPane tabId={23}>
-                      {answerslist2[22][answers[22]]}
-                    </TabPane>
-                    <TabPane tabId={24}>
-                      {answerslist2[23][answers[23]]}
-                    </TabPane>
-                    <TabPane tabId={25}>
-                      {answerslist2[24][answers[24]]}
-                    </TabPane>
-                    <TabPane tabId={26}>
-                      {answerslist2[25][answers[25]]}
-                    </TabPane>
-                    <TabPane tabId={27}>
-                      {answerslist2[26][answers[26]]}
-                    </TabPane>
+                  </TabContent>
+                </Col>
+              </Row>
+              <Row>
+                <Col xs="12" md="4">
+                  <ListGroup id="list-tab" role="tablist">
+                  <ListGroupItem onClick={() => setActiveTab(19)} action active={activeTab === 19} >Diecinueve</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(20)} action active={activeTab === 20} >Veinte</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(21)} action active={activeTab === 21} >Veintiuno</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(22)} action active={activeTab === 22} >Veintidos</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(23)} action active={activeTab === 23} >Veintitres</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(24)} action active={activeTab === 24} >Veinticuatro</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(25)} action active={activeTab === 25} >Veinticinco</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(26)} action active={activeTab === 26} >Veintiseis</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(27)} action active={activeTab === 27} >Veintisiete</ListGroupItem>
+                  </ListGroup>
+                </Col>
+                <Col xs="12" md="8">
+                  <TabContent activeTab={activeTab}>
+                      <TabPane tabId={19}>
+                        {answerslist2[18][answers[18]]}
+                      </TabPane>
+                      <TabPane tabId={20}>
+                        {answerslist2[19][answers[19]]}
+                      </TabPane>
+                      <TabPane tabId={21}>
+                        {answerslist2[20][answers[20]]}
+                      </TabPane>
+                      <TabPane tabId={22}>
+                        {answerslist2[21][answers[21]]}
+                      </TabPane>
+                      <TabPane tabId={23}>
+                        {answerslist2[22][answers[22]]}
+                      </TabPane>
+                      <TabPane tabId={24}>
+                        {answerslist2[23][answers[23]]}
+                      </TabPane>
+                      <TabPane tabId={25}>
+                        {answerslist2[24][answers[24]]}
+                      </TabPane>
+                      <TabPane tabId={26}>
+                        {answerslist2[25][answers[25]]}
+                      </TabPane>
+                      <TabPane tabId={27}>
+                        {answerslist2[26][answers[26]]}
+                      </TabPane>
                   </TabContent>
                 </Col>
               </Row>

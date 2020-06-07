@@ -16,7 +16,8 @@ import {
   PaginationLink,
   Input,
   Label,
-  Row
+  Row,
+  ButtonGroup
 } from 'reactstrap';
 import { func } from 'prop-types';
 
@@ -133,7 +134,7 @@ const Forms = () => {
                           {optionsGroup.map((option, index) => {
                             return (
                               <FormGroup key = {index} check className="radio">
-                                <Input onChange={(event)=>handleChange(event,index1)} checked={answers[index1] === index+""} className="form-check-input" type="radio" value={index} required />
+                                <Input /* required={true} */ onChange={(event)=>handleChange(event,index1)} checked={answers[index1] === index+""} className="form-check-input" type="radio" value={index} />
                                 <Label check className="form-check-label">{option}</Label>
                               </FormGroup>
                             )
@@ -145,8 +146,12 @@ const Forms = () => {
                     </FormGroup>
                   )
                 })}
-                <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o" value="Enviar datos"></i> Enviar</Button>
-                <Button style={{ position: "absolute", left: "107px", right: "20px"}} type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reiniciar</Button>
+                <Row style={{justifyContent:'center'}}>
+                  <div>
+                    <Button type="submit" size="sm" color="primary"><i className="fa fa-check-square" value="Enviar datos"></i> Enviar</Button>{' '}
+                    <Button type="reset" size="sm" color="danger"><i className="fa fa-refresh"></i> Reiniciar</Button>                  
+                  </div>
+                </Row>
               </Form>
             </CardBody>
             <CardFooter>

@@ -142,10 +142,12 @@ const Forms3 = () => {
                     </FormGroup>
                   )
                 })}
-
-              
-                <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Enviar</Button>
-                <Button style={{ position: "absolute", left: "107px", right: "20px"}} type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reiniciar</Button>
+                <Row style={{justifyContent:'center'}}>
+                  <div>
+                    <Button type="submit" size="sm" color="primary"><i className="fa fa-check-square" value="Enviar datos"></i> Enviar</Button>{' '}
+                    <Button type="reset" size="sm" color="danger"><i className="fa fa-refresh"></i> Reiniciar</Button>                  
+                  </div>
+                </Row>
               </Form>
             </CardBody>
             <CardFooter>
