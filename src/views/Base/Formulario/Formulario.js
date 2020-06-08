@@ -1,4 +1,4 @@
-import React, { Component, useState, FormControlLabel, Radio, RadioGroup, renderCount } from 'react';
+import React, { Component, useState, FormControlLabel, Radio, RadioGroup, renderCount, Alert } from 'react';
 import { Controller, useForm } from 'react-hook-form'
 
 import { Link, useHistory } from 'react-router-dom';
@@ -59,6 +59,7 @@ const Forms = () => {
   ])
 
   const [answers,setAnswers] = useState([])
+  const [error,setErrors] = useState("")
 
   const history = useHistory()
 
@@ -68,16 +69,22 @@ const Forms = () => {
     setAnswers(tempAnswers);
     console.log(tempAnswers)
   }
-  
+  const resetAnswers = () => {
+    setErrors("")
+    setAnswers([]);
+  }
   const handleSubmit = (event) => {
     event.preventDefault()
-    
-    localStorage.setItem("p1", JSON.stringify(answers))
-    history.push("/base/form2")
 
+    if(Object.keys(answers).length==12) {
+      setErrors("")
+      localStorage.setItem("p1", JSON.stringify(answers))
+      history.push("/base/form2")
+    } else {
+      setErrors("Debe responder todas las preguntas!")
+    }   
   }
  
-
   return (
     <div className="animated fadeIn">
       <Row style={{ justifyContent: 'center' }}>
@@ -134,22 +141,24 @@ const Forms = () => {
                           {optionsGroup.map((option, index) => {
                             return (
                               <FormGroup key = {index} check className="radio">
-                                <Input /* required={true} */ onChange={(event)=>handleChange(event,index1)} checked={answers[index1] === index+""} className="form-check-input" type="radio" value={index} />
-                                <Label check className="form-check-label">{option}</Label>
+                                <Input required = "required" onChange={(event)=>handleChange(event,index1)} checked={answers[index1] === index+""} className="form-check-input" type="radio" value={index} />
+                                <Label htmlFor = {"radio"+index} className="form-check-label">{option}</Label>
                               </FormGroup>
                             )
                           }
                           )}
-
                         </CardBody>
                       </Card>
                     </FormGroup>
                   )
                 })}
+                <Row style={{justifyContent:'center', color: 'red', padding:'15px'}}>
+                  {error}
+                </Row>
                 <Row style={{justifyContent:'center'}}>
                   <div>
                     <Button type="submit" size="sm" color="primary"><i className="fa fa-check-square" value="Enviar datos"></i> Enviar</Button>{' '}
-                    <Button type="reset" size="sm" color="danger"><i className="fa fa-refresh"></i> Reiniciar</Button>                  
+                    <Button onClick = {resetAnswers} size="sm" color="danger"><i className="fa fa-refresh"></i> Reiniciar</Button>        
                   </div>
                 </Row>
               </Form>

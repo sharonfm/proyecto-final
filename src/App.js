@@ -3,7 +3,7 @@ import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import "./App.scss";
 import { UserContext } from "./context/authContext";
 
-const loading = () => (
+const pageLoading = () => (
   <div className="animated fadeIn pt-3 text-center">Cargando...</div>
 );
 
@@ -15,35 +15,42 @@ const Login = React.lazy(() => import("./views/Pages/Login"));
 const Register = React.lazy(() => import("./views/Pages/Register"));
 
 const App = () => {
-  const user = useContext(UserContext);
+  const { user, loading } = useContext(UserContext);
   return (
     <HashRouter>
-      <React.Suspense fallback={loading()}>
-        {user ? (
-          <Switch>
-            <Route
-              path="/"
-              name="Home"
-              render={(props) => <DefaultLayout {...props} />}
-            />
-          </Switch>
-        ) : (
-          <Switch>
-            <Route
-              exact
-              path="/"
-              name="Login Page"
-              render={(props) => <Login {...props} />}
-            />
-            <Route
-              exact
-              path="/register"
-              name="Register Page"
-              render={(props) => <Register {...props} />}
-            />
-            <Route render={() => <Redirect to="/" />} />
-          </Switch>
-        )}
+      <React.Suspense fallback={pageLoading()}>
+        {loading ? (
+          <div>
+            loading
+          </div>
+        ) :
+          user ? (
+            <Switch>
+              <Route
+                path="/"
+                name="Home"
+                render={(props) => <DefaultLayout {...props} />}
+              />
+            </Switch>
+          ) : (
+              <Switch>
+                <Route
+                  exact
+                  path="/"
+                  name="Login Page"
+                  render={(props) => <Login {...props} />}
+                />
+                <Route
+                  exact
+                  path="/register"
+                  name="Register Page"
+                  render={(props) => <Register {...props} />}
+                />
+                <Route render={() => <Redirect to="/" />} />
+              </Switch>
+            )
+        }
+
       </React.Suspense>
     </HashRouter>
   );

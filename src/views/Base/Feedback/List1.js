@@ -236,7 +236,7 @@ const List1 = () => {
                 </PaginationItem>
                 <Link to="/base/list2">
                   <PaginationItem>
-                    <PaginationLink next></PaginationLink>
+                    <PaginationLink style={{ color: '#43425D' }} next></PaginationLink>
                   </PaginationItem>
                 </Link>
               </Pagination>

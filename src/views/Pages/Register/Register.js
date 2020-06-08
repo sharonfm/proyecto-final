@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Divider from '@material-ui/core/Divider';
 import {
   Button,
   Card,
@@ -50,7 +51,7 @@ const Register = () => {
         });
       // generateUserDocument(user, {email, userName});
     } catch (error) {
-      setError("Error Signing up with email and password");
+      setError("Error de registro. Debes llenar todos los campos o actualmente ya te encuentras registrado.");
     }
     setEmail("");
     setPassword("");
@@ -79,12 +80,12 @@ const Register = () => {
                 className="text-white  py-5 d-md-down-none"
                 style={{ backgroundColor: "#43425D" }}
               >
-                <CardBody className="text-center">
+                <CardBody className="text-center" style={{padding:'70px'}}>
                   <div>
                     <h2>Únete a nosotros!</h2>
-                    <p>
+                    <p className="text-justify">
                     Mediante esta plataforma te ayudaremos a conocer y calificar todos 
-                    los procesos que puedes tener en el dpto de TI de tu empresa. Registrate, ingresa y actúa!
+                    los procesos que puedes tener en el departamento de TI de tu empresa. Registrate, ingresa y actúa!
                     </p>
                   </div>
                 </CardBody>
@@ -95,8 +96,10 @@ const Register = () => {
                   <Form align="center">
                     <h1 style={{ color: "#43425D" }}>G&G TI</h1>
                     <p className="text-muted">Registra aquí una nueva cuenta</p>
-                    {error ? <span>{error}</span> : null}
-
+                    <Divider />
+                    <Row align='center' style={{color:'red', padding:'8px'}}>
+                      {error ? <span>{error}</span> : null}
+                    </Row>
                     <InputGroup className="mb-3">
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
@@ -166,6 +169,7 @@ const Register = () => {
                           )
                         }
                         className="mt-3"
+                        type="submit"
                       >
                         <medium style={{ color: "#F2F2F2" }}>
                           Registrarme

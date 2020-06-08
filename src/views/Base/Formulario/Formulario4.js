@@ -40,23 +40,31 @@ const Forms4 = () => {
     "Calificación cinco: más del 75%"
   ])
 
-  const [answers, setAnswers] = useState([])
+  const [answers,setAnswers] = useState([])
+  const [error,setErrors] = useState("")
 
   const history = useHistory()
 
-  const handleChange = (event, index) => {
+  const handleChange =(event,index) => {
     const tempAnswers = Object.assign({}, answers);
-    tempAnswers[index] = event.target.value;
+    tempAnswers[index] = event.target.value;   
     setAnswers(tempAnswers);
     console.log(tempAnswers)
   }
-
+  const resetAnswers = () => {
+    setErrors("")
+    setAnswers([]);
+  }
   const handleSubmit = (event) => {
     event.preventDefault()
 
-    localStorage.setItem("p4", JSON.stringify(answers))
-    history.push("/base/form5")
-
+    if(Object.keys(answers).length==9) {
+      setErrors("")
+      localStorage.setItem("p4", JSON.stringify(answers))
+      history.push("/base/form5")
+    } else {
+      setErrors("Debe llenar todas las opciones")
+    }   
   }
 
 
@@ -128,10 +136,13 @@ const Forms4 = () => {
                     </FormGroup>
                   )
                 })}
+                <Row style={{justifyContent:'center', color: 'red', padding:'15px'}}>
+                  {error}
+                </Row>
                 <Row style={{justifyContent:'center'}}>
                   <div>
                     <Button type="submit" size="sm" color="primary"><i className="fa fa-check-square" value="Enviar datos"></i> Enviar</Button>{' '}
-                    <Button type="reset" size="sm" color="danger"><i className="fa fa-refresh"></i> Reiniciar</Button>                  
+                    <Button onClick = {resetAnswers} size="sm" color="danger"><i className="fa fa-refresh"></i> Reiniciar</Button>        
                   </div>
                 </Row>
               </Form>
