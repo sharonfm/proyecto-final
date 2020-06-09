@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import "./App.scss";
 import { UserContext } from "./context/authContext";
-
+import {Spinner, Row, Card, Col} from 'reactstrap';
 const pageLoading = () => (
   <div className="animated fadeIn pt-3 text-center">Cargando...</div>
 );
@@ -20,9 +20,9 @@ const App = () => {
     <HashRouter>
       <React.Suspense fallback={pageLoading()}>
         {loading ? (
-          <div>
-            loading
-          </div>
+          <Row className="justify-content-center" style={{padding:'300px'}}>
+            <Spinner style={{ width: '6rem', height: '6rem' }}> Cargando...</Spinner> 
+          </Row>
         ) :
           user ? (
             <Switch>

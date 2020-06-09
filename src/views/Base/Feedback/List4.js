@@ -6,7 +6,7 @@ const List4 = () => {
 
   const [activeTab, setActiveTab] = useState(1)
 
-  const [answers, setAnswers] = useState([])
+  const [answers, setAnswers] = useState({0: "6", 1: "6", 2: "6", 3: "6", 4: "6", 5: "6", 6: "6", 7: "6", 8: "6"})
   /*FEEDBACK DSS */ 
   const [options0] = useState([
     "Para una calificación de 0 en esta área se recomienda: Asegurar que los requisitos de procesamiento operacional del negocio y de TI de la empresa y las prioridades para la prestación de servicios cumplan con los contratos y SLA de hosting de terceros o proveedores de servicios.",
@@ -14,7 +14,8 @@ const List4 = () => {
     "Para una calificación de 2 en esta área se recomienda: Asegurar que los requisitos de los procesos de seguridad de la información de la empresa cumplan con los contratos y SLA de hosting de terceros o proveedores de servicios.",
     "Para una calificación de 3 en esta área se recomienda: Integrar los procesos de gestión de TI internos críticos con los de los proveedores de servicios externalizados. Esto debería cubrir, por ejemplo, la planificación de rendimiento y capacidad, gestión del cambio, gestión de la configuración, solicitud de servicios y gestión de incidentes, gestión de problemas, gestión de la seguridad, continuidad del negocio y monitorización del rendimiento y reporte del proceso.",
     "Para una calificación de 4 en esta área se recomienda: Planificar una auditoría independiente y el aseguramiento de los entornos operacionales de proveedores que proporcionen servicios externalizados para confirmar que se han abordado de forma adecuada los requisitos acordados.",
-    "Para una calificación de 5 en esta área se recomienda: Planificar una auditoría independiente y el aseguramiento de los entornos operacionales de proveedores que proporcionen servicios externalizados para confirmar que se han abordado de forma adecuada los requisitos acordados."
+    "Para una calificación de 5 en esta área se recomienda: Planificar una auditoría independiente y el aseguramiento de los entornos operacionales de proveedores que proporcionen servicios externalizados para confirmar que se han abordado de forma adecuada los requisitos acordados.",
+    "No existe ninguna calificación para esta pregunta."
   ])
   const [options1] = useState([
     "Para una calificación de 0 en esta área se recomienda: Registrar los eventos. Identificar el nivel de información que debe registrarse, conforme a una consideración de riesgo y rendimiento.",
@@ -22,7 +23,8 @@ const List4 = () => {
     "Para una calificación de 2 en esta área se recomienda: Identificar y mantener una lista de activos de infraestructura que deben monitorizarse conforme a la criticidad del servicio y la relación entre los elementos de configuración y servicios que dependen de ellos.",
     "Para una calificación de 3 en esta área se recomienda: Producir registros de eventos y conservarlos durante un periodo de tiempo adecuado para que ayuden en futuras investigaciones.",
     "Para una calificación de 4 en esta área se recomienda: Garantizar que se creen tickets de incidentes en el plazo debido a la hora de monitorizar desviaciones identificadas en los umbrales definidos.",
-    "Para una calificación de 5 en esta área se recomienda: Establecer procedimientos para monitorizar los registros de eventos. Llevar a cabo revisiones regulares."
+    "Para una calificación de 5 en esta área se recomienda: Establecer procedimientos para monitorizar los registros de eventos. Llevar a cabo revisiones regulares.",
+    "No existe ninguna calificación para esta pregunta."
   ])
   const [options2] = useState([
     "Para una calificación de 0 en esta área se recomienda: Identificar los desastres naturales y causados por el hombre que podrían ocurrir en el área en la que se encuentran las instalaciones de TI. Evaluar el efecto potencial en las instalaciones de TI.",
@@ -30,7 +32,8 @@ const List4 = () => {
     "Para una calificación de 2 en esta área se recomienda: Situar y construir las instalaciones de TI para minimizar y mitigar la susceptibilidad a las amenazas medioambientales (p. ej., robo, aire, incendio, humo, agua, vibración, terrorismo, vandalismo, químicos, explosivos). Considerar zonas de seguridad y/o células ignífugas específicas (p. ej., ubicar los entornos/servidores de producción y desarrollo apartado uno del otro).",
     "Para una calificación de 3 en esta área se recomienda: Responder a las alarmas medioambientales y a otras notificaciones. Documentar y probar los procedimientos, lo cual debería incluir la priorización de alarmas y contacto con las autoridades de respuesta a emergencia locales. Capacitar al personal en estos procedimientos.",
     "Para una calificación de 4 en esta área se recomienda: Comparar las medidas y planes de contingencia con los requisitos de las políticas de seguros y los resultados del informe. Abordar los puntos de incumplimiento en el plazo debido. ",
-    "Para una calificación de 5 en esta área se recomienda: Monitorizar y mantener regularmente dispositivos que detecten proactivamente amenazas medioambientales (p. ej., fuego, agua, humo, humedad)."
+    "Para una calificación de 5 en esta área se recomienda: Monitorizar y mantener regularmente dispositivos que detecten proactivamente amenazas medioambientales (p. ej., fuego, agua, humo, humedad).",
+    "No existe ninguna calificación para esta pregunta."
   ])
   const [options3] = useState([
     "Para una calificación de 0 en esta área se recomienda: Comprobar el derecho a las solicitudes de servicio, utilizando un flujo de proceso predefinido y cambios estándar, cuando sea posible.",
@@ -38,7 +41,8 @@ const List4 = () => {
     "Para una calificación de 2 en esta área se recomienda: Obtener la aprobación y confirmación financiera y funcional, si fuera necesario, o las aprobaciones predefinidas para los cambios estándar acordados.",
     "Para una calificación de 3 en esta área se recomienda: Obtener la aprobación y confirmación financiera y funcional, si fuera necesario, o las aprobaciones predefinidas para los cambios estándar acordados.",
     "Para una calificación de 4 en esta área se recomienda: Cumplir con las solicitudes realizando el proceso de solicitud seleccionado. Cuando sea posible, usar menús automáticos de autoayuda y modelos de solicitud predefinidas para elementos solicitados con frecuencia. ",
-    "Para una calificación de 5 en esta área se recomienda: Cumplir con las solicitudes realizando el proceso de solicitud seleccionado. Cuando sea posible, usar menús automáticos de autoayuda y modelos de solicitud predefinidas para elementos solicitados con frecuencia."
+    "Para una calificación de 5 en esta área se recomienda: Cumplir con las solicitudes realizando el proceso de solicitud seleccionado. Cuando sea posible, usar menús automáticos de autoayuda y modelos de solicitud predefinidas para elementos solicitados con frecuencia.",
+    "No existe ninguna calificación para esta pregunta."
   ])
   const [options4] = useState([
     "Para una calificación de 0 en esta área se recomienda: Comprobar el derecho a las solicitudes de servicio, utilizando un flujo de proceso predefinido y cambios estándar, cuando sea posible.",
@@ -46,7 +50,8 @@ const List4 = () => {
     "Para una calificación de 2 en esta área se recomienda: Obtener la aprobación y confirmación financiera y funcional, si fuera necesario, o las aprobaciones predefinidas para los cambios estándar acordados.",
     "Para una calificación de 3 en esta área se recomienda: Obtener la aprobación y confirmación financiera y funcional, si fuera necesario, o las aprobaciones predefinidas para los cambios estándar acordados.",
     "Para una calificación de 4 en esta área se recomienda: Cumplir con las solicitudes realizando el proceso de solicitud seleccionado. Cuando sea posible, usar menús automáticos de autoayuda y modelos de solicitud predefinidas para elementos solicitados con frecuencia.",
-    "Para una calificación de 5 en esta área se recomienda: Cumplir con las solicitudes realizando el proceso de solicitud seleccionado. Cuando sea posible, usar menús automáticos de autoayuda y modelos de solicitud predefinidas para elementos solicitados con frecuencia."
+    "Para una calificación de 5 en esta área se recomienda: Cumplir con las solicitudes realizando el proceso de solicitud seleccionado. Cuando sea posible, usar menús automáticos de autoayuda y modelos de solicitud predefinidas para elementos solicitados con frecuencia.",
+    "No existe ninguna calificación para esta pregunta."
   ])
   const [options5] = useState([
     "Para una calificación de 0 en esta área se recomienda: Comprobar con los usuarios afectados que la solicitud de servicio se ha cumplido de forma satisfactoria o el incidente se ha resuelto de forma satisfactoria dentro de un plazo de tiempo acordado/aceptable.",
@@ -54,7 +59,8 @@ const List4 = () => {
     "Para una calificación de 2 en esta área se recomienda: Comprobar con los usuarios afectados que la solicitud de servicio se ha cumplido de forma satisfactoria o el incidente se ha resuelto de forma satisfactoria dentro de un plazo de tiempo acordado/aceptable.",
     "Para una calificación de 3 en esta área se recomienda: Cerrar las peticiones e incidentes de servicio.",
     "Para una calificación de 4 en esta área se recomienda: Cerrar las peticiones e incidentes de servicio.",
-    "Para una calificación de 5 en esta área se recomienda: Cerrar las peticiones e incidentes de servicio."
+    "Para una calificación de 5 en esta área se recomienda: Cerrar las peticiones e incidentes de servicio.",
+    "No existe ninguna calificación para esta pregunta."
   ])
   const [options6] = useState([
     "Para una calificación de 0 en esta área se recomienda: Configurar los sistemas operativos de forma segura. Implementar mecanismos de bloqueo de dispositivos.",
@@ -62,7 +68,8 @@ const List4 = () => {
     "Para una calificación de 2 en esta área se recomienda: Gestionar la configuración de red de forma segura. Implementar el filtrado de tráfico de red en dispositivos de punto final.",
     "Para una calificación de 3 en esta área se recomienda: Proporcionar protección física a los dispositivos de punto final.Eliminar de forma segura los dispositivos Endpoint.",
     "Para una calificación de 4 en esta área se recomienda: Gestionar el acceso malicioso a través del correo electrónico y los navegadores web. Por ejemplo, bloquear determinados sitios web y desactivar los clics a enlaces para los smartphones.",
-    "Para una calificación de 5 en esta área se recomienda: Encriptar la información almacenada de acuerdo a su clasificación."
+    "Para una calificación de 5 en esta área se recomienda: Encriptar la información almacenada de acuerdo a su clasificación.",
+    "No existe ninguna calificación para esta pregunta."
   ])
   const [options7] = useState([
     "Para una calificación de 0 en esta área se recomienda: Registrar y monitorizar todos los puntos de entrada a las instalaciones de TI. Registrar a todos los visitantes al sitio, incluidos contratistas y proveedores.",
@@ -70,7 +77,8 @@ const List4 = () => {
     "Para una calificación de 2 en esta área se recomienda: Requerir a los visitantes que estén acompañados en todo momento durante su estancia en las instalaciones.",
     "Para una calificación de 3 en esta área se recomienda: Garantizar que los perfiles de acceso permanezcan actualizados. Basar el acceso a las instalaciones de TI (sala de servidores, edificios, áreas o zonas) en el cargo y las responsabilidades.",
     "Para una calificación de 4 en esta área se recomienda: Gestionar solicitudes para permitir el acceso debidamente autorizado a las instalaciones de cómputo.",
-    "Para una calificación de 5 en esta área se recomienda: Realizar formación sobre concienciación de la seguridad de la información física de forma regular."
+    "Para una calificación de 5 en esta área se recomienda: Realizar formación sobre concienciación de la seguridad de la información física de forma regular.",
+    "No existe ninguna calificación para esta pregunta."
   ])
   const [options8] = useState([
     "Para una calificación de 0 en esta área se recomienda: Definir y comunicar escenarios de riesgo para que se puedan reconocer con facilidad y se pueda entender su probabilidad e impacto. ",
@@ -78,13 +86,18 @@ const List4 = () => {
     "Para una calificación de 2 en esta área se recomienda: Garantizar que se creen tickets relativos a incidentes de seguridad de forma oportuna cuando la monitorización identifique posibles incidentes.",
     "Para una calificación de 3 en esta área se recomienda: Revisar regularmente los logs de eventos para detectar posibles incidentes.",
     "Para una calificación de 4 en esta área se recomienda: Garantizar que se creen tickets relativos a incidentes de seguridad de forma oportuna cuando la monitorización identifique posibles incidentes.",
-    "Para una calificación de 5 en esta área se recomienda: Garantizar que se creen tickets relativos a incidentes de seguridad de forma oportuna cuando la monitorización identifique posibles incidentes."
+    "Para una calificación de 5 en esta área se recomienda: Garantizar que se creen tickets relativos a incidentes de seguridad de forma oportuna cuando la monitorización identifique posibles incidentes.",
+    "No existe ninguna calificación para esta pregunta."
   ])
 
   const [answerslist4] = useState([options0, options1, options2, options3, options4, options5, options6, options7, options8])
 
   React.useEffect(() => {
-    setAnswers(JSON.parse(localStorage.getItem("p4")))
+    if(localStorage.getItem("p4")==null){
+      //console.log("here")
+    }else{
+      setAnswers(JSON.parse(localStorage.getItem("p4")))
+    }
   }, [])
 
   return (
@@ -99,15 +112,15 @@ const List4 = () => {
               <Row>
                 <Col xs="12" md="4">
                   <ListGroup id="list-tab" role="tablist">
-                    <ListGroupItem onClick={() => setActiveTab(1)} action active={activeTab === 1} >Uno</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(2)} action active={activeTab === 2} >Dos</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(3)} action active={activeTab === 3} >Tres</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(4)} action active={activeTab === 4} >Cuatro</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(5)} action active={activeTab === 5} >Cinco</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(6)} action active={activeTab === 6} >Seis</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(7)} action active={activeTab === 7} >Siete</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(8)} action active={activeTab === 8} >Ocho</ListGroupItem>
-                    <ListGroupItem onClick={() => setActiveTab(9)} action active={activeTab === 9} >Nueve</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(1)} action active={activeTab === 1} >Feedback-Pregunta Uno</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(2)} action active={activeTab === 2} >Feedback-Pregunta Dos</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(3)} action active={activeTab === 3} >Feedback-Pregunta Tres</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(4)} action active={activeTab === 4} >Feedback-Pregunta Cuatro</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(5)} action active={activeTab === 5} >Feedback-Pregunta Cinco</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(6)} action active={activeTab === 6} >Feedback-Pregunta Seis</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(7)} action active={activeTab === 7} >Feedback-Pregunta Siete</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(8)} action active={activeTab === 8} >Feedback-Pregunta Ocho</ListGroupItem>
+                    <ListGroupItem onClick={() => setActiveTab(9)} action active={activeTab === 9} >Feedback-Pregunta Nueve</ListGroupItem>
                   </ListGroup>
                 </Col>
                 <Col xs="12" md="8">

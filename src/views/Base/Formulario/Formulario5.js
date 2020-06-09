@@ -63,6 +63,7 @@ const Forms5 = () => {
     if(Object.keys(answers).length==12) {
       setErrors("")
       localStorage.setItem("p5", JSON.stringify(answers))
+      console.log(JSON.stringify(answers))
       history.push("/views/estadisticas")
     } else {
       setErrors("Debe llenar todas las opciones")

@@ -1,7 +1,7 @@
 import React, { Component, Suspense } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import * as router from 'react-router-dom';
-import { Container } from 'reactstrap';
+import { Container, Spinner } from 'reactstrap';
 
 import {
   AppFooter,
@@ -23,7 +23,7 @@ const DefaultHeader = React.lazy(() => import('./DefaultHeader'));
 
 class DefaultLayout extends Component {
 
-  loading = () => <div className="animated fadeIn pt-1 text-center" >Loading...</div>
+  loading = () => <div className="animated fadeIn pt-1 text-center" ><Spinner style={{ width: '2rem', height: '2rem' }}>Cargando...</Spinner></div>
 
   signOut(e) {
     e.preventDefault()

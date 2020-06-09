@@ -20,11 +20,11 @@ import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
 
 const Estadisticas= () => {
 
-  const [answers1,setAnswers1] = useState([])
-  const [answers2,setAnswers2] = useState([])
-  const [answers3,setAnswers3] = useState([])
-  const [answers4,setAnswers4] = useState([])
-  const [answers5,setAnswers5] = useState([])
+  const [answers1,setAnswers1] = useState({0: "0", 1: "0", 2: "0", 3: "0", 4: "0", 5: "0", 6: "0", 7: "0", 8: "0", 9: "0", 10: "0", 11: "0"})
+  const [answers2,setAnswers2] = useState({0: "0", 1: "0", 2: "0", 3: "0", 4: "0", 5: "0", 6: "0", 7: "0", 8: "0", 9: "0", 10: "0", 11: "0", 12: "0", 13: "0", 14: "0", 15: "0", 16: "0", 17: "0", 18: "0", 19: "0", 20: "0", 21: "0", 22: "0", 23: "0", 24: "0", 25: "0", 26: "0"})
+  const [answers3,setAnswers3] = useState({0: "0", 1: "0", 2: "0", 3: "0", 4: "0", 5: "0", 6: "0", 7: "0", 8: "0", 9: "0", 10: "0", 11: "0", 12: "0", 13: "0", 14: "0", 15: "0", 16: "0", 17: "0", 18: "0", 19: "0", 20: "0", 21: "0", 22: "0", 23: "0"})
+  const [answers4,setAnswers4] = useState({0: "0", 1: "0", 2: "0", 3: "0", 4: "0", 5: "0", 6: "0", 7: "0", 8: "0"})
+  const [answers5,setAnswers5] = useState({0: "0", 1: "0", 2: "0", 3: "0", 4: "0", 5: "0", 6: "0", 7: "0", 8: "0", 9: "0", 10: "0", 11: "0"})
 
 
   const [dropdownOpen,setDropDownOpen] = useState(false)
@@ -35,12 +35,66 @@ const Estadisticas= () => {
   const loading = () => <div className="animated fadeIn pt-1 text-center">Loading...</div>
 
   React.useEffect(()=>{
-    setAnswers1(JSON.parse(localStorage.getItem("p1")))
-    setAnswers2(JSON.parse(localStorage.getItem("p2")))
-    setAnswers3(JSON.parse(localStorage.getItem("p3")))
-    setAnswers4(JSON.parse(localStorage.getItem("p4")))
-    setAnswers5(JSON.parse(localStorage.getItem("p5")))
+    if(localStorage.getItem("p1")==null){
+      console.log("cristianesmarica")
+    }else{
+      setAnswers1(JSON.parse(localStorage.getItem("p1")))
+    }
+    
+    if(localStorage.getItem("p2")==null){
+      console.log("cristianesmarica")
+    }else{
+      setAnswers2(JSON.parse(localStorage.getItem("p2")))
+    }
 
+    if(localStorage.getItem("p3")==null){
+      console.log("cristianesmarica")
+    }else{
+      setAnswers3(JSON.parse(localStorage.getItem("p3")))
+    }
+
+    if(localStorage.getItem("p4")==null){
+      console.log("cristianesmarica")
+    }else{
+      setAnswers4(JSON.parse(localStorage.getItem("p4")))
+    }
+
+    if(localStorage.getItem("p5")==null){
+      console.log("cristianesmarica")
+    }else{
+      setAnswers5(JSON.parse(localStorage.getItem("p5")))
+    }
+
+    console.log(answers1)
+    console.log(answers2)
+    console.log(answers3)
+    console.log(answers4)
+    console.log(answers5)
+    /* if(answers1.length === 0){
+      localStorage.setItem("p1", {0: "0", 1: "0", 2: "0", 3: "0", 4: "0", 5: "0", 6: "0", 7: "0", 8: "0", 9: "0", 10: "0", 11: "0"})
+      setAnswers1(JSON.parse(localStorage.getItem("p1")))
+      console.log("answ1")
+    }
+    if(answers2.length === 0){
+      localStorage.setItem("p2", {0: "0", 1: "0", 2: "0", 3: "0", 4: "0", 5: "0", 6: "0", 7: "0", 8: "0", 9: "0", 10: "0", 11: "0", 12: "0", 13: "0", 14: "0", 15: "0", 16: "0", 17: "0", 18: "0", 19: "0", 20: "0", 21: "0", 22: "0", 23: "0", 24: "0", 25: "0", 26: "0"})
+      setAnswers2(JSON.parse(localStorage.getItem("p2")))
+      console.log("answ2")
+    }
+    if(answers3.length === 0){
+      localStorage.setItem("p3", JSON.parse({0: "0", 1: "0", 2: "0", 3: "0", 4: "0", 5: "0", 6: "0", 7: "0", 8: "0", 9: "0", 10: "0", 11: "0", 12: "0", 13: "0", 14: "0", 15: "0", 16: "0", 17: "0", 18: "0", 19: "0", 20: "0", 21: "0", 22: "0", 23: "0"}))
+      setAnswers3(JSON.parse(localStorage.getItem("p3")))
+      console.log("answ3")
+    }
+    if(answers4.length === 0){
+      localStorage.setItem("p4", JSON.parse({0: "0", 1: "0", 2: "0", 3: "0", 4: "0", 5: "0", 6: "0", 7: "0", 8: "0"}))
+      setAnswers4(JSON.parse(localStorage.getItem("p4")))
+      console.log("answ4")
+    }
+    if(answers5.length === 0){
+      localStorage.setItem("p5", JSON.parse({0: "0", 1: "0", 2: "0", 3: "0", 4: "0", 5: "0", 6: "0", 7: "0", 8: "0", 9: "0", 10: "0", 11: "0"}))
+      setAnswers5(JSON.parse(localStorage.getItem("p5")))
+      console.log("answ5")
+    } */
     console.log(JSON.parse(localStorage.getItem("p1")))
     console.log(JSON.parse(localStorage.getItem("p2")))
     console.log(JSON.parse(localStorage.getItem("p3")))

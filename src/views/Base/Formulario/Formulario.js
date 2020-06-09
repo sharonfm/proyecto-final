@@ -79,6 +79,7 @@ const Forms = () => {
     if(Object.keys(answers).length==12) {
       setErrors("")
       localStorage.setItem("p1", JSON.stringify(answers))
+      console.log(JSON.parse(JSON.stringify(answers)))
       history.push("/base/form2")
     } else {
       setErrors("Debe responder todas las preguntas!")
