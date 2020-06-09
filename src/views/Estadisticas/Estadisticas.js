@@ -245,12 +245,12 @@ const Estadisticas = () => {
     datasets: [
       {
         label: 'EDM',
-        //backgroundColor: '#43425D',
-        borderColor: '#43425D',
-        pointBackgroundColor: '#43425D',
+        backgroundColor: 'rgba(67, 66, 93, 0.2)',
+        borderColor: 'rgba(67, 66, 93, 1)',
+        pointBackgroundColor: 'rgba(67, 66, 93, 1)',
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: '#43425D',
+        pointHoverBorderColor: 'rgba(67, 66, 93, 1)',
         data: Object.values(answers1),
       },
 
@@ -261,12 +261,12 @@ const Estadisticas = () => {
     datasets: [
       {
         label: 'APO',
-        backgroundColor: 'rgba(255,99,132,0.2)',
-        borderColor: 'rgba(255,99,132,1)',
-        pointBackgroundColor: 'rgba(255,99,132,1)',
+        backgroundColor: 'rgba(213,76,105,0.2)',
+        borderColor: 'rgba(213,76,105,1)',
+        pointBackgroundColor: 'rgba(213,76,105,1)',
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgba(255,99,132,1)',
+        pointHoverBorderColor: 'rgba(213,76,105,1)',
         data: Object.values(answers2),
       },
     ],
@@ -277,12 +277,12 @@ const Estadisticas = () => {
     datasets: [
       {
         label: 'BAI',
-        //backgroundColor: '#43425D',
-        borderColor: '#43425D',
-        pointBackgroundColor: '#43425D',
+        backgroundColor: 'rgba(37,180,175,0.2)',
+        borderColor: 'rgba(37,180,175,1)',
+        pointBackgroundColor: 'rgba(37,180,175,1)',
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: '#43425D',
+        pointHoverBorderColor: 'rgba(37,180,175,1)',
         data: Object.values(answers3),
       },
 
@@ -293,12 +293,12 @@ const Estadisticas = () => {
     datasets: [
       {
         label: 'DSS',
-        backgroundColor: 'rgba(255,99,132,0.2)',
-        borderColor: 'rgba(255,99,132,1)',
-        pointBackgroundColor: 'rgba(255,99,132,1)',
+        backgroundColor: 'rgba(59, 105, 120, 0.2)',
+        borderColor: 'rgba(59, 105, 120, 1)',
+        pointBackgroundColor: 'rgba(59, 105, 120, 1)',
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgba(255,99,132,1)',
+        pointHoverBorderColor: 'rgba(59, 105, 120, 1)',
         data: Object.values(answers4),
       },
     ],
@@ -308,12 +308,12 @@ const Estadisticas = () => {
     datasets: [
       {
         label: 'MEA',
-        //backgroundColor: '#43425D',
-        borderColor: '#43425D',
-        pointBackgroundColor: '#43425D',
+        backgroundColor: 'rgba(180, 37, 37, 0.2)',
+        borderColor: 'rgba(180, 37, 37, 1)',
+        pointBackgroundColor: 'rgba(180, 37, 37, 1)',
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: '#43425D',
+        pointHoverBorderColor: 'rgba(180, 37, 37, 1)',
         data: Object.values(answers5),
       },
 
