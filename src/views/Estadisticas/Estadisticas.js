@@ -40,13 +40,13 @@ const Estadisticas= () => {
     }else{
       setAnswers1(JSON.parse(localStorage.getItem("p1")))
     }
-    
+
     if(localStorage.getItem("p2")==null){
       console.log("cristianesmarica")
     }else{
       setAnswers2(JSON.parse(localStorage.getItem("p2")))
     }
-
+    
     if(localStorage.getItem("p3")==null){
       console.log("cristianesmarica")
     }else{
