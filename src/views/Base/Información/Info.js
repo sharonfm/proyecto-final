@@ -98,7 +98,7 @@ class Carousels extends Component {
           <Col xs="12" sm="9">    
             <Card className="text-center">
               <CardHeader style={{color:'#43425D'}}>
-                <h1><strong>Governance y Gestión de TI</strong> </h1>
+                <h1><strong>Gobierno y Gestión de TI</strong> </h1>
               </CardHeader>
               <CardBody>
                 <Carousel activeIndex={activeIndex} next={this.next} previous={this.previous}>
@@ -112,9 +112,6 @@ class Carousels extends Component {
           </Col>
         </Row>
         <h1 style={{color:'#43425D', textAlign:'center', marginBottom:'30px'}}> Definición de los dominios activos en G&G TI </h1>
-        {/* <Card className="card-accent-primary text-center">
-            <CardHeader><h3 style={{color:'#43425D'}}>Definición de los dominios activos en G&G TI</h3></CardHeader>
-        </Card> */}
         <Card className=" text-center">
             <CardHeader style={{backgroundColor:'#696791'}}></CardHeader>
             <CardBody><h3 style={{color:'#43425D'}}>EDM→ Evaluar, Dirigir y Monitorizar</h3></CardBody>
